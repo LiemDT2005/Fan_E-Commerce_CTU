@@ -1,0 +1,371 @@
+{
+  "id": 1794746134591,
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "text": "{\"screens\":[{\"name\":\"projects/5634229459885586050/screens/53cc26eed6b54b9481781d7a1cf944ea\",\"title\":\"FANFUN Admin - Quản lý Đơn hàng\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/53cc26eed6b54b9481781d7a1cf944ea/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34ab022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/53cc26eed6b54b9481781d7a1cf944ea/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/53cc26eed6b54b9481781d7a1cf944ea:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"2976\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/59aedb88f6d94563aba59e33eec3b0f1\",\"title\":\"FANFUN Admin - Quản lý Danh mục\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/59aedb88f6d94563aba59e33eec3b0f1/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d348b022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/59aedb88f6d94563aba59e33eec3b0f1/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/59aedb88f6d94563aba59e33eec3b0f1:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"3220\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/a297b6f64e314405b51253bccee3bd93\",\"title\":\"FANFUN - Đăng ký tài khoản mới\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/a297b6f64e314405b51253bccee3bd93/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d3493022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/a297b6f64e314405b51253bccee3bd93/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/a297b6f64e314405b51253bccee3bd93:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"2048\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/ebe43ed9324b42cab4456b53d7494143\",\"title\":\"FANFUN Admin - Quản lý Sản phẩm\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/ebe43ed9324b42cab4456b53d7494143/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34ad022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/ebe43ed9324b42cab4456b53d7494143/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/ebe43ed9324b42cab4456b53d7494143:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"4138\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/fd0d1771fe954a9085ad5c465123e658\",\"title\":\"FANFUN Admin - Quản lý Khách hàng\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/fd0d1771fe954a9085ad5c465123e658/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d3486022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/fd0d1771fe954a9085ad5c465123e658/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/fd0d1771fe954a9085ad5c465123e658:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"2656\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/b5bf67fe6ff54f788c06bd4568d71bcd\",\"title\":\"FANFUN - Đặt hàng thành công\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/b5bf67fe6ff54f788c06bd4568d71bcd/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d3491022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/b5bf67fe6ff54f788c06bd4568d71bcd/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/b5bf67fe6ff54f788c06bd4568d71bcd:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"4580\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/93d7694d739842e9a004e1932088e87a\",\"title\":\"FANFUN - Danh mục sản phẩm & Hệ sinh thái\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/93d7694d739842e9a004e1932088e87a/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34af022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/93d7694d739842e9a004e1932088e87a/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/93d7694d739842e9a004e1932088e87a:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"5676\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/90382c09a77d46deab4497f7736d7270\",\"title\":\"FANFUN - Đơn hàng của tôi\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/90382c09a77d46deab4497f7736d7270/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d348f022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/90382c09a77d46deab4497f7736d7270/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/90382c09a77d46deab4497f7736d7270:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"4120\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/5189631ffc9541d6a358d513d8987f77\",\"title\":\"FANFUN Admin - Biểu mẫu Sản phẩm\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/5189631ffc9541d6a358d513d8987f77/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34a5022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/5189631ffc9541d6a358d513d8987f77/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/5189631ffc9541d6a358d513d8987f77:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"7640\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/495d9b365fa14727a63d39973ee12fad\",\"title\":\"FANFUN - Thanh toán đơn hàng\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/495d9b365fa14727a63d39973ee12fad/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d3479022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/495d9b365fa14727a63d39973ee12fad/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/495d9b365fa14727a63d39973ee12fad:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"4256\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/915fcd8825af4fe58952424b455eeb61\",\"title\":\"FANFUN Admin - Chi tiết đơn hàng #FF-2025-8869\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/915fcd8825af4fe58952424b455eeb61/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d349c022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/915fcd8825af4fe58952424b455eeb61/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/915fcd8825af4fe58952424b455eeb61:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"5166\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/adbc538067e943c69e002a91ce341a8d\",\"title\":\"FANFUN - Giỏ hàng của bạn\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/adbc538067e943c69e002a91ce341a8d/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d3498022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/adbc538067e943c69e002a91ce341a8d/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/adbc538067e943c69e002a91ce341a8d:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"2992\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/c6e04c9e3d404ecda5e31e3358374cf6\",\"title\":\"FANFUN - Hồ sơ cá nhân\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/c6e04c9e3d404ecda5e31e3358374cf6/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34a0022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/c6e04c9e3d404ecda5e31e3358374cf6/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/c6e04c9e3d404ecda5e31e3358374cf6:download\",\"mimeType\":\"text/html\"},\"width\":\"3056\",\"height\":\"2992\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/86b8f95f020d4ce4b035809a9671584a\",\"title\":\"FANFUN Admin - Quản lý Khuyến mãi & Voucher\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/86b8f95f020d4ce4b035809a9671584a/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d349a022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/86b8f95f020d4ce4b035809a9671584a/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/86b8f95f020d4ce4b035809a9671584a:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"4500\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/7df672db1ff34bbea2e89ad4c938d06a\",\"title\":\"FANFUN - Chi tiết đơn hàng #FF-2025-8869\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/7df672db1ff34bbea2e89ad4c938d06a/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d349e022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/7df672db1ff34bbea2e89ad4c938d06a/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/7df672db1ff34bbea2e89ad4c938d06a:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"4978\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/6e1bcca255844686b68eb1a96530f927\",\"title\":\"FANFUN - Trang chủ | Quạt trần thông minh 3-in-1\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/6e1bcca255844686b68eb1a96530f927/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d348d022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/6e1bcca255844686b68eb1a96530f927/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/6e1bcca255844686b68eb1a96530f927:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"8528\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/362d329a21974fe8be4421ab7cfeab73\",\"title\":\"FANFUN - Chi tiết sản phẩm Quạt trần thông minh 3-in-1\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/362d329a21974fe8be4421ab7cfeab73/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34a3022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/362d329a21974fe8be4421ab7cfeab73/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/362d329a21974fe8be4421ab7cfeab73:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"5760\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/ad7beb3575094dc9b2aeb77d05df9e26\",\"title\":\"FANFUN - Đăng nhập tài khoản\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/ad7beb3575094dc9b2aeb77d05df9e26/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d3496022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/5634229459885586050/files/12584943026516499216\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/12584943026516499216:download\",\"mimeType\":\"text/html\"},\"width\":\"2560\",\"height\":\"2206\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/e36f72da5bc34b5c905be340d98445b0\",\"title\":\"FANFUN - Đổi mật khẩu\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/e36f72da5bc34b5c905be340d98445b0/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34a8022d6bb1051f5c93:download\",\"mimeType\":\"image/png\"},\"htmlCode\":{\"name\":\"projects/9052313486425226484/screens/e36f72da5bc34b5c905be340d98445b0/fileEntries/html\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/e36f72da5bc34b5c905be340d98445b0:download\",\"mimeType\":\"text/html\"},\"width\":\"3056\",\"height\":\"2644\",\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\"},{\"name\":\"projects/5634229459885586050/screens/de5b9290e74e4806b8be08dc30370ec4\",\"title\":\"A modern luxury architectural living room with a sleek 5-blade smart ceiling fan with integrated warm LED light, hanging from a minimalist ceiling in a high-end contemporary apartment with large glass windows overlooking lush greenery. Elegant interior design, warm domestic lighting, natural wood and stone textures, ultra-photorealistic, high-end commercial home appliance product photography.\",\"screenshot\":{\"name\":\"projects/9052313486425226484/screens/de5b9290e74e4806b8be08dc30370ec4/fileEntries/screenshot\",\"downloadUrl\":\"https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34a7022d6bb1051f5c93:download\",\"mimeType\":\"image/jpeg\"},\"htmlCode\":{},\"width\":\"896\",\"height\":\"1200\",\"screenType\":\"IMAGE\"}]}",
+        "type": "text"
+      }
+    ],
+    "structuredContent": {
+      "screens": [
+        {
+          "deviceType": "DESKTOP",
+          "height": "2976",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/53cc26eed6b54b9481781d7a1cf944ea:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/53cc26eed6b54b9481781d7a1cf944ea/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/53cc26eed6b54b9481781d7a1cf944ea",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34ab022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/53cc26eed6b54b9481781d7a1cf944ea/fileEntries/screenshot"
+          },
+          "title": "FANFUN Admin - Quản lý Đơn hàng",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "3220",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/59aedb88f6d94563aba59e33eec3b0f1:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/59aedb88f6d94563aba59e33eec3b0f1/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/59aedb88f6d94563aba59e33eec3b0f1",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d348b022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/59aedb88f6d94563aba59e33eec3b0f1/fileEntries/screenshot"
+          },
+          "title": "FANFUN Admin - Quản lý Danh mục",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "2048",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/a297b6f64e314405b51253bccee3bd93:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/a297b6f64e314405b51253bccee3bd93/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/a297b6f64e314405b51253bccee3bd93",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d3493022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/a297b6f64e314405b51253bccee3bd93/fileEntries/screenshot"
+          },
+          "title": "FANFUN - Đăng ký tài khoản mới",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "4138",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/ebe43ed9324b42cab4456b53d7494143:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/ebe43ed9324b42cab4456b53d7494143/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/ebe43ed9324b42cab4456b53d7494143",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34ad022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/ebe43ed9324b42cab4456b53d7494143/fileEntries/screenshot"
+          },
+          "title": "FANFUN Admin - Quản lý Sản phẩm",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "2656",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/fd0d1771fe954a9085ad5c465123e658:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/fd0d1771fe954a9085ad5c465123e658/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/fd0d1771fe954a9085ad5c465123e658",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d3486022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/fd0d1771fe954a9085ad5c465123e658/fileEntries/screenshot"
+          },
+          "title": "FANFUN Admin - Quản lý Khách hàng",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "4580",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/b5bf67fe6ff54f788c06bd4568d71bcd:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/b5bf67fe6ff54f788c06bd4568d71bcd/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/b5bf67fe6ff54f788c06bd4568d71bcd",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d3491022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/b5bf67fe6ff54f788c06bd4568d71bcd/fileEntries/screenshot"
+          },
+          "title": "FANFUN - Đặt hàng thành công",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "5676",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/93d7694d739842e9a004e1932088e87a:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/93d7694d739842e9a004e1932088e87a/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/93d7694d739842e9a004e1932088e87a",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34af022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/93d7694d739842e9a004e1932088e87a/fileEntries/screenshot"
+          },
+          "title": "FANFUN - Danh mục sản phẩm & Hệ sinh thái",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "4120",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/90382c09a77d46deab4497f7736d7270:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/90382c09a77d46deab4497f7736d7270/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/90382c09a77d46deab4497f7736d7270",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d348f022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/90382c09a77d46deab4497f7736d7270/fileEntries/screenshot"
+          },
+          "title": "FANFUN - Đơn hàng của tôi",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "7640",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/5189631ffc9541d6a358d513d8987f77:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/5189631ffc9541d6a358d513d8987f77/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/5189631ffc9541d6a358d513d8987f77",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34a5022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/5189631ffc9541d6a358d513d8987f77/fileEntries/screenshot"
+          },
+          "title": "FANFUN Admin - Biểu mẫu Sản phẩm",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "4256",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/495d9b365fa14727a63d39973ee12fad:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/495d9b365fa14727a63d39973ee12fad/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/495d9b365fa14727a63d39973ee12fad",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d3479022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/495d9b365fa14727a63d39973ee12fad/fileEntries/screenshot"
+          },
+          "title": "FANFUN - Thanh toán đơn hàng",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "5166",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/915fcd8825af4fe58952424b455eeb61:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/915fcd8825af4fe58952424b455eeb61/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/915fcd8825af4fe58952424b455eeb61",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d349c022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/915fcd8825af4fe58952424b455eeb61/fileEntries/screenshot"
+          },
+          "title": "FANFUN Admin - Chi tiết đơn hàng #FF-2025-8869",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "2992",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/adbc538067e943c69e002a91ce341a8d:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/adbc538067e943c69e002a91ce341a8d/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/adbc538067e943c69e002a91ce341a8d",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d3498022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/adbc538067e943c69e002a91ce341a8d/fileEntries/screenshot"
+          },
+          "title": "FANFUN - Giỏ hàng của bạn",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "2992",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/c6e04c9e3d404ecda5e31e3358374cf6:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/c6e04c9e3d404ecda5e31e3358374cf6/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/c6e04c9e3d404ecda5e31e3358374cf6",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34a0022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/c6e04c9e3d404ecda5e31e3358374cf6/fileEntries/screenshot"
+          },
+          "title": "FANFUN - Hồ sơ cá nhân",
+          "width": "3056"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "4500",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/86b8f95f020d4ce4b035809a9671584a:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/86b8f95f020d4ce4b035809a9671584a/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/86b8f95f020d4ce4b035809a9671584a",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d349a022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/86b8f95f020d4ce4b035809a9671584a/fileEntries/screenshot"
+          },
+          "title": "FANFUN Admin - Quản lý Khuyến mãi & Voucher",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "4978",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/7df672db1ff34bbea2e89ad4c938d06a:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/7df672db1ff34bbea2e89ad4c938d06a/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/7df672db1ff34bbea2e89ad4c938d06a",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d349e022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/7df672db1ff34bbea2e89ad4c938d06a/fileEntries/screenshot"
+          },
+          "title": "FANFUN - Chi tiết đơn hàng #FF-2025-8869",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "8528",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/6e1bcca255844686b68eb1a96530f927:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/6e1bcca255844686b68eb1a96530f927/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/6e1bcca255844686b68eb1a96530f927",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d348d022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/6e1bcca255844686b68eb1a96530f927/fileEntries/screenshot"
+          },
+          "title": "FANFUN - Trang chủ | Quạt trần thông minh 3-in-1",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "5760",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/362d329a21974fe8be4421ab7cfeab73:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/362d329a21974fe8be4421ab7cfeab73/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/362d329a21974fe8be4421ab7cfeab73",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34a3022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/362d329a21974fe8be4421ab7cfeab73/fileEntries/screenshot"
+          },
+          "title": "FANFUN - Chi tiết sản phẩm Quạt trần thông minh 3-in-1",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "2206",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/12584943026516499216:download",
+            "mimeType": "text/html",
+            "name": "projects/5634229459885586050/files/12584943026516499216"
+          },
+          "name": "projects/5634229459885586050/screens/ad7beb3575094dc9b2aeb77d05df9e26",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d3496022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/ad7beb3575094dc9b2aeb77d05df9e26/fileEntries/screenshot"
+          },
+          "title": "FANFUN - Đăng nhập tài khoản",
+          "width": "2560"
+        },
+        {
+          "deviceType": "DESKTOP",
+          "height": "2644",
+          "htmlCode": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/e36f72da5bc34b5c905be340d98445b0:download",
+            "mimeType": "text/html",
+            "name": "projects/9052313486425226484/screens/e36f72da5bc34b5c905be340d98445b0/fileEntries/html"
+          },
+          "name": "projects/5634229459885586050/screens/e36f72da5bc34b5c905be340d98445b0",
+          "screenType": "DESIGN",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34a8022d6bb1051f5c93:download",
+            "mimeType": "image/png",
+            "name": "projects/9052313486425226484/screens/e36f72da5bc34b5c905be340d98445b0/fileEntries/screenshot"
+          },
+          "title": "FANFUN - Đổi mật khẩu",
+          "width": "3056"
+        },
+        {
+          "height": "1200",
+          "htmlCode": {},
+          "name": "projects/5634229459885586050/screens/de5b9290e74e4806b8be08dc30370ec4",
+          "screenType": "IMAGE",
+          "screenshot": {
+            "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34a7022d6bb1051f5c93:download",
+            "mimeType": "image/jpeg",
+            "name": "projects/9052313486425226484/screens/de5b9290e74e4806b8be08dc30370ec4/fileEntries/screenshot"
+          },
+          "title": "A modern luxury architectural living room with a sleek 5-blade smart ceiling fan with integrated warm LED light, hanging from a minimalist ceiling in a high-end contemporary apartment with large glass windows overlooking lush greenery. Elegant interior design, warm domestic lighting, natural wood and stone textures, ultra-photorealistic, high-end commercial home appliance product photography.",
+          "width": "896"
+        }
+      ]
+    }
+  }
+}

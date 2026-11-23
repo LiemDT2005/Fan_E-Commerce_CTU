@@ -1,0 +1,384 @@
+{
+  "id": 1794746132744,
+  "jsonrpc": "2.0",
+  "result": {
+    "content": [
+      {
+        "text": "{\"name\":\"projects/5634229459885586050\",\"title\":\"Remix of FANFUN Smart Appliance Storefront\",\"visibility\":\"PRIVATE\",\"createTime\":\"2026-11-15T12:32:08.043155Z\",\"updateTime\":\"2026-11-15T12:32:31.562280Z\",\"projectType\":\"TEXT_TO_UI_PRO\",\"thumbnailScreenshot\":{\"name\":\"projects/9052313486425226484/screens/362d329a21974fe8be4421ab7cfeab73/fileEntries/screenshot\",\"downloadUrl\":\"https://lh3.googleusercontent.com/aida/ALJJyrAIlKYHBl1Uq4xQnh9n68K0YqWGTDsm03PldACMunGcAkutZvQmcykxes_j19oU3uXB1xjo1IZU7IrwQEp9x1tvY3kST8APZx_442XUqpJyEF2KWK1hfQT8CnLTuEOe8voXemInOusEGawzdXl3EUxYEdabufF3X2qeZTBah1GAxPZZjQr_3Xw-VzOkfSFyiwsT0eJzRNzEslu0xjKwZus7jCbSAwELf4XkntLn7UUQ\"},\"origin\":\"REMIX\",\"deviceType\":\"DESKTOP\",\"designTheme\":{\"colorMode\":\"LIGHT\",\"font\":\"BE_VIETNAM_PRO\",\"roundness\":\"ROUND_EIGHT\",\"customColor\":\"#d66a3a\",\"headlineFont\":\"BE_VIETNAM_PRO\",\"bodyFont\":\"BE_VIETNAM_PRO\",\"labelFont\":\"BE_VIETNAM_PRO\",\"namedColors\":{\"on_secondary\":\"#ffffff\",\"outline_variant\":\"#ddc1b6\",\"surface_container_high\":\"#f0e7db\",\"on_secondary_container\":\"#656464\",\"surface_container_low\":\"#fcf2e7\",\"tertiary_fixed\":\"#e8e2d7\",\"surface_container_highest\":\"#eae1d6\",\"inverse_on_surface\":\"#f9efe4\",\"surface\":\"#fff8f2\",\"on_primary_fixed\":\"#370e00\",\"on_tertiary_fixed_variant\":\"#49473f\",\"on_background\":\"#1f1b14\",\"surface_dim\":\"#e2d9ce\",\"on_tertiary_container\":\"#fffbff\",\"inverse_surface\":\"#343028\",\"secondary_fixed\":\"#e4e2e1\",\"surface_variant\":\"#eae1d6\",\"secondary\":\"#5f5e5e\",\"background\":\"#fff8f2\",\"surface_container\":\"#f6ede1\",\"surface_bright\":\"#fff8f2\",\"error\":\"#ba1a1a\",\"on_error_container\":\"#93000a\",\"on_surface_variant\":\"#56423b\",\"tertiary_container\":\"#78746b\",\"secondary_container\":\"#e4e2e1\",\"secondary_fixed_dim\":\"#c8c6c5\",\"on_tertiary\":\"#ffffff\",\"primary_fixed\":\"#ffdbce\",\"on_tertiary_fixed\":\"#1d1b15\",\"inverse_primary\":\"#ffb598\",\"on_primary\":\"#ffffff\",\"on_primary_fixed_variant\":\"#7e2c00\",\"primary_fixed_dim\":\"#ffb598\",\"surface_tint\":\"#9f4113\",\"surface_container_lowest\":\"#ffffff\",\"error_container\":\"#ffdad6\",\"primary_container\":\"#bc5728\",\"on_error\":\"#ffffff\",\"on_primary_container\":\"#fffbff\",\"tertiary_fixed_dim\":\"#cbc6bc\",\"on_secondary_fixed\":\"#1b1c1c\",\"on_secondary_fixed_variant\":\"#474746\",\"primary\":\"#9c3f11\",\"on_surface\":\"#1f1b14\",\"outline\":\"#8a7269\",\"tertiary\":\"#5f5c53\"},\"designMd\":\"---\\nname: Warm Architectural Domesticity\\ncolors:\\n  surface: '#fff8f2'\\n  surface-dim: '#e2d9ce'\\n  surface-bright: '#fff8f2'\\n  surface-container-lowest: '#ffffff'\\n  surface-container-low: '#fcf2e7'\\n  surface-container: '#f6ede1'\\n  surface-container-high: '#f0e7db'\\n  surface-container-highest: '#eae1d6'\\n  on-surface: '#1f1b14'\\n  on-surface-variant: '#56423b'\\n  inverse-surface: '#343028'\\n  inverse-on-surface: '#f9efe4'\\n  outline: '#8a7269'\\n  outline-variant: '#ddc1b6'\\n  surface-tint: '#9f4113'\\n  primary: '#9c3f11'\\n  on-primary: '#ffffff'\\n  primary-container: '#bc5728'\\n  on-primary-container: '#fffbff'\\n  inverse-primary: '#ffb598'\\n  secondary: '#5f5e5e'\\n  on-secondary: '#ffffff'\\n  secondary-container: '#e4e2e1'\\n  on-secondary-container: '#656464'\\n  tertiary: '#5f5c53'\\n  on-tertiary: '#ffffff'\\n  tertiary-container: '#78746b'\\n  on-tertiary-container: '#fffbff'\\n  error: '#ba1a1a'\\n  on-error: '#ffffff'\\n  error-container: '#ffdad6'\\n  on-error-container: '#93000a'\\n  primary-fixed: '#ffdbce'\\n  primary-fixed-dim: '#ffb598'\\n  on-primary-fixed: '#370e00'\\n  on-primary-fixed-variant: '#7e2c00'\\n  secondary-fixed: '#e4e2e1'\\n  secondary-fixed-dim: '#c8c6c5'\\n  on-secondary-fixed: '#1b1c1c'\\n  on-secondary-fixed-variant: '#474746'\\n  tertiary-fixed: '#e8e2d7'\\n  tertiary-fixed-dim: '#cbc6bc'\\n  on-tertiary-fixed: '#1d1b15'\\n  on-tertiary-fixed-variant: '#49473f'\\n  background: '#fff8f2'\\n  on-background: '#1f1b14'\\n  surface-variant: '#eae1d6'\\ntypography:\\n  display:\\n    fontFamily: Be Vietnam Pro\\n    fontSize: 3.5rem\\n    fontWeight: '700'\\n    lineHeight: 4.25rem\\n    letterSpacing: -0.02em\\n  display-mobile:\\n    fontFamily: Be Vietnam Pro\\n    fontSize: 2.25rem\\n    fontWeight: '700'\\n    lineHeight: 2.75rem\\n    letterSpacing: -0.015em\\n  headline-lg:\\n    fontFamily: Be Vietnam Pro\\n    fontSize: 2.25rem\\n    fontWeight: '600'\\n    lineHeight: 2.75rem\\n    letterSpacing: -0.015em\\n  headline-lg-mobile:\\n    fontFamily: Be Vietnam Pro\\n    fontSize: 1.75rem\\n    fontWeight: '600'\\n    lineHeight: 2.25rem\\n    letterSpacing: -0.01em\\n  headline-md:\\n    fontFamily: Be Vietnam Pro\\n    fontSize: 1.5rem\\n    fontWeight: '600'\\n    lineHeight: 2rem\\n    letterSpacing: -0.01em\\n  headline-sm:\\n    fontFamily: Be Vietnam Pro\\n    fontSize: 1.25rem\\n    fontWeight: '600'\\n    lineHeight: 1.75rem\\n    letterSpacing: '0'\\n  body-lg:\\n    fontFamily: Be Vietnam Pro\\n    fontSize: 1.125rem\\n    fontWeight: '400'\\n    lineHeight: 1.75rem\\n    letterSpacing: '0'\\n  body-md:\\n    fontFamily: Be Vietnam Pro\\n    fontSize: 1rem\\n    fontWeight: '400'\\n    lineHeight: 1.5rem\\n    letterSpacing: '0'\\n  body-sm:\\n    fontFamily: Be Vietnam Pro\\n    fontSize: 0.875rem\\n    fontWeight: '400'\\n    lineHeight: 1.25rem\\n    letterSpacing: 0.005em\\n  label-lg:\\n    fontFamily: Be Vietnam Pro\\n    fontSize: 0.875rem\\n    fontWeight: '600'\\n    lineHeight: 1.25rem\\n    letterSpacing: 0.02em\\n  label-md:\\n    fontFamily: Be Vietnam Pro\\n    fontSize: 0.75rem\\n    fontWeight: '600'\\n    lineHeight: 1rem\\n    letterSpacing: 0.04em\\n  label-sm:\\n    fontFamily: Be Vietnam Pro\\n    fontSize: 0.6875rem\\n    fontWeight: '500'\\n    lineHeight: 0.875rem\\n    letterSpacing: 0.05em\\nrounded:\\n  sm: 0.25rem\\n  DEFAULT: 0.5rem\\n  md: 0.75rem\\n  lg: 1rem\\n  xl: 1.5rem\\n  full: 9999px\\nspacing:\\n  gutter: 1.5rem\\n  gutter-mobile: 1rem\\n  margin: 3rem\\n  margin-mobile: 1.25rem\\n  space-xs: 0.25rem\\n  space-sm: 0.5rem\\n  space-md: 1rem\\n  space-lg: 1.5rem\\n  space-xl: 2.5rem\\n---\\n\\n## Brand & Style\\n\\nThis design system expresses a refined synthesis of smart home technology and warm domestic comfort tailored for modern Vietnamese living. Rejecting the clinical, cold blue-and-neon aesthetic standard of generic IoT platforms, the visual language grounds itself in natural, tactile warmth (\\\"Thoải mái quanh năm, thông minh mỗi ngày\\\"). \\n\\nThe design combines Modern Organic Minimalism with functional clarity:\\n- **Atmosphere:** Earthy, grounded, breathable, and deeply hospitable. Interfaces mirror modern Southeast Asian interior spaces—balancing architectural discipline with organic textures like natural wood, woven rattan, and textured terracotta brick.\\n- **Personality:** Intelligent without feeling detached; caring and attentive without clutter; modern, dependable, and quietly responsible.\\n- **Visual Tenets:** Generous, calm white/ivory negative space, structured structural typography with exceptional Vietnamese diacritical legibility, subtle warm-tinted surface elevations, and confident terracotta focal points.\\n\\n## Colors\\n\\nThe palette establishes thermal balance: cooling architectural charcoal anchors the space, while artisanal terracotta infuses vitality and smart responsive highlights. \\n\\n- **Primary Accent (`#D66A3A` - Terracotta Orange):** Reserved for intentional points of engagement—active states, main toggles, primary CTA buttons, climate slider pins, and energetic metrics.\\n- **Secondary / Anchor (`#252525` - Charcoal Black):** High-contrast anchor for headlines, key data figures, solid action buttons, and dominant iconography. Replaces pure black to eliminate harsh optical glare against warm surfaces.\\n- **Background (`#F7F2E9` - Warm Ivory):** The structural canvas. Eliminates clinical digital starkness in favor of a soft, ambient residential feel.\\n- **Surfaces & Cards:** Layered using Pure White (`#FFFFFF`) for elevated control panels and interactive modules, resting upon Warm Sand (`#F2ECE1`) for secondary contextual sections.\\n- **Borders & Dividers (`#E2DBD0` - Subtle Warm Gray):** Low-contrast structural perimeter styling that defines element zones without slicing the interface rigidly.\\n- **Muted Text & Metadata (`#6B655C` - Muted Slate Gray):** Ensures balanced reading contrast (passing WCAG AAA for normal text) for labels, descriptions, and auxiliary sensor readings.\\n- **Functional Validation:** Error states employ a soft vermilion (`#D32F2F`) calibrated to match the terracotta family; success uses an earthy moss tint (`#3E6B48`). Cool blues, synthetic teals, and synthetic neon gradients are strictly forbidden.\\n\\n## Typography\\n\\nThe design system exclusively adopts **Be Vietnam Pro** across all typographic hierarchies. Built natively to accommodate Vietnamese diacritics, it prevents vertical clipping of accent marks (e.g., hỏi, ngã, nặng, sắc, huyền) and preserves visual rhythm in multilingual domestic contexts.\\n\\n- **Display & Headline Levels:** Feature tight negative letter-spacing and strong vertical metrics for crisp rendering of Vietnamese compound vowels and tonemarks.\\n- **Body Rhythm:** Ample line heights (1.5x to 1.55x) protect stacked tone marks from crashing into preceding lines during continuous reading.\\n- **Labels & Overlines:** Small-caps styled overlines and status microcopy use medium to semi-bold weights with tracked letter spacing (`0.02em` - `0.05em`) to retain legibility on micro appliance displays and handheld mobile dashboards.\\n\\n## Layout & Spacing\\n\\nThe layout model implements a fluid responsive 12-column grid on desktop and tablet, collapsing to a 4-column layout on mobile devices.\\n\\n- **Desktop (min-width: 1024px):** Max container width of 1280px, with generous `margin` (3rem) and `gutter` (1.5rem) to evoke an open-concept architectural plan.\\n- **Tablet (768px - 1023px):** 8-column layout with 2rem margins and 1rem gutters. Sidebars collapse into drawer navigation or bottom action rails.\\n- **Mobile (\\u003c 768px):** 4-column layout, `margin-mobile` of 1.25rem, prioritizing thumb-reachable vertical stacks for quick appliance control (fan speed dials, scene selectors, lighting toggles).\\n- **Rhythm & Gaps:** All spatial separation strictly adheres to an 8pt base grid (`space-xs` = 4px, `space-sm` = 8px, `space-md` = 16px, `space-lg` = 24px, `space-xl` = 40px). Element grouping pairs related controls (e.g., speed + oscillation) with `space-sm`, while modular units (e.g., Fan Status vs. Air Purification Stats) are offset with `space-lg` or `space-xl`.\\n\\n## Elevation & Depth\\n\\nDepth is established through soft, ambient multi-layer lighting rather than dramatic artificial drops. Shadows are tinted with warm undertones derived from the Charcoal and Terracotta primaries to prevent muddy gray artifacts.\\n\\n- **Base Layer (Level 0):** Canvas background `#F7F2E9`. Flat, non-elevated.\\n- **Surface Layer (Level 1 - Cards & Modular Tiles):** White `#FFFFFF` or Warm Sand `#F2ECE1` surfaces with a 1px border of `#E2DBD0` and a diffuse ambient shadow:\\n  `box-shadow: 0 4px 20px -2px rgba(37, 37, 37, 0.04), 0 2px 6px -1px rgba(214, 106, 58, 0.02);`\\n- **Raised Interactive Layer (Level 2 - Hovered Cards, Dropdowns, Segmented Controllers):**\\n  `box-shadow: 0 10px 25px -4px rgba(37, 37, 37, 0.07), 0 4px 10px -2px rgba(214, 106, 58, 0.04);`\\n- **Floating Layer (Level 3 - Modals, Command Bottom Sheets, Floating Control Bars):**\\n  `box-shadow: 0 20px 40px -8px rgba(37, 37, 37, 0.12), 0 8px 16px -4px rgba(214, 106, 58, 0.05);`\\n  Surfaces in this layer pair with subtle background blur (`backdrop-filter: blur(12px)`) when overlaid on active imagery.\\n\\n## Shapes\\n\\nThe design system employs Level 2 (Rounded) geometry, balancing organic domestic warmth with structural precision.\\n\\n- **Standard Containers & Cards:** `0.75rem` (12px) to `1rem` (16px) corner radius, matching the physical industrial curve of fan housings and wall-mounted controllers.\\n- **Inputs & Form Controls:** `0.5rem` (8px) to `0.75rem` (12px) corner radius.\\n- **Chips, Sliders, and Circular Dials:** Full pill radius (`9999px`) or exact 1:1 circular shapes for mode toggles, status pills, and continuous rotary sliders.\\n- **Subtle Nesting Principle:** When cards contain inner elements (such as secondary buttons or sub-cards), the inner radius is consistently 4px smaller than the parent container to maintain optical harmony.\\n\\n## Components\\n\\n### Buttons\\n- **Primary CTA:** Solid Terracotta Orange `#D66A3A` with pure white text. Padding: `12px 24px`. Border-radius: `12px` (or pill `9999px` for hero actions). Hover state: Darkens to `#BF582B` with a subtle elevation boost. Active state: `#A84B22`. Disabled state: Opacity 40% with no pointer events.\\n- **Secondary CTA:** Charcoal Black `#252525` background with white text, used for high-impact confirmation flows.\\n- **Tertiary / Outlined:** Transparent background with 1.5px border in `#E2DBD0` and `#252525` text. On hover, background shifts to `#F2ECE1`.\\n\\n### Form Inputs & Selectors\\n- **Base Style:** Solid `#FFFFFF` background, 1.5px border in `#E2DBD0`, text in `#252525`, placeholder in `#6B655C`. Height: 48px for comfortable touch ergonomics.\\n- **Focus State:** Crisp 2px outline in Terracotta Orange `#D66A3A` with a soft 3px glow (`rgba(214, 106, 58, 0.15)`).\\n- **Error State:** Border shifts to `#D32F2F` with descriptive microcopy anchored directly below the field in `body-sm` font.\\n\\n### Checkboxes & Radios\\n- Custom rounded squares (`6px` radius) for checkboxes, circular for radios. Inactive: `#E2DBD0` border. Active: Solid `#D66A3A` fill with crisp white glyph checkmark or inner dot.\\n\\n### Chips & Status Badges\\n- Compact interactive pills for mode selection (e.g., \\\"Gió tự nhiên\\\", \\\"Chế độ ngủ\\\", \\\"Đảo chiều\\\").\\n- **Inactive:** `#F2ECE1` background, `#6B655C` text.\\n- **Active:** `#252525` or `#D66A3A` background with `#FFFFFF` text.\\n\\n### Control Cards & Appliance Tiles\\n- White `#FFFFFF` card containing device status (FANFUN 3-IN-1: Fan Speed, Lighting Intensity, Air Purifier Index).\\n- Features prominent state badges, real-time sensor metrics (temperature/humidity/AQI), and dedicated toggle zones separated by thin `#E2DBD0` dividers.\\n\\n### Specialty: Rotary Climate Dial\\n- Circular dial widget with a warm sand track, filled with a terracotta progress arc indicating airflow intensity or color temperature (2700K Warm Yellow to 6500K Daylight). Includes haptic-inspired tactile step markers.\",\"colorVariant\":\"FIDELITY\",\"overridePrimaryColor\":\"#d66a3a\",\"overrideSecondaryColor\":\"#252525\",\"overrideTertiaryColor\":\"#f2ece1\",\"overrideNeutralColor\":\"#6b655c\",\"typography\":{\"label-sm\":{\"fontFamily\":\"Be Vietnam Pro\",\"fontSize\":\"0.6875rem\",\"fontWeight\":\"500\",\"lineHeight\":\"0.875rem\",\"letterSpacing\":\"0.05em\"},\"headline-md\":{\"fontFamily\":\"Be Vietnam Pro\",\"fontSize\":\"1.5rem\",\"fontWeight\":\"600\",\"lineHeight\":\"2rem\",\"letterSpacing\":\"-0.01em\"},\"display\":{\"fontFamily\":\"Be Vietnam Pro\",\"fontSize\":\"3.5rem\",\"fontWeight\":\"700\",\"lineHeight\":\"4.25rem\",\"letterSpacing\":\"-0.02em\"},\"body-sm\":{\"fontFamily\":\"Be Vietnam Pro\",\"fontSize\":\"0.875rem\",\"fontWeight\":\"400\",\"lineHeight\":\"1.25rem\",\"letterSpacing\":\"0.005em\"},\"headline-lg\":{\"fontFamily\":\"Be Vietnam Pro\",\"fontSize\":\"2.25rem\",\"fontWeight\":\"600\",\"lineHeight\":\"2.75rem\",\"letterSpacing\":\"-0.015em\"},\"headline-lg-mobile\":{\"fontFamily\":\"Be Vietnam Pro\",\"fontSize\":\"1.75rem\",\"fontWeight\":\"600\",\"lineHeight\":\"2.25rem\",\"letterSpacing\":\"-0.01em\"},\"display-mobile\":{\"fontFamily\":\"Be Vietnam Pro\",\"fontSize\":\"2.25rem\",\"fontWeight\":\"700\",\"lineHeight\":\"2.75rem\",\"letterSpacing\":\"-0.015em\"},\"body-md\":{\"fontFamily\":\"Be Vietnam Pro\",\"fontSize\":\"1rem\",\"fontWeight\":\"400\",\"lineHeight\":\"1.5rem\",\"letterSpacing\":\"0\"},\"label-lg\":{\"fontFamily\":\"Be Vietnam Pro\",\"fontSize\":\"0.875rem\",\"fontWeight\":\"600\",\"lineHeight\":\"1.25rem\",\"letterSpacing\":\"0.02em\"},\"label-md\":{\"fontFamily\":\"Be Vietnam Pro\",\"fontSize\":\"0.75rem\",\"fontWeight\":\"600\",\"lineHeight\":\"1rem\",\"letterSpacing\":\"0.04em\"},\"body-lg\":{\"fontFamily\":\"Be Vietnam Pro\",\"fontSize\":\"1.125rem\",\"fontWeight\":\"400\",\"lineHeight\":\"1.75rem\",\"letterSpacing\":\"0\"},\"headline-sm\":{\"fontFamily\":\"Be Vietnam Pro\",\"fontSize\":\"1.25rem\",\"fontWeight\":\"600\",\"lineHeight\":\"1.75rem\",\"letterSpacing\":\"0\"}},\"spacing\":{\"space-lg\":\"1.5rem\",\"space-xl\":\"2.5rem\",\"margin-mobile\":\"1.25rem\",\"margin\":\"3rem\",\"space-sm\":\"0.5rem\",\"space-xs\":\"0.25rem\",\"gutter\":\"1.5rem\",\"gutter-mobile\":\"1rem\",\"space-md\":\"1rem\"},\"headlineFontFamily\":\"Be Vietnam Pro\",\"bodyFontFamily\":\"Be Vietnam Pro\",\"labelFontFamily\":\"Be Vietnam Pro\"},\"screenInstances\":[{\"id\":\"362d329a21974fe8be4421ab7cfeab73\",\"sourceScreen\":\"projects/5634229459885586050/screens/362d329a21974fe8be4421ab7cfeab73\",\"x\":6720,\"y\":1359,\"width\":1280,\"height\":2880,\"label\":\"FANFUN - Chi tiết sản phẩm Quạt trần thông minh 3-in-1\"},{\"id\":\"495d9b365fa14727a63d39973ee12fad\",\"sourceScreen\":\"projects/5634229459885586050/screens/495d9b365fa14727a63d39973ee12fad\",\"x\":5376,\"y\":1359,\"width\":1280,\"height\":2128,\"label\":\"FANFUN - Thanh toán đơn hàng\"},{\"id\":\"5189631ffc9541d6a358d513d8987f77\",\"sourceScreen\":\"projects/5634229459885586050/screens/5189631ffc9541d6a358d513d8987f77\",\"x\":1344,\"y\":10235,\"width\":1280,\"height\":3820,\"label\":\"FANFUN Admin - Biểu mẫu Sản phẩm\"},{\"id\":\"53cc26eed6b54b9481781d7a1cf944ea\",\"sourceScreen\":\"projects/5634229459885586050/screens/53cc26eed6b54b9481781d7a1cf944ea\",\"x\":1344,\"y\":14311,\"width\":1280,\"height\":1488,\"label\":\"FANFUN Admin - Quản lý Đơn hàng\"},{\"id\":\"59aedb88f6d94563aba59e33eec3b0f1\",\"sourceScreen\":\"projects/5634229459885586050/screens/59aedb88f6d94563aba59e33eec3b0f1\",\"x\":2688,\"y\":10235,\"width\":1280,\"height\":1610,\"label\":\"FANFUN Admin - Quản lý Danh mục\"},{\"id\":\"6e1bcca255844686b68eb1a96530f927\",\"sourceScreen\":\"projects/5634229459885586050/screens/6e1bcca255844686b68eb1a96530f927\",\"x\":-78,\"y\":1350,\"width\":1280,\"height\":4166,\"label\":\"FANFUN - Trang chủ | Quạt tr��n thông minh 3-in-1\"},{\"id\":\"7df672db1ff34bbea2e89ad4c938d06a\",\"sourceScreen\":\"projects/5634229459885586050/screens/7df672db1ff34bbea2e89ad4c938d06a\",\"y\":5772,\"width\":1280,\"height\":2455,\"label\":\"FANFUN - Chi tiết đơn hàng #FF-2025-8869\"},{\"id\":\"86b8f95f020d4ce4b035809a9671584a\",\"sourceScreen\":\"projects/5634229459885586050/screens/86b8f95f020d4ce4b035809a9671584a\",\"y\":18714,\"width\":1280,\"height\":2270,\"label\":\"FANFUN Admin - Quản lý Khuyến mãi & Voucher\"},{\"id\":\"90382c09a77d46deab4497f7736d7270\",\"sourceScreen\":\"projects/5634229459885586050/screens/90382c09a77d46deab4497f7736d7270\",\"x\":1344,\"y\":5772,\"width\":1280,\"height\":2060,\"label\":\"FANFUN - Đơn hàng của tôi\"},{\"id\":\"915fcd8825af4fe58952424b455eeb61\",\"sourceScreen\":\"projects/5634229459885586050/screens/915fcd8825af4fe58952424b455eeb61\",\"y\":14311,\"width\":1280,\"height\":2583,\"label\":\"FANFUN Admin - Chi tiết đơn hàng #FF-2025-8869\"},{\"id\":\"93d7694d739842e9a004e1932088e87a\",\"sourceScreen\":\"projects/5634229459885586050/screens/93d7694d739842e9a004e1932088e87a\",\"x\":1344,\"y\":1359,\"width\":1280,\"height\":2838,\"label\":\"FANFUN - Danh mục sản phẩm & Hệ sinh thái\"},{\"id\":\"a297b6f64e314405b51253bccee3bd93\",\"sourceScreen\":\"projects/5634229459885586050/screens/a297b6f64e314405b51253bccee3bd93\",\"x\":2944,\"width\":1280,\"height\":1024,\"label\":\"FANFUN - Đăng ký tài khoản mới\"},{\"id\":\"ad7beb3575094dc9b2aeb77d05df9e26\",\"sourceScreen\":\"projects/5634229459885586050/screens/ad7beb3575094dc9b2aeb77d05df9e26\",\"x\":1024,\"width\":1280,\"height\":1103,\"label\":\"FANFUN - Đăng nhập tài khoản\"},{\"id\":\"adbc538067e943c69e002a91ce341a8d\",\"sourceScreen\":\"projects/5634229459885586050/screens/adbc538067e943c69e002a91ce341a8d\",\"x\":4020,\"y\":1359,\"width\":1280,\"height\":1496,\"label\":\"FANFUN - Giỏ hàng của bạn\"},{\"id\":\"assets_69cf406fbd544a52a0c5a15d62eb59df\",\"width\":960,\"height\":540,\"sourceAsset\":\"assets/69cf406fbd544a52a0c5a15d62eb59df\",\"type\":\"DESIGN_SYSTEM_INSTANCE\"},{\"id\":\"b5bf67fe6ff54f788c06bd4568d71bcd\",\"sourceScreen\":\"projects/5634229459885586050/screens/b5bf67fe6ff54f788c06bd4568d71bcd\",\"x\":2688,\"y\":1359,\"width\":1280,\"height\":2290,\"label\":\"FANFUN - Đặt hàng thành công\"},{\"id\":\"c6e04c9e3d404ecda5e31e3358374cf6\",\"sourceScreen\":\"projects/5634229459885586050/screens/c6e04c9e3d404ecda5e31e3358374cf6\",\"y\":8483,\"width\":1280,\"height\":1496,\"label\":\"FANFUN - Hồ sơ cá nhân\"},{\"id\":\"de5b9290e74e4806b8be08dc30370ec4\",\"sourceScreen\":\"projects/5634229459885586050/screens/de5b9290e74e4806b8be08dc30370ec4\",\"x\":2368,\"width\":512,\"height\":686,\"label\":\"A modern luxury architectural living room with a sleek 5-blade smart ceiling fan with integrated warm LED light, hanging from a minimalist ceiling in a high-end contemporary apartment with large glass windows overlooking lush greenery. Elegant interior design, warm domestic lighting, natural wood and stone textures, ultra-photorealistic, high-end commercial home appliance product photography.\"},{\"id\":\"e36f72da5bc34b5c905be340d98445b0\",\"sourceScreen\":\"projects/5634229459885586050/screens/e36f72da5bc34b5c905be340d98445b0\",\"x\":1344,\"y\":8483,\"width\":1280,\"height\":1322,\"label\":\"FANFUN - Đổi mật khẩu\"},{\"id\":\"ebe43ed9324b42cab4456b53d7494143\",\"sourceScreen\":\"projects/5634229459885586050/screens/ebe43ed9324b42cab4456b53d7494143\",\"y\":10235,\"width\":1280,\"height\":2018,\"label\":\"FANFUN Admin - Quản lý Sản phẩm\"},{\"id\":\"fd0d1771fe954a9085ad5c465123e658\",\"sourceScreen\":\"projects/5634229459885586050/screens/fd0d1771fe954a9085ad5c465123e658\",\"y\":17150,\"width\":1280,\"height\":1308,\"label\":\"FANFUN Admin - Quản lý Khách hàng\"}],\"metadata\":{\"userRole\":\"OWNER\",\"isRemixed\":true},\"sharingSettings\":{\"permissions\":[{\"id\":\"790492802058\",\"role\":\"OWNER\",\"email\":\"liemdt.ce190697@gmail.com\"}],\"accessType\":\"RESTRICTED\"}}",
+        "type": "text"
+      }
+    ],
+    "structuredContent": {
+      "createTime": "2026-11-15T12:32:08.043155Z",
+      "designTheme": {
+        "bodyFont": "BE_VIETNAM_PRO",
+        "bodyFontFamily": "Be Vietnam Pro",
+        "colorMode": "LIGHT",
+        "colorVariant": "FIDELITY",
+        "customColor": "#d66a3a",
+        "designMd": "---\nname: Warm Architectural Domesticity\ncolors:\n  surface: '#fff8f2'\n  surface-dim: '#e2d9ce'\n  surface-bright: '#fff8f2'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#fcf2e7'\n  surface-container: '#f6ede1'\n  surface-container-high: '#f0e7db'\n  surface-container-highest: '#eae1d6'\n  on-surface: '#1f1b14'\n  on-surface-variant: '#56423b'\n  inverse-surface: '#343028'\n  inverse-on-surface: '#f9efe4'\n  outline: '#8a7269'\n  outline-variant: '#ddc1b6'\n  surface-tint: '#9f4113'\n  primary: '#9c3f11'\n  on-primary: '#ffffff'\n  primary-container: '#bc5728'\n  on-primary-container: '#fffbff'\n  inverse-primary: '#ffb598'\n  secondary: '#5f5e5e'\n  on-secondary: '#ffffff'\n  secondary-container: '#e4e2e1'\n  on-secondary-container: '#656464'\n  tertiary: '#5f5c53'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#78746b'\n  on-tertiary-container: '#fffbff'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#ffdbce'\n  primary-fixed-dim: '#ffb598'\n  on-primary-fixed: '#370e00'\n  on-primary-fixed-variant: '#7e2c00'\n  secondary-fixed: '#e4e2e1'\n  secondary-fixed-dim: '#c8c6c5'\n  on-secondary-fixed: '#1b1c1c'\n  on-secondary-fixed-variant: '#474746'\n  tertiary-fixed: '#e8e2d7'\n  tertiary-fixed-dim: '#cbc6bc'\n  on-tertiary-fixed: '#1d1b15'\n  on-tertiary-fixed-variant: '#49473f'\n  background: '#fff8f2'\n  on-background: '#1f1b14'\n  surface-variant: '#eae1d6'\ntypography:\n  display:\n    fontFamily: Be Vietnam Pro\n    fontSize: 3.5rem\n    fontWeight: '700'\n    lineHeight: 4.25rem\n    letterSpacing: -0.02em\n  display-mobile:\n    fontFamily: Be Vietnam Pro\n    fontSize: 2.25rem\n    fontWeight: '700'\n    lineHeight: 2.75rem\n    letterSpacing: -0.015em\n  headline-lg:\n    fontFamily: Be Vietnam Pro\n    fontSize: 2.25rem\n    fontWeight: '600'\n    lineHeight: 2.75rem\n    letterSpacing: -0.015em\n  headline-lg-mobile:\n    fontFamily: Be Vietnam Pro\n    fontSize: 1.75rem\n    fontWeight: '600'\n    lineHeight: 2.25rem\n    letterSpacing: -0.01em\n  headline-md:\n    fontFamily: Be Vietnam Pro\n    fontSize: 1.5rem\n    fontWeight: '600'\n    lineHeight: 2rem\n    letterSpacing: -0.01em\n  headline-sm:\n    fontFamily: Be Vietnam Pro\n    fontSize: 1.25rem\n    fontWeight: '600'\n    lineHeight: 1.75rem\n    letterSpacing: '0'\n  body-lg:\n    fontFamily: Be Vietnam Pro\n    fontSize: 1.125rem\n    fontWeight: '400'\n    lineHeight: 1.75rem\n    letterSpacing: '0'\n  body-md:\n    fontFamily: Be Vietnam Pro\n    fontSize: 1rem\n    fontWeight: '400'\n    lineHeight: 1.5rem\n    letterSpacing: '0'\n  body-sm:\n    fontFamily: Be Vietnam Pro\n    fontSize: 0.875rem\n    fontWeight: '400'\n    lineHeight: 1.25rem\n    letterSpacing: 0.005em\n  label-lg:\n    fontFamily: Be Vietnam Pro\n    fontSize: 0.875rem\n    fontWeight: '600'\n    lineHeight: 1.25rem\n    letterSpacing: 0.02em\n  label-md:\n    fontFamily: Be Vietnam Pro\n    fontSize: 0.75rem\n    fontWeight: '600'\n    lineHeight: 1rem\n    letterSpacing: 0.04em\n  label-sm:\n    fontFamily: Be Vietnam Pro\n    fontSize: 0.6875rem\n    fontWeight: '500'\n    lineHeight: 0.875rem\n    letterSpacing: 0.05em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  gutter: 1.5rem\n  gutter-mobile: 1rem\n  margin: 3rem\n  margin-mobile: 1.25rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2.5rem\n---\n\n## Brand & Style\n\nThis design system expresses a refined synthesis of smart home technology and warm domestic comfort tailored for modern Vietnamese living. Rejecting the clinical, cold blue-and-neon aesthetic standard of generic IoT platforms, the visual language grounds itself in natural, tactile warmth (\"Thoải mái quanh năm, thông minh mỗi ngày\"). \n\nThe design combines Modern Organic Minimalism with functional clarity:\n- **Atmosphere:** Earthy, grounded, breathable, and deeply hospitable. Interfaces mirror modern Southeast Asian interior spaces—balancing architectural discipline with organic textures like natural wood, woven rattan, and textured terracotta brick.\n- **Personality:** Intelligent without feeling detached; caring and attentive without clutter; modern, dependable, and quietly responsible.\n- **Visual Tenets:** Generous, calm white/ivory negative space, structured structural typography with exceptional Vietnamese diacritical legibility, subtle warm-tinted surface elevations, and confident terracotta focal points.\n\n## Colors\n\nThe palette establishes thermal balance: cooling architectural charcoal anchors the space, while artisanal terracotta infuses vitality and smart responsive highlights. \n\n- **Primary Accent (`#D66A3A` - Terracotta Orange):** Reserved for intentional points of engagement—active states, main toggles, primary CTA buttons, climate slider pins, and energetic metrics.\n- **Secondary / Anchor (`#252525` - Charcoal Black):** High-contrast anchor for headlines, key data figures, solid action buttons, and dominant iconography. Replaces pure black to eliminate harsh optical glare against warm surfaces.\n- **Background (`#F7F2E9` - Warm Ivory):** The structural canvas. Eliminates clinical digital starkness in favor of a soft, ambient residential feel.\n- **Surfaces & Cards:** Layered using Pure White (`#FFFFFF`) for elevated control panels and interactive modules, resting upon Warm Sand (`#F2ECE1`) for secondary contextual sections.\n- **Borders & Dividers (`#E2DBD0` - Subtle Warm Gray):** Low-contrast structural perimeter styling that defines element zones without slicing the interface rigidly.\n- **Muted Text & Metadata (`#6B655C` - Muted Slate Gray):** Ensures balanced reading contrast (passing WCAG AAA for normal text) for labels, descriptions, and auxiliary sensor readings.\n- **Functional Validation:** Error states employ a soft vermilion (`#D32F2F`) calibrated to match the terracotta family; success uses an earthy moss tint (`#3E6B48`). Cool blues, synthetic teals, and synthetic neon gradients are strictly forbidden.\n\n## Typography\n\nThe design system exclusively adopts **Be Vietnam Pro** across all typographic hierarchies. Built natively to accommodate Vietnamese diacritics, it prevents vertical clipping of accent marks (e.g., hỏi, ngã, nặng, sắc, huyền) and preserves visual rhythm in multilingual domestic contexts.\n\n- **Display & Headline Levels:** Feature tight negative letter-spacing and strong vertical metrics for crisp rendering of Vietnamese compound vowels and tonemarks.\n- **Body Rhythm:** Ample line heights (1.5x to 1.55x) protect stacked tone marks from crashing into preceding lines during continuous reading.\n- **Labels & Overlines:** Small-caps styled overlines and status microcopy use medium to semi-bold weights with tracked letter spacing (`0.02em` - `0.05em`) to retain legibility on micro appliance displays and handheld mobile dashboards.\n\n## Layout & Spacing\n\nThe layout model implements a fluid responsive 12-column grid on desktop and tablet, collapsing to a 4-column layout on mobile devices.\n\n- **Desktop (min-width: 1024px):** Max container width of 1280px, with generous `margin` (3rem) and `gutter` (1.5rem) to evoke an open-concept architectural plan.\n- **Tablet (768px - 1023px):** 8-column layout with 2rem margins and 1rem gutters. Sidebars collapse into drawer navigation or bottom action rails.\n- **Mobile (< 768px):** 4-column layout, `margin-mobile` of 1.25rem, prioritizing thumb-reachable vertical stacks for quick appliance control (fan speed dials, scene selectors, lighting toggles).\n- **Rhythm & Gaps:** All spatial separation strictly adheres to an 8pt base grid (`space-xs` = 4px, `space-sm` = 8px, `space-md` = 16px, `space-lg` = 24px, `space-xl` = 40px). Element grouping pairs related controls (e.g., speed + oscillation) with `space-sm`, while modular units (e.g., Fan Status vs. Air Purification Stats) are offset with `space-lg` or `space-xl`.\n\n## Elevation & Depth\n\nDepth is established through soft, ambient multi-layer lighting rather than dramatic artificial drops. Shadows are tinted with warm undertones derived from the Charcoal and Terracotta primaries to prevent muddy gray artifacts.\n\n- **Base Layer (Level 0):** Canvas background `#F7F2E9`. Flat, non-elevated.\n- **Surface Layer (Level 1 - Cards & Modular Tiles):** White `#FFFFFF` or Warm Sand `#F2ECE1` surfaces with a 1px border of `#E2DBD0` and a diffuse ambient shadow:\n  `box-shadow: 0 4px 20px -2px rgba(37, 37, 37, 0.04), 0 2px 6px -1px rgba(214, 106, 58, 0.02);`\n- **Raised Interactive Layer (Level 2 - Hovered Cards, Dropdowns, Segmented Controllers):**\n  `box-shadow: 0 10px 25px -4px rgba(37, 37, 37, 0.07), 0 4px 10px -2px rgba(214, 106, 58, 0.04);`\n- **Floating Layer (Level 3 - Modals, Command Bottom Sheets, Floating Control Bars):**\n  `box-shadow: 0 20px 40px -8px rgba(37, 37, 37, 0.12), 0 8px 16px -4px rgba(214, 106, 58, 0.05);`\n  Surfaces in this layer pair with subtle background blur (`backdrop-filter: blur(12px)`) when overlaid on active imagery.\n\n## Shapes\n\nThe design system employs Level 2 (Rounded) geometry, balancing organic domestic warmth with structural precision.\n\n- **Standard Containers & Cards:** `0.75rem` (12px) to `1rem` (16px) corner radius, matching the physical industrial curve of fan housings and wall-mounted controllers.\n- **Inputs & Form Controls:** `0.5rem` (8px) to `0.75rem` (12px) corner radius.\n- **Chips, Sliders, and Circular Dials:** Full pill radius (`9999px`) or exact 1:1 circular shapes for mode toggles, status pills, and continuous rotary sliders.\n- **Subtle Nesting Principle:** When cards contain inner elements (such as secondary buttons or sub-cards), the inner radius is consistently 4px smaller than the parent container to maintain optical harmony.\n\n## Components\n\n### Buttons\n- **Primary CTA:** Solid Terracotta Orange `#D66A3A` with pure white text. Padding: `12px 24px`. Border-radius: `12px` (or pill `9999px` for hero actions). Hover state: Darkens to `#BF582B` with a subtle elevation boost. Active state: `#A84B22`. Disabled state: Opacity 40% with no pointer events.\n- **Secondary CTA:** Charcoal Black `#252525` background with white text, used for high-impact confirmation flows.\n- **Tertiary / Outlined:** Transparent background with 1.5px border in `#E2DBD0` and `#252525` text. On hover, background shifts to `#F2ECE1`.\n\n### Form Inputs & Selectors\n- **Base Style:** Solid `#FFFFFF` background, 1.5px border in `#E2DBD0`, text in `#252525`, placeholder in `#6B655C`. Height: 48px for comfortable touch ergonomics.\n- **Focus State:** Crisp 2px outline in Terracotta Orange `#D66A3A` with a soft 3px glow (`rgba(214, 106, 58, 0.15)`).\n- **Error State:** Border shifts to `#D32F2F` with descriptive microcopy anchored directly below the field in `body-sm` font.\n\n### Checkboxes & Radios\n- Custom rounded squares (`6px` radius) for checkboxes, circular for radios. Inactive: `#E2DBD0` border. Active: Solid `#D66A3A` fill with crisp white glyph checkmark or inner dot.\n\n### Chips & Status Badges\n- Compact interactive pills for mode selection (e.g., \"Gió tự nhiên\", \"Chế độ ngủ\", \"Đảo chiều\").\n- **Inactive:** `#F2ECE1` background, `#6B655C` text.\n- **Active:** `#252525` or `#D66A3A` background with `#FFFFFF` text.\n\n### Control Cards & Appliance Tiles\n- White `#FFFFFF` card containing device status (FANFUN 3-IN-1: Fan Speed, Lighting Intensity, Air Purifier Index).\n- Features prominent state badges, real-time sensor metrics (temperature/humidity/AQI), and dedicated toggle zones separated by thin `#E2DBD0` dividers.\n\n### Specialty: Rotary Climate Dial\n- Circular dial widget with a warm sand track, filled with a terracotta progress arc indicating airflow intensity or color temperature (2700K Warm Yellow to 6500K Daylight). Includes haptic-inspired tactile step markers.",
+        "font": "BE_VIETNAM_PRO",
+        "headlineFont": "BE_VIETNAM_PRO",
+        "headlineFontFamily": "Be Vietnam Pro",
+        "labelFont": "BE_VIETNAM_PRO",
+        "labelFontFamily": "Be Vietnam Pro",
+        "namedColors": {
+          "background": "#fff8f2",
+          "error": "#ba1a1a",
+          "error_container": "#ffdad6",
+          "inverse_on_surface": "#f9efe4",
+          "inverse_primary": "#ffb598",
+          "inverse_surface": "#343028",
+          "on_background": "#1f1b14",
+          "on_error": "#ffffff",
+          "on_error_container": "#93000a",
+          "on_primary": "#ffffff",
+          "on_primary_container": "#fffbff",
+          "on_primary_fixed": "#370e00",
+          "on_primary_fixed_variant": "#7e2c00",
+          "on_secondary": "#ffffff",
+          "on_secondary_container": "#656464",
+          "on_secondary_fixed": "#1b1c1c",
+          "on_secondary_fixed_variant": "#474746",
+          "on_surface": "#1f1b14",
+          "on_surface_variant": "#56423b",
+          "on_tertiary": "#ffffff",
+          "on_tertiary_container": "#fffbff",
+          "on_tertiary_fixed": "#1d1b15",
+          "on_tertiary_fixed_variant": "#49473f",
+          "outline": "#8a7269",
+          "outline_variant": "#ddc1b6",
+          "primary": "#9c3f11",
+          "primary_container": "#bc5728",
+          "primary_fixed": "#ffdbce",
+          "primary_fixed_dim": "#ffb598",
+          "secondary": "#5f5e5e",
+          "secondary_container": "#e4e2e1",
+          "secondary_fixed": "#e4e2e1",
+          "secondary_fixed_dim": "#c8c6c5",
+          "surface": "#fff8f2",
+          "surface_bright": "#fff8f2",
+          "surface_container": "#f6ede1",
+          "surface_container_high": "#f0e7db",
+          "surface_container_highest": "#eae1d6",
+          "surface_container_low": "#fcf2e7",
+          "surface_container_lowest": "#ffffff",
+          "surface_dim": "#e2d9ce",
+          "surface_tint": "#9f4113",
+          "surface_variant": "#eae1d6",
+          "tertiary": "#5f5c53",
+          "tertiary_container": "#78746b",
+          "tertiary_fixed": "#e8e2d7",
+          "tertiary_fixed_dim": "#cbc6bc"
+        },
+        "overrideNeutralColor": "#6b655c",
+        "overridePrimaryColor": "#d66a3a",
+        "overrideSecondaryColor": "#252525",
+        "overrideTertiaryColor": "#f2ece1",
+        "roundness": "ROUND_EIGHT",
+        "spacing": {
+          "gutter": "1.5rem",
+          "gutter-mobile": "1rem",
+          "margin": "3rem",
+          "margin-mobile": "1.25rem",
+          "space-lg": "1.5rem",
+          "space-md": "1rem",
+          "space-sm": "0.5rem",
+          "space-xl": "2.5rem",
+          "space-xs": "0.25rem"
+        },
+        "typography": {
+          "body-lg": {
+            "fontFamily": "Be Vietnam Pro",
+            "fontSize": "1.125rem",
+            "fontWeight": "400",
+            "letterSpacing": "0",
+            "lineHeight": "1.75rem"
+          },
+          "body-md": {
+            "fontFamily": "Be Vietnam Pro",
+            "fontSize": "1rem",
+            "fontWeight": "400",
+            "letterSpacing": "0",
+            "lineHeight": "1.5rem"
+          },
+          "body-sm": {
+            "fontFamily": "Be Vietnam Pro",
+            "fontSize": "0.875rem",
+            "fontWeight": "400",
+            "letterSpacing": "0.005em",
+            "lineHeight": "1.25rem"
+          },
+          "display": {
+            "fontFamily": "Be Vietnam Pro",
+            "fontSize": "3.5rem",
+            "fontWeight": "700",
+            "letterSpacing": "-0.02em",
+            "lineHeight": "4.25rem"
+          },
+          "display-mobile": {
+            "fontFamily": "Be Vietnam Pro",
+            "fontSize": "2.25rem",
+            "fontWeight": "700",
+            "letterSpacing": "-0.015em",
+            "lineHeight": "2.75rem"
+          },
+          "headline-lg": {
+            "fontFamily": "Be Vietnam Pro",
+            "fontSize": "2.25rem",
+            "fontWeight": "600",
+            "letterSpacing": "-0.015em",
+            "lineHeight": "2.75rem"
+          },
+          "headline-lg-mobile": {
+            "fontFamily": "Be Vietnam Pro",
+            "fontSize": "1.75rem",
+            "fontWeight": "600",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "2.25rem"
+          },
+          "headline-md": {
+            "fontFamily": "Be Vietnam Pro",
+            "fontSize": "1.5rem",
+            "fontWeight": "600",
+            "letterSpacing": "-0.01em",
+            "lineHeight": "2rem"
+          },
+          "headline-sm": {
+            "fontFamily": "Be Vietnam Pro",
+            "fontSize": "1.25rem",
+            "fontWeight": "600",
+            "letterSpacing": "0",
+            "lineHeight": "1.75rem"
+          },
+          "label-lg": {
+            "fontFamily": "Be Vietnam Pro",
+            "fontSize": "0.875rem",
+            "fontWeight": "600",
+            "letterSpacing": "0.02em",
+            "lineHeight": "1.25rem"
+          },
+          "label-md": {
+            "fontFamily": "Be Vietnam Pro",
+            "fontSize": "0.75rem",
+            "fontWeight": "600",
+            "letterSpacing": "0.04em",
+            "lineHeight": "1rem"
+          },
+          "label-sm": {
+            "fontFamily": "Be Vietnam Pro",
+            "fontSize": "0.6875rem",
+            "fontWeight": "500",
+            "letterSpacing": "0.05em",
+            "lineHeight": "0.875rem"
+          }
+        }
+      },
+      "deviceType": "DESKTOP",
+      "metadata": {
+        "isRemixed": true,
+        "userRole": "OWNER"
+      },
+      "name": "projects/5634229459885586050",
+      "origin": "REMIX",
+      "projectType": "TEXT_TO_UI_PRO",
+      "screenInstances": [
+        {
+          "height": 2880,
+          "id": "362d329a21974fe8be4421ab7cfeab73",
+          "label": "FANFUN - Chi tiết sản phẩm Quạt trần thông minh 3-in-1",
+          "sourceScreen": "projects/5634229459885586050/screens/362d329a21974fe8be4421ab7cfeab73",
+          "width": 1280,
+          "x": 6720,
+          "y": 1359
+        },
+        {
+          "height": 2128,
+          "id": "495d9b365fa14727a63d39973ee12fad",
+          "label": "FANFUN - Thanh toán đơn hàng",
+          "sourceScreen": "projects/5634229459885586050/screens/495d9b365fa14727a63d39973ee12fad",
+          "width": 1280,
+          "x": 5376,
+          "y": 1359
+        },
+        {
+          "height": 3820,
+          "id": "5189631ffc9541d6a358d513d8987f77",
+          "label": "FANFUN Admin - Biểu mẫu Sản phẩm",
+          "sourceScreen": "projects/5634229459885586050/screens/5189631ffc9541d6a358d513d8987f77",
+          "width": 1280,
+          "x": 1344,
+          "y": 10235
+        },
+        {
+          "height": 1488,
+          "id": "53cc26eed6b54b9481781d7a1cf944ea",
+          "label": "FANFUN Admin - Quản lý Đơn hàng",
+          "sourceScreen": "projects/5634229459885586050/screens/53cc26eed6b54b9481781d7a1cf944ea",
+          "width": 1280,
+          "x": 1344,
+          "y": 14311
+        },
+        {
+          "height": 1610,
+          "id": "59aedb88f6d94563aba59e33eec3b0f1",
+          "label": "FANFUN Admin - Quản lý Danh mục",
+          "sourceScreen": "projects/5634229459885586050/screens/59aedb88f6d94563aba59e33eec3b0f1",
+          "width": 1280,
+          "x": 2688,
+          "y": 10235
+        },
+        {
+          "height": 4166,
+          "id": "6e1bcca255844686b68eb1a96530f927",
+          "label": "FANFUN - Trang chủ | Quạt trần thông minh 3-in-1",
+          "sourceScreen": "projects/5634229459885586050/screens/6e1bcca255844686b68eb1a96530f927",
+          "width": 1280,
+          "x": -78,
+          "y": 1350
+        },
+        {
+          "height": 2455,
+          "id": "7df672db1ff34bbea2e89ad4c938d06a",
+          "label": "FANFUN - Chi tiết đơn hàng #FF-2025-8869",
+          "sourceScreen": "projects/5634229459885586050/screens/7df672db1ff34bbea2e89ad4c938d06a",
+          "width": 1280,
+          "y": 5772
+        },
+        {
+          "height": 2270,
+          "id": "86b8f95f020d4ce4b035809a9671584a",
+          "label": "FANFUN Admin - Quản lý Khuyến mãi & Voucher",
+          "sourceScreen": "projects/5634229459885586050/screens/86b8f95f020d4ce4b035809a9671584a",
+          "width": 1280,
+          "y": 18714
+        },
+        {
+          "height": 2060,
+          "id": "90382c09a77d46deab4497f7736d7270",
+          "label": "FANFUN - Đơn hàng của tôi",
+          "sourceScreen": "projects/5634229459885586050/screens/90382c09a77d46deab4497f7736d7270",
+          "width": 1280,
+          "x": 1344,
+          "y": 5772
+        },
+        {
+          "height": 2583,
+          "id": "915fcd8825af4fe58952424b455eeb61",
+          "label": "FANFUN Admin - Chi tiết đơn hàng #FF-2025-8869",
+          "sourceScreen": "projects/5634229459885586050/screens/915fcd8825af4fe58952424b455eeb61",
+          "width": 1280,
+          "y": 14311
+        },
+        {
+          "height": 2838,
+          "id": "93d7694d739842e9a004e1932088e87a",
+          "label": "FANFUN - Danh mục sản phẩm & Hệ sinh thái",
+          "sourceScreen": "projects/5634229459885586050/screens/93d7694d739842e9a004e1932088e87a",
+          "width": 1280,
+          "x": 1344,
+          "y": 1359
+        },
+        {
+          "height": 1024,
+          "id": "a297b6f64e314405b51253bccee3bd93",
+          "label": "FANFUN - Đăng ký tài khoản mới",
+          "sourceScreen": "projects/5634229459885586050/screens/a297b6f64e314405b51253bccee3bd93",
+          "width": 1280,
+          "x": 2944
+        },
+        {
+          "height": 1103,
+          "id": "ad7beb3575094dc9b2aeb77d05df9e26",
+          "label": "FANFUN - Đăng nhập tài khoản",
+          "sourceScreen": "projects/5634229459885586050/screens/ad7beb3575094dc9b2aeb77d05df9e26",
+          "width": 1280,
+          "x": 1024
+        },
+        {
+          "height": 1496,
+          "id": "adbc538067e943c69e002a91ce341a8d",
+          "label": "FANFUN - Giỏ hàng của bạn",
+          "sourceScreen": "projects/5634229459885586050/screens/adbc538067e943c69e002a91ce341a8d",
+          "width": 1280,
+          "x": 4020,
+          "y": 1359
+        },
+        {
+          "height": 540,
+          "id": "assets_69cf406fbd544a52a0c5a15d62eb59df",
+          "sourceAsset": "assets/69cf406fbd544a52a0c5a15d62eb59df",
+          "type": "DESIGN_SYSTEM_INSTANCE",
+          "width": 960
+        },
+        {
+          "height": 2290,
+          "id": "b5bf67fe6ff54f788c06bd4568d71bcd",
+          "label": "FANFUN - Đặt hàng thành công",
+          "sourceScreen": "projects/5634229459885586050/screens/b5bf67fe6ff54f788c06bd4568d71bcd",
+          "width": 1280,
+          "x": 2688,
+          "y": 1359
+        },
+        {
+          "height": 1496,
+          "id": "c6e04c9e3d404ecda5e31e3358374cf6",
+          "label": "FANFUN - Hồ sơ cá nhân",
+          "sourceScreen": "projects/5634229459885586050/screens/c6e04c9e3d404ecda5e31e3358374cf6",
+          "width": 1280,
+          "y": 8483
+        },
+        {
+          "height": 686,
+          "id": "de5b9290e74e4806b8be08dc30370ec4",
+          "label": "A modern luxury architectural living room with a sleek 5-blade smart ceiling fan with integrated warm LED light, hanging from a minimalist ceiling in a high-end contemporary apartment with large glass windows overlooking lush greenery. Elegant interior design, warm domestic lighting, natural wood and stone textures, ultra-photorealistic, high-end commercial home appliance product photography.",
+          "sourceScreen": "projects/5634229459885586050/screens/de5b9290e74e4806b8be08dc30370ec4",
+          "width": 512,
+          "x": 2368
+        },
+        {
+          "height": 1322,
+          "id": "e36f72da5bc34b5c905be340d98445b0",
+          "label": "FANFUN - Đổi mật khẩu",
+          "sourceScreen": "projects/5634229459885586050/screens/e36f72da5bc34b5c905be340d98445b0",
+          "width": 1280,
+          "x": 1344,
+          "y": 8483
+        },
+        {
+          "height": 2018,
+          "id": "ebe43ed9324b42cab4456b53d7494143",
+          "label": "FANFUN Admin - Quản lý Sản phẩm",
+          "sourceScreen": "projects/5634229459885586050/screens/ebe43ed9324b42cab4456b53d7494143",
+          "width": 1280,
+          "y": 10235
+        },
+        {
+          "height": 1308,
+          "id": "fd0d1771fe954a9085ad5c465123e658",
+          "label": "FANFUN Admin - Quản lý Khách hàng",
+          "sourceScreen": "projects/5634229459885586050/screens/fd0d1771fe954a9085ad5c465123e658",
+          "width": 1280,
+          "y": 17150
+        }
+      ],
+      "sharingSettings": {
+        "accessType": "RESTRICTED",
+        "permissions": [
+          {
+            "email": "liemdt.ce190697@gmail.com",
+            "id": "790492802058",
+            "role": "OWNER"
+          }
+        ]
+      },
+      "thumbnailScreenshot": {
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/ALJJyrAIlKYHBl1Uq4xQnh9n68K0YqWGTDsm03PldACMunGcAkutZvQmcykxes_j19oU3uXB1xjo1IZU7IrwQEp9x1tvY3kST8APZx_442XUqpJyEF2KWK1hfQT8CnLTuEOe8voXemInOusEGawzdXl3EUxYEdabufF3X2qeZTBah1GAxPZZjQr_3Xw-VzOkfSFyiwsT0eJzRNzEslu0xjKwZus7jCbSAwELf4XkntLn7UUQ",
+        "name": "projects/9052313486425226484/screens/362d329a21974fe8be4421ab7cfeab73/fileEntries/screenshot"
+      },
+      "title": "Remix of FANFUN Smart Appliance Storefront",
+      "updateTime": "2026-11-15T12:32:31.562280Z",
+      "visibility": "PRIVATE"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "fanfun-smart-living",
+  "version": "1.0.0",
+  "description": "FANFUN Smart Living 3-in-1 Fullstack Storefront and Admin Management",
+  "scripts": {
+    "start": "node start-all.js",
+    "dev": "node start-all.js",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "fanfun",
+    "ecommerce",
+    "smart-home",
+    "react",
+    "vite",
+    "express"
+  ],
+  "author": "FANFUN Team",
+  "license": "ISC"
+}

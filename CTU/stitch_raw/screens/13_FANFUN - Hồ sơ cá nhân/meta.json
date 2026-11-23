@@ -1,0 +1,18 @@
+{
+  "name": "projects/5634229459885586050/screens/c6e04c9e3d404ecda5e31e3358374cf6",
+  "title": "FANFUN - Hồ sơ cá nhân",
+  "screenshot": {
+    "name": "projects/9052313486425226484/screens/c6e04c9e3d404ecda5e31e3358374cf6/fileEntries/screenshot",
+    "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34a0022d6bb1051f5c93:download",
+    "mimeType": "image/png"
+  },
+  "htmlCode": {
+    "name": "projects/9052313486425226484/screens/c6e04c9e3d404ecda5e31e3358374cf6/fileEntries/html",
+    "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/c6e04c9e3d404ecda5e31e3358374cf6:download",
+    "mimeType": "text/html"
+  },
+  "width": "3056",
+  "height": "2992",
+  "deviceType": "DESKTOP",
+  "screenType": "DESIGN"
+}

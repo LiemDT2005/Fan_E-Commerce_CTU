@@ -1,0 +1,18 @@
+{
+  "name": "projects/5634229459885586050/screens/59aedb88f6d94563aba59e33eec3b0f1",
+  "title": "FANFUN Admin - Quản lý Danh mục",
+  "screenshot": {
+    "name": "projects/9052313486425226484/screens/59aedb88f6d94563aba59e33eec3b0f1/fileEntries/screenshot",
+    "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d348b022d6bb1051f5c93:download",
+    "mimeType": "image/png"
+  },
+  "htmlCode": {
+    "name": "projects/9052313486425226484/screens/59aedb88f6d94563aba59e33eec3b0f1/fileEntries/html",
+    "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/59aedb88f6d94563aba59e33eec3b0f1:download",
+    "mimeType": "text/html"
+  },
+  "width": "2560",
+  "height": "3220",
+  "deviceType": "DESKTOP",
+  "screenType": "DESIGN"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "projects/5634229459885586050/screens/adbc538067e943c69e002a91ce341a8d",
+  "title": "FANFUN - Giỏ hàng của bạn",
+  "screenshot": {
+    "name": "projects/9052313486425226484/screens/adbc538067e943c69e002a91ce341a8d/fileEntries/screenshot",
+    "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d3498022d6bb1051f5c93:download",
+    "mimeType": "image/png"
+  },
+  "htmlCode": {
+    "name": "projects/9052313486425226484/screens/adbc538067e943c69e002a91ce341a8d/fileEntries/html",
+    "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/adbc538067e943c69e002a91ce341a8d:download",
+    "mimeType": "text/html"
+  },
+  "width": "2560",
+  "height": "2992",
+  "deviceType": "DESKTOP",
+  "screenType": "DESIGN"
+}

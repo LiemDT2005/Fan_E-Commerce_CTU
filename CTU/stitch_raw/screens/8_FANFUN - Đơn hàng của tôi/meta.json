@@ -1,0 +1,18 @@
+{
+  "name": "projects/5634229459885586050/screens/90382c09a77d46deab4497f7736d7270",
+  "title": "FANFUN - Đơn hàng của tôi",
+  "screenshot": {
+    "name": "projects/9052313486425226484/screens/90382c09a77d46deab4497f7736d7270/fileEntries/screenshot",
+    "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d348f022d6bb1051f5c93:download",
+    "mimeType": "image/png"
+  },
+  "htmlCode": {
+    "name": "projects/9052313486425226484/screens/90382c09a77d46deab4497f7736d7270/fileEntries/html",
+    "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/90382c09a77d46deab4497f7736d7270:download",
+    "mimeType": "text/html"
+  },
+  "width": "2560",
+  "height": "4120",
+  "deviceType": "DESKTOP",
+  "screenType": "DESIGN"
+}

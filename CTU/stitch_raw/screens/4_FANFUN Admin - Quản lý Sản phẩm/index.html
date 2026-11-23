@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"outline":"#8a7269","tertiary-fixed-dim":"#cbc6bc","primary-container":"#bc5728","on-primary-container":"#fffbff","error":"#ba1a1a","inverse-surface":"#343028","surface-variant":"#eae1d6","secondary":"#5f5e5e","surface-tint":"#9f4113","on-error":"#ffffff","inverse-on-surface":"#f9efe4","on-secondary-container":"#656464","on-secondary":"#ffffff","secondary-fixed":"#e4e2e1","outline-variant":"#ddc1b6","on-primary-fixed":"#370e00","tertiary-fixed":"#e8e2d7","error-container":"#ffdad6","secondary-fixed-dim":"#c8c6c5","on-primary":"#ffffff","surface-container-lowest":"#ffffff","tertiary-container":"#78746b","surface":"#fff8f2","surface-container-low":"#fcf2e7","surface-container-high":"#f0e7db","surface-container-highest":"#eae1d6","on-secondary-fixed":"#1b1c1c","on-tertiary-fixed-variant":"#49473f","surface-bright":"#fff8f2","on-secondary-fixed-variant":"#474746","on-tertiary":"#ffffff","on-tertiary-container":"#fffbff","primary":"#9c3f11","inverse-primary":"#ffb598","on-background":"#1f1b14","on-error-container":"#93000a","primary-fixed-dim":"#ffb598","on-tertiary-fixed":"#1d1b15","tertiary":"#5f5c53","surface-container":"#f6ede1","primary-fixed":"#ffdbce","surface-dim":"#e2d9ce","on-primary-fixed-variant":"#7e2c00","on-surface-variant":"#56423b","background":"#fff8f2","secondary-container":"#e4e2e1","on-surface":"#1f1b14"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","margin":"3rem","space-sm":"0.5rem","gutter-mobile":"1rem","space-md":"1rem","margin-mobile":"1.25rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter":"1.5rem"},"fontFamily":{"display-mobile":["Be Vietnam Pro"],"body-lg":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"label-lg":["Be Vietnam Pro"],"label-sm":["Be Vietnam Pro"],"headline-sm":["Be Vietnam Pro"],"headline-lg-mobile":["Be Vietnam Pro"],"body-sm":["Be Vietnam Pro"],"body-md":["Be Vietnam Pro"],"headline-lg":["Be Vietnam Pro"],"label-md":["Be Vietnam Pro"],"display":["Be Vietnam Pro"]},"fontSize":{"display-mobile":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.015em","fontWeight":"700"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","letterSpacing":"0","fontWeight":"400"}],"headline-md":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.02em","fontWeight":"600"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.05em","fontWeight":"500"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"0","fontWeight":"600"}],"headline-lg-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.005em","fontWeight":"400"}],"body-md":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"headline-lg":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.015em","fontWeight":"600"}],"label-md":["0.75rem",{"lineHeight":"1.rem","letterSpacing":"0.04em","fontWeight":"600"}],"display":["3.5rem",{"lineHeight":"4.25rem","letterSpacing":"-0.02em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between py-6 px-4 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-6"><div class="px-4 flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-2xl">mode_fan</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">FANFUN</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Smart Living Admin</span></div></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-sm"><a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="tong-quan" href="#"><span class="material-symbols-outlined text-xl">dashboard</span><span>Tổng quan</span></a><a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="quan-ly-don-hang" href="#"><span class="material-symbols-outlined text-xl">shopping_bag</span><span>Quản lý đơn hàng</span></a><a aria-current="page" class="flex items-center gap-3 px-4 py-3 rounded-xl transition-all bg-primary-container text-on-primary-container font-semibold shadow-sm" data-path="quan-ly-san-pham" href="#"><span class="material-symbols-outlined text-xl">inventory_2</span><span>Quản lý sản phẩm</span></a><a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="quan-ly-danh-muc" href="#"><span class="material-symbols-outlined text-xl">category</span><span>Quản lý danh mục</span></a><a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="khao-sat-ky-thuat" href="#"><span class="material-symbols-outlined text-xl">home_repair_service</span><span>Khảo sát &amp; Kỹ thuật</span></a><a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="khach-hang" href="#"><span class="material-symbols-outlined text-xl">group</span><span>Khách hàng</span></a><a class="flex items-center gap-3 px-4 py-3 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="cai-dat-he-thong" href="#"><span class="material-symbols-outlined text-xl">settings</span><span>Cài đặt hệ thống</span></a></nav></div><div class="flex flex-col gap-3 px-2"><a class="flex items-center gap-3 px-4 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-all" data-path="dang-xuat" href="#"><span class="material-symbols-outlined text-xl">logout</span><span>Đăng xuất</span></a><div class="px-4 py-2 rounded-lg bg-surface-container flex items-center justify-between text-on-surface-variant"><span class="font-label-sm text-label-sm">Phiên bản</span><span class="font-label-sm text-label-sm font-semibold">V1.2.0-MVP</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-4 flex-1 max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl">search</span><input class="w-full h-10 pl-10 pr-4 rounded-xl bg-surface-container-lowest font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Tìm kiếm mã đơn, sản phẩm, khách hàng..." type="text"/></div></div><div class="flex items-center gap-5"><div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span>Hệ thống: Hoạt động</span></div><a class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-primary hover:text-primary-container font-semibold transition-colors" href="#"><span>Xem cửa hàng Storefront</span><span class="material-symbols-outlined text-base">arrow_forward</span></a><div class="h-5 w-px bg-surface-container-highest"></div><button aria-label="Thông báo" class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-all" type="button"><span class="material-symbols-outlined text-2xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary"></span></button><div class="flex items-center gap-3 pl-2"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Nguyễn Admin</span><span class="font-label-sm text-label-sm text-on-surface-variant">Quản trị viên cấp cao</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-8 py-8 flex flex-col gap-8 max-w-[1400px] mx-auto w-full">
+<!-- Top Breadcrumb & Metadata String -->
+<div class="flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer">Bảng điều khiển</span>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Kho hàng &amp; Thiết bị</span>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+<span class="text-primary font-semibold">Quản lý Sản phẩm</span>
+<span class="mx-2 text-outline-variant">/</span>
+<span class="font-mono text-outline text-[11px] tracking-wider uppercase">CAT-SKU-SYS-2025</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+<span>Đồng bộ máy chủ: 1 phút trước</span>
+</div>
+<button class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-surface-container-high hover:bg-surface-variant font-label-sm text-label-sm text-on-surface transition-all" type="button">
+<span class="material-symbols-outlined text-base">cloud_sync</span>
+<span>Đồng bộ ERP</span>
+</button>
+</div>
+</div>
+<!-- Page Header & Action Bar -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-2">
+<div class="flex flex-col gap-2 max-w-2xl">
+<div class="flex items-center gap-2.5">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Kho Thiết Bị Thông Minh FANFUN</span>
+<span class="w-6 h-px bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hệ Sinh Thái Vi Khí Hậu</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Quản lý Sản phẩm</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Quản lý danh mục thiết bị quạt trần thông minh 3-in-1, lõi lọc định kỳ và các phụ kiện vi khí hậu chính hãng FANFUN trên toàn quốc.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-lg text-tertiary">download</span>
+<span>Xuất dữ liệu Excel</span>
+</button>
+<button class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-xl">add</span>
+<span>Thêm sản phẩm mới</span>
+</button>
+</div>
+</div>
+<!-- Quick KPI Stats Bar -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Stat 1: Total -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex flex-col gap-1 z-10">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Tổng sản phẩm</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">thiết bị lưu kho</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]">tune</span> 4 phân nhóm chính
+          </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-2xl">inventory_2</span>
+</div>
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full pointer-events-none"></div>
+</div>
+<!-- Stat 2: Active -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex flex-col gap-1 z-10">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Đang mở bán</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">6</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">mã trực tuyến</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> 75% danh mục hiện diện
+          </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-2xl">storefront</span>
+</div>
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full pointer-events-none"></div>
+</div>
+<!-- Stat 3: Low stock warning -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex flex-col gap-1 z-10">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Sắp hết hàng</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-primary font-bold">1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">thiết bị &lt; 10 cái</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 mt-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">warning</span> Remote LCD (còn 8)
+          </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined text-2xl">priority_high</span>
+</div>
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/10 rounded-full pointer-events-none"></div>
+</div>
+<!-- Stat 4: Hidden / Out of Stock -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex flex-col gap-1 z-10">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Đang ẩn / Hết kho</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-on-surface-variant font-bold">1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">sản phẩm ẩn</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]">visibility_off</span> Cảm biến không khí
+          </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:bg-tertiary-container group-hover:text-on-tertiary transition-all">
+<span class="material-symbols-outlined text-2xl">hide_source</span>
+</div>
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-tertiary/10 rounded-full pointer-events-none"></div>
+</div>
+</div>
+<!-- Filter & Search Control Bar -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-3">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl">search</span>
+<input class="w-full h-11 pl-11 pr-4 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="searchInput" placeholder="Tìm kiếm sản phẩm theo tên, SKU hoặc mã vạch..." type="text"/>
+</div>
+<!-- Filters Group -->
+<div class="flex flex-wrap items-center gap-2.5">
+<!-- Category Filter -->
+<div class="relative min-w-[190px]">
+<select class="w-full h-11 pl-3.5 pr-8 rounded-xl bg-surface-container-low font-label-sm text-label-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer" id="catFilter">
+<option value="all">Tất cả danh mục (8)</option>
+<option value="fan">Quạt trần thông minh 3-in-1</option>
+<option value="filter">Lõi lọc không khí HEPA</option>
+<option value="acc">Phụ kiện &amp; Bộ điều khiển</option>
+<option value="service">Gói dịch vụ bảo dưỡng</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-lg">expand_more</span>
+</div>
+<!-- Status Filter -->
+<div class="relative min-w-[160px]">
+<select class="w-full h-11 pl-3.5 pr-8 rounded-xl bg-surface-container-low font-label-sm text-label-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer" id="statusFilter">
+<option value="all">Tất cả trạng thái</option>
+<option value="active">Đang mở bán</option>
+<option value="low">Sắp hết kho</option>
+<option value="hidden">Tạm ẩn / Hết kho</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-lg">expand_more</span>
+</div>
+<!-- Sort Filter -->
+<div class="relative min-w-[160px]">
+<select class="w-full h-11 pl-3.5 pr-8 rounded-xl bg-surface-container-low font-label-sm text-label-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer" id="sortFilter">
+<option value="newest">Sắp xếp: Mới nhất</option>
+<option value="price-desc">Giá cao đến thấp</option>
+<option value="stock-asc">Tồn kho thấp nhất</option>
+<option value="stock-desc">Tồn kho cao nhất</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-lg">sort</span>
+</div>
+<button class="h-11 w-11 flex items-center justify-center rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" onclick="resetFilters()" title="Đặt lại bộ lọc" type="button">
+<span class="material-symbols-outlined text-xl">restart_alt</span>
+</button>
+</div>
+</div>
+<!-- Demo State Switcher (for prototype validation) -->
+<div class="flex items-center justify-between flex-wrap gap-3 px-4 py-2.5 rounded-xl bg-surface-container-low text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary">science</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Chế độ kiểm thử giao diện:</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded-lg text-label-sm font-label-sm bg-primary text-on-primary font-semibold shadow-xs" id="stateBtnFull" onclick="switchState('full')" type="button">
+          Hiển thị đầy đủ (8)
+        </button>
+<button class="px-3 py-1 rounded-lg text-label-sm font-label-sm bg-surface-container-lowest hover:bg-surface-container-high text-on-surface transition-all" id="stateBtnSearch" onclick="switchState('empty-search')" type="button">
+          Không có kết quả
+        </button>
+<button class="px-3 py-1 rounded-lg text-label-sm font-label-sm bg-surface-container-lowest hover:bg-surface-container-high text-on-surface transition-all" id="stateBtnStock" onclick="switchState('empty-stock')" type="button">
+          Kho trống rỗng
+        </button>
+</div>
+</div>
+<!-- Main Table Container -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col" id="tableContainer">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-4 pl-6 pr-3 w-12 text-center" scope="col">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary focus:ring-offset-0 bg-surface-container-lowest accent-primary cursor-pointer" id="selectAllCheckbox" onchange="toggleSelectAll(this)" type="checkbox"/>
+</th>
+<th class="py-4 px-3 w-32 font-semibold" scope="col">Mã SKU</th>
+<th class="py-4 px-4 min-w-[320px] font-semibold" scope="col">Sản phẩm vi khí hậu</th>
+<th class="py-4 px-4 w-44 font-semibold" scope="col">Danh mục</th>
+<th class="py-4 px-4 w-44 font-semibold text-right" scope="col">Giá niêm yết</th>
+<th class="py-4 px-4 w-48 font-semibold" scope="col">Tồn kho &amp; Trạng thái</th>
+<th class="py-4 px-4 w-36 text-center font-semibold" scope="col">Hiển thị</th>
+<th class="py-4 pl-3 pr-6 w-36 text-right font-semibold" scope="col">Thao tác</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface" id="productTableBody">
+<!-- Item 1: Living Walnut -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-4 pl-6 pr-3 text-center">
+<input class="product-row-check w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-3">
+<span class="font-mono text-[12px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-md">FF-LUM-WN5</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3.5">
+<div class="w-14 h-14 rounded-xl bg-surface-container overflow-hidden shrink-0 relative shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close up architectural photograph of modern ceiling fan with solid walnut wooden blades and minimalist warm ambient circular ring light in a serene contemporary living room with clean terracotta decor and cream walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtZt-h8JnV8UnpkE1jVcQhazB2OQN-mHvwUn2EGvRhnOwAe3TYU959Fcjlg-mMfuAF9kRN793Ulb4QkDwVSRz2H1TriulguSq4fCq3hyNk438ZAFI40NT8sk2HwnkLRYrhixWA0XX4t8vkAdtZeH33IHUXfcT-TRmaF3uBIWN0bqA3XrG4IyEDSZRWdPtXPWH1NP7xAH3XYQxju-39HkhdyLd3EIsyhw3K-2YioMA"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors">
+                      FANFUN 3-IN-1 Living (Bản gỗ Walnut)
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[13px] text-primary">air</span> Động cơ DC Inverter • Lõi HEPA H13
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Quạt trần thông minh
+                </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-on-surface font-headline-sm text-body-md">8.990.000đ</span>
+<span class="line-through text-on-surface-variant text-[11px] font-mono">10.500.000đ</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1.5 max-w-[150px]">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface">38 chiếc</span>
+<span class="text-primary text-[11px] font-semibold">Sẵn kho</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 76%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                  Đang mở bán
+                </span>
+</td>
+<td class="py-4 pl-3 pr-6 text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all" title="Chỉnh sửa sản phẩm" type="button">
+<span class="material-symbols-outlined text-[19px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all" title="Cập nhật nhanh kho" type="button">
+<span class="material-symbols-outlined text-[19px]">add_box</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" title="Tác vụ khác" type="button">
+<span class="material-symbols-outlined text-[19px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 2: Prime White -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-4 pl-6 pr-3 text-center">
+<input class="product-row-check w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-3">
+<span class="font-mono text-[12px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-md">FF-LUM-PR5</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3.5">
+<div class="w-14 h-14 rounded-xl bg-surface-container overflow-hidden shrink-0 relative shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Minimalist pearl white ceiling smart fan mounted on warm plaster ceiling, soft afternoon sunlight casting architectural shadows, premium matte white finish with subtle warm LED edge glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLk1Dkg4YCbhvISFSmlfMqd3Im7f79LBeh7zVeBOX-XQFiuKO5q5ynBd8Ty1CsgIYHFbX06RxsjOx15M1WH123y6yTBNpcWCF97rwJIdSp8mGYrVt3IoYEq8pA2QbUr6BvrfFYNVKglC-6_487rrWUCFigEHODd_AMv7DJGi2wXX6shnSehY2iNuiZmSNw5phHTH32vtf5LHeD8gRn0Q1itEx9ro6knewBQlVaWck"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors">
+                      FANFUN 3-IN-1 Prime (Trắng ngọc trai)
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[13px] text-primary">light_mode</span> Đèn LED 3000K-6500K • Cảm biến AQI
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Quạt trần thông minh
+                </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-on-surface font-headline-sm text-body-md">8.490.000đ</span>
+<span class="line-through text-on-surface-variant text-[11px] font-mono">9.800.000đ</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1.5 max-w-[150px]">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface">24 chiếc</span>
+<span class="text-primary text-[11px] font-semibold">Sẵn kho</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 48%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Đang mở bán
+                </span>
+</td>
+<td class="py-4 pl-3 pr-6 text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all" title="Chỉnh sửa" type="button">
+<span class="material-symbols-outlined text-[19px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all" title="Cập nhật kho" type="button">
+<span class="material-symbols-outlined text-[19px]">add_box</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" title="Tác vụ" type="button">
+<span class="material-symbols-outlined text-[19px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 3: Breeze Lite Black -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-4 pl-6 pr-3 text-center">
+<input class="product-row-check w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-3">
+<span class="font-mono text-[12px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-md">FF-AIR-LT3</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3.5">
+<div class="w-14 h-14 rounded-xl bg-surface-container overflow-hidden shrink-0 relative shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Studio shot of matte black sleek contemporary 3-blade ceiling fan against a textured sandy beige wall with subtle terracotta architectural brick details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb6fPTE1d78cZTMnoaRY1SFVTxdZYdMrmF26D0Zjzjlqo4oXi7JdDPWqP2wIq1nJbG6ujFpZaLjz3-X7-oiuH6PEJoXJn_3Et3q6DCWUOrcUb_l3p3-GVXrDo6Vn-FnWRHWE6Ptd7DIYBhYN5GvQEhjBOXWYspvgbQQvcNw8zq7NrGBTXi7oe3trO8ps0Zjhz9XcEDeKH4ntOx9Flgw2NVT9nifQhl-nC9WZ9d0e0"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors">
+                      FANFUN Breeze Lite (Đen mờ Carbon)
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[13px] text-tertiary">speed</span> Động cơ siêu êm 32dB • 3 Cánh khí động học
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Quạt trần thông minh
+                </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-on-surface font-headline-sm text-body-md">6.290.000đ</span>
+<span class="line-through text-on-surface-variant text-[11px] font-mono">7.000.000đ</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1.5 max-w-[150px]">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface">15 chiếc</span>
+<span class="text-on-surface-variant text-[11px]">Ổn định</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 30%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Đang mở bán
+                </span>
+</td>
+<td class="py-4 pl-3 pr-6 text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all" title="Chỉnh sửa" type="button">
+<span class="material-symbols-outlined text-[19px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all" title="Cập nhật kho" type="button">
+<span class="material-symbols-outlined text-[19px]">add_box</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" title="Tác vụ" type="button">
+<span class="material-symbols-outlined text-[19px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 4: HEPA & Carbon Filter -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-4 pl-6 pr-3 text-center">
+<input class="product-row-check w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-3">
+<span class="font-mono text-[12px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-md">FF-FLT-H13C</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3.5">
+<div class="w-14 h-14 rounded-xl bg-surface-container overflow-hidden shrink-0 relative shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Cylindrical smart air purifier filter module with high grade white pleated HEPA paper and black coconut shell activated carbon honeycombs on clean ivory studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZbt4OvsB4eTc4faK86JjFZGA0zes18wCLUbFAQdS5ZR_ZwUVYkkji_Kx23TYH10aNnlAmtRCUvlkq7jxji090pcg3KloYSzaMbXE8MDc4BLnsHsA3XOaQO5IKd0Lryx3Rmm5a_GzIjz_lYY_pszkHlBGgHgjBaT_aLC-FUmlZtZVzoYi8bRyKIAfY2pabs7-wdn9oTcm5cxFQ1GIWHJSMGbDO0ebdV3ozPHedae0"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors">
+                      Bộ lõi lọc kép True HEPA H13 &amp; Than hoạt tính
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[13px] text-primary">filter_vintage</span> Tuổi thọ 12 tháng • Khử mùi formaldehyde
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Lõi lọc không khí
+                </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-on-surface font-headline-sm text-body-md">650.000đ</span>
+<span class="text-on-surface-variant text-[11px] font-mono">Đồng giá niêm yết</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1.5 max-w-[150px]">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface">120 bộ</span>
+<span class="text-primary text-[11px] font-semibold">Dồi dào</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 95%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Đang mở bán
+                </span>
+</td>
+<td class="py-4 pl-3 pr-6 text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-2 rounded-lg hover:bg-error-container text-on-surface-variant hover:text-error transition-all" onclick="openHideModal('Bộ lõi lọc kép True HEPA H13 &amp; Than hoạt tính')" title="Ẩn sản phẩm này" type="button">
+<span class="material-symbols-outlined text-[19px]">visibility_off</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all" title="Chỉnh sửa" type="button">
+<span class="material-symbols-outlined text-[19px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" title="Tác vụ" type="button">
+<span class="material-symbols-outlined text-[19px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 5: LCD Remote (Low stock warning) -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group bg-error-container/10">
+<td class="py-4 pl-6 pr-3 text-center">
+<input class="product-row-check w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-3">
+<span class="font-mono text-[12px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-md">FF-RMT-LCD</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3.5">
+<div class="w-14 h-14 rounded-xl bg-surface-container overflow-hidden shrink-0 relative shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Ergonomic smart remote control with monochrome OLED display showing fan speeds and ambient temperature, docked on magnetic wood charging cradle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVyvyc6kkAPFerBDcHsOwGpm2Xrcx1yEC7jltO1T-gTUPqFiwcw_Cim7uJ0id5rR-YoMeXszKYZptSKEpRwfXbmrsIugYPx_syglbfQhmFLMll0YaC-tel606sNzf1vwqZjINA-4lWqTO6l-26aXZ9vBAzVeZGINNEjhhEddKzXJv8ZoCxAWmqmJUcSvd0ak6XaT9l7GMs8mPKnZDzbPhw_8Bkzx6mFdFO_4Kpd7E"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors">
+                        Remote điều khiển cầm tay LCD &amp; Đế từ tính
+                      </span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-primary text-on-primary uppercase">Cảnh báo kho</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[13px] text-outline">dock</span> Kèm đế sạc Type-C • Đèn nền cảm ứng rung
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Phụ kiện &amp; Điều khiển
+                </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-on-surface font-headline-sm text-body-md">490.000đ</span>
+<span class="text-on-surface-variant text-[11px] font-mono">Bảo hành 12T</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1.5 max-w-[150px]">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="font-bold text-error">8 chiếc</span>
+<span class="text-error font-semibold text-[11px]">Sắp hết kho</span>
+</div>
+<div class="w-full h-1.5 bg-error-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full animate-pulse" style="width: 16%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Đang mở bán
+                </span>
+</td>
+<td class="py-4 pl-3 pr-6 text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-2 rounded-lg bg-primary-fixed hover:bg-primary-container text-on-primary-fixed hover:text-on-primary transition-all" title="Nhập hàng ngay" type="button">
+<span class="material-symbols-outlined text-[19px]">add_shopping_cart</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all" title="Chỉnh sửa" type="button">
+<span class="material-symbols-outlined text-[19px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" title="Tác vụ" type="button">
+<span class="material-symbols-outlined text-[19px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 6: Extension Rod -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-4 pl-6 pr-3 text-center">
+<input class="product-row-check w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-3">
+<span class="font-mono text-[12px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-md">FF-ROD-EXT</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3.5">
+<div class="w-14 h-14 rounded-xl bg-surface-container overflow-hidden shrink-0 relative shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Architectural metallic powder-coated ceiling fan extension downrod accessory set, clean bronze metallic texture on sand fabric backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1_TTaLckFA5BG0-ux2SP44iWOTHrotl4rYs7uMAJ826ZlgkPq5biuiPCe9NH-vAJG-_XXTLU57sz2P2WrQiZWRh9Lc0bAlQ5pBo4fiB6KpnQMwPjBfzZ0SFHSYpi1IGWTPPIG0NnJ_18rbso5EswPmmzUgShe61zCQeFjp36vryMsD0Vgefan8xkicWu2BJWqNhgxcN2oHfaDFMJyYrZCRUFjVRb7bulllw-LBiY"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors">
+                      Ty treo quạt nối dài cao cấp (50cm - 1m kim loại đúc)
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[13px] text-tertiary">straighten</span> Dành cho trần cao 3.5m - 5m • Sơn tĩnh điện
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Phụ kiện &amp; Điều khiển
+                </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-on-surface font-headline-sm text-body-md">250.000đ</span>
+<span class="text-on-surface-variant text-[11px] font-mono">3 tùy chọn màu</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1.5 max-w-[150px]">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface">65 chiếc</span>
+<span class="text-primary text-[11px] font-semibold">Sẵn kho</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 65%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Đang mở bán
+                </span>
+</td>
+<td class="py-4 pl-3 pr-6 text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all" title="Chỉnh sửa" type="button">
+<span class="material-symbols-outlined text-[19px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all" title="Cập nhật kho" type="button">
+<span class="material-symbols-outlined text-[19px]">add_box</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" title="Tác vụ" type="button">
+<span class="material-symbols-outlined text-[19px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 7: FANFUN Care+ Service Pack -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-4 pl-6 pr-3 text-center">
+<input class="product-row-check w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-3">
+<span class="font-mono text-[12px] font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-md">FF-CARE-5Y</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3.5">
+<div class="w-14 h-14 rounded-xl bg-surface-container overflow-hidden shrink-0 relative shadow-sm flex items-center justify-center bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors">
+                      Gói gia hạn bảo hành Vàng 5 năm tận nhà (FANFUN Care+)
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[13px] text-primary">home_repair_service</span> Bảo dưỡng định kỳ 2 lần/năm • Kỹ sư chính hãng
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Gói dịch vụ
+                </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-on-surface font-headline-sm text-body-md">1.200.000đ</span>
+<span class="text-on-surface-variant text-[11px] font-mono">Dịch vụ kỹ thuật</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1.5 max-w-[150px]">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface">Không giới hạn</span>
+<span class="text-primary text-[11px] font-semibold">Dịch vụ số</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Đang mở bán
+                </span>
+</td>
+<td class="py-4 pl-3 pr-6 text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all" title="Chỉnh sửa" type="button">
+<span class="material-symbols-outlined text-[19px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all" title="Cập nhật kho" type="button">
+<span class="material-symbols-outlined text-[19px]">add_box</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" title="Tác vụ" type="button">
+<span class="material-symbols-outlined text-[19px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 8: Out of Stock & Hidden Sensor -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group opacity-60 bg-surface-container-high/40">
+<td class="py-4 pl-6 pr-3 text-center">
+<input class="product-row-check w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-3">
+<span class="font-mono text-[12px] font-semibold text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-md">FF-SEN-AI</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3.5">
+<div class="w-14 h-14 rounded-xl bg-surface-container overflow-hidden shrink-0 relative shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 grayscale" data-alt="Minimalist desktop smart air quality sensor cube with terracotta accent and subtle digital humidity and PM2.5 display screen, high key studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ0xeWN8ocnQH7X_lXN1adrd5LFzXsMg9VpVYw9jF5qEqBtLg4jyZ45vi7mLaEw8mFSg0m0zOjTzEeVo5QFFQyvXkxDtqTOe8iANPWg6R_-htSpPrKoJJj8Xtqz5FIBAH3SDKxlNjl1wnKXBhsBNCYIwsPJBMHkVZDlZ8OnAhio2doXr41NRK4anNiSQyAn33OOcDp70lNfB9WYBRhqrkXUydq81ZWrFB6OdAqIQs"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface truncate line-through">
+                      Cảm biến chất lượng không khí PM2.5 &amp; Độ ẩm AI
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[13px] text-tertiary">sensors</span> Tự động kích hoạt quạt • Kết nối Matter/Zigbee
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Phụ kiện &amp; Điều khiển
+                </span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="flex flex-col items-end">
+<span class="font-semibold text-on-surface-variant font-headline-sm text-body-md">850.000đ</span>
+<span class="text-on-surface-variant text-[11px] font-mono">Chờ lô hàng mới</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1.5 max-w-[150px]">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="font-bold text-on-surface-variant">0 chiếc</span>
+<span class="text-on-surface-variant text-[11px] font-semibold">Hết hàng</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-on-surface-variant/30 rounded-full" style="width: 0%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                  Đã tạm ẩn
+                </span>
+</td>
+<td class="py-4 pl-3 pr-6 text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-2 rounded-lg hover:bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all" title="Mở bán lại" type="button">
+<span class="material-symbols-outlined text-[19px]">visibility</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-highest text-on-surface-variant transition-all" title="Chỉnh sửa" type="button">
+<span class="material-symbols-outlined text-[19px]">edit</span>
+</button>
+<button class="p-2 rounded-lg hover:bg-surface-container-highest text-on-surface-variant transition-all" title="Tác vụ" type="button">
+<span class="material-symbols-outlined text-[19px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- State: Empty Search (Hidden by default) -->
+<div class="hidden flex-col items-center justify-center py-16 px-4 text-center" id="emptySearchState">
+<div class="w-16 h-16 rounded-2xl bg-surface-container flex items-center justify-center text-on-surface-variant mb-4">
+<span class="material-symbols-outlined text-3xl">search_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">Không tìm thấy thiết bị phù hợp</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md mb-6">
+          Không có sản phẩm nào khớp với từ khóa tìm kiếm hoặc bộ lọc danh mục đã chọn. Vui lòng kiểm tra lại chính tả hoặc thử tiêu chí khác.
+        </p>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all" onclick="switchState('full')" type="button">
+<span class="material-symbols-outlined text-lg">refresh</span>
+<span>Xóa tất cả bộ lọc</span>
+</button>
+</div>
+<!-- State: Empty Stock (Hidden by default) -->
+<div class="hidden flex-col items-center justify-center py-16 px-4 text-center" id="emptyStockState">
+<div class="w-16 h-16 rounded-2xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed mb-4">
+<span class="material-symbols-outlined text-3xl">inventory</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">Danh mục sản phẩm đang trống</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md mb-6">
+          Chưa có mẫu quạt trần, linh kiện vi khí hậu hoặc lõi lọc nào trong cơ sở dữ liệu. Bắt đầu cấu hình sản phẩm đầu tiên ngay hôm nay.
+        </p>
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all" type="button">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+<span>Tạo sản phẩm mẫu FANFUN</span>
+</button>
+</div>
+<!-- Pagination & Table Footer -->
+<div class="p-4 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-4" id="tableFooter">
+<div class="flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span>Hiển thị <span class="font-semibold text-on-surface">1 - 8</span> trong tổng số <span class="font-semibold text-on-surface">8</span> sản phẩm</span>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1.5">
+<span>Mỗi trang:</span>
+<select class="bg-surface-container-lowest rounded-lg px-2 py-1 text-on-surface font-semibold focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer text-xs">
+<option value="10">10 sản phẩm</option>
+<option value="20">20 sản phẩm</option>
+<option value="50">50 sản phẩm</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline cursor-not-allowed bg-surface-container opacity-50" disabled="" type="button">
+<span class="material-symbols-outlined text-lg">first_page</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline cursor-not-allowed bg-surface-container opacity-50" disabled="" type="button">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary text-on-primary font-label-sm text-label-sm font-semibold shadow-xs" type="button">
+            1
+          </button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline cursor-not-allowed bg-surface-container opacity-50" disabled="" type="button">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline cursor-not-allowed bg-surface-container opacity-50" disabled="" type="button">
+<span class="material-symbols-outlined text-lg">last_page</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Batch Selection Floating Action Bar (Contextual) -->
+<div class="hidden items-center justify-between p-4 rounded-2xl bg-inverse-surface text-inverse-on-surface shadow-xl animate-fade-in" id="bulkActionBar">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-lg bg-primary flex items-center justify-center text-on-primary font-bold text-xs" id="selectedCount">0</span>
+<span class="font-label-md text-label-md font-medium">Sản phẩm đang được chọn</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-1.5 rounded-xl bg-surface-container/20 hover:bg-surface-container/30 text-inverse-on-surface font-label-sm text-label-sm transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-base">visibility_off</span>
+<span>Tạm ẩn hàng loạt</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-xl bg-surface-container/20 hover:bg-surface-container/30 text-inverse-on-surface font-label-sm text-label-sm transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-base">price_change</span>
+<span>Cập nhật giá sỉ</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-xl bg-error text-on-error font-label-sm text-label-sm hover:opacity-90 transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-base">delete</span>
+<span>Xóa đã chọn</span>
+</button>
+</div>
+</div>
+<!-- Quick Info Cards Bento (Bottom Section) -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-2">
+<!-- Card 1: Warehouse Summary -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-xl">warehouse</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-md font-semibold text-on-surface">Kho tổng Hà Nội &amp; TP.HCM</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Phân phối vi khí hậu nội địa</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">Tự động cân bằng</span>
+</div>
+<div class="space-y-3 pt-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Tỷ lệ khả dụng thiết bị:</span>
+<span class="font-bold text-on-surface">94.2%</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 94%;"></div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant italic">
+            * Cảnh báo tồn kho tự động gửi tới bộ phận vận hành khi mức tồn &lt; 15 đơn vị cho mỗi SKU động cơ DC.
+          </p>
+</div>
+</div>
+<!-- Card 2: IoT Firmware Compatibility -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-xl">router</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-body-md font-semibold text-on-surface">Hệ điều hành FANFUN OS</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Phiên bản giao thức v2.4.1</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Chuẩn kết nối:</span>
+<span class="font-semibold text-on-surface">Matter, Apple Home, Tuya IoT</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Cập nhật OTA:</span>
+<span class="font-semibold text-primary">Sẵn sàng (2 bản vá bảo mật)</span>
+</div>
+<a class="font-label-sm text-label-sm text-primary hover:underline inline-flex items-center gap-1 mt-1 font-semibold" href="#">
+<span>Xem tài liệu tích hợp API sản phẩm</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3: Quick Action Guide -->
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-primary">Hướng dẫn vận hành</span>
+<h4 class="font-headline-sm text-body-md font-semibold text-on-surface mt-1">Quy chuẩn đăng tải sản phẩm FANFUN</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Mỗi thiết bị quạt thông minh bắt buộc phải có ít nhất 3 góc ảnh kiến trúc, thông số lưu lượng gió CFM, và chỉ số âm học dB đo tại khoảng cách tiêu chuẩn 1.5 mét.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tiêu chuẩn QC 2025</span>
+<button class="px-3 py-1.5 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm font-semibold transition-all" type="button">
+            Tải mẫu hướng dẫn (PDF)
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Confirmation Dialog: Hide Product Modal -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4 animate-fade-in" id="hideConfirmModal">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-3xl p-6 shadow-2xl flex flex-col gap-5 border border-outline-variant/30">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-2xl bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">visibility_off</span>
+</div>
+<button class="p-2 text-on-surface-variant hover:text-on-surface rounded-xl hover:bg-surface-container transition-all" onclick="closeHideModal()" type="button">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Xác nhận tạm ẩn sản phẩm?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Bạn đang yêu cầu ẩn sản phẩm <span class="font-semibold text-on-surface" id="modalProductName">Bộ lõi lọc kép True HEPA H13</span> khỏi giao diện cửa hàng trực tuyến FANFUN Storefront. Khách hàng sẽ không thể đặt mua cho đến khi được mở bán lại.
+        </p>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">info</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+          Các đơn hàng đã đặt trước của sản phẩm này vẫn được giữ nguyên và tiến hành giao theo tiến độ.
+        </span>
+</div>
+<div class="flex items-center justify-end gap-3 pt-2">
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-all" onclick="closeHideModal()" type="button">
+          Hủy bỏ
+        </button>
+<button class="px-5 py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all shadow-sm" onclick="confirmHideAction()" type="button">
+          Xác nhận ẩn
+        </button>
+</div>
+</div>
+</div>
+<script>
+    // Handle Modal Toggle
+    function openHideModal(productTitle) {
+      const modal = document.getElementById('hideConfirmModal');
+      const titleEl = document.getElementById('modalProductName');
+      if (titleEl && productTitle) {
+        titleEl.textContent = productTitle;
+      }
+      if (modal) {
+        modal.classList.remove('hidden');
+      }
+    }
+
+    function closeHideModal() {
+      const modal = document.getElementById('hideConfirmModal');
+      if (modal) {
+        modal.classList.add('hidden');
+      }
+    }
+
+    function confirmHideAction() {
+      closeHideModal();
+      alert('Đã cập nhật trạng thái tạm ẩn sản phẩm thành công!');
+    }
+
+    // Prototype State Switcher
+    function switchState(state) {
+      const tableBody = document.getElementById('productTableBody');
+      const tableFooter = document.getElementById('tableFooter');
+      const emptySearch = document.getElementById('emptySearchState');
+      const emptyStock = document.getElementById('emptyStockState');
+      const bulkBar = document.getElementById('bulkActionBar');
+
+      const btnFull = document.getElementById('stateBtnFull');
+      const btnSearch = document.getElementById('stateBtnSearch');
+      const btnStock = document.getElementById('stateBtnStock');
+
+      // Reset Active Tabs
+      [btnFull, btnSearch, btnStock].forEach(b => {
+        if(b) {
+          b.className = "px-3 py-1 rounded-lg text-label-sm font-label-sm bg-surface-container-lowest hover:bg-surface-container-high text-on-surface transition-all";
+        }
+      });
+
+      if (state === 'full') {
+        btnFull.className = "px-3 py-1 rounded-lg text-label-sm font-label-sm bg-primary text-on-primary font-semibold shadow-xs";
+        tableBody.parentElement.classList.remove('hidden');
+        tableFooter.classList.remove('hidden');
+        emptySearch.classList.add('hidden');
+        emptySearch.classList.remove('flex');
+        emptyStock.classList.add('hidden');
+        emptyStock.classList.remove('flex');
+      } else if (state === 'empty-search') {
+        btnSearch.className = "px-3 py-1 rounded-lg text-label-sm font-label-sm bg-primary text-on-primary font-semibold shadow-xs";
+        tableBody.parentElement.classList.add('hidden');
+        tableFooter.classList.add('hidden');
+        emptySearch.classList.remove('hidden');
+        emptySearch.classList.add('flex');
+        emptyStock.classList.add('hidden');
+        emptyStock.classList.remove('flex');
+        if(bulkBar) bulkBar.classList.add('hidden');
+      } else if (state === 'empty-stock') {
+        btnStock.className = "px-3 py-1 rounded-lg text-label-sm font-label-sm bg-primary text-on-primary font-semibold shadow-xs";
+        tableBody.parentElement.classList.add('hidden');
+        tableFooter.classList.add('hidden');
+        emptySearch.classList.add('hidden');
+        emptySearch.classList.remove('flex');
+        emptyStock.classList.remove('hidden');
+        emptyStock.classList.add('flex');
+        if(bulkBar) bulkBar.classList.add('hidden');
+      }
+    }
+
+    // Batch Selection Logic
+    function toggleSelectAll(master) {
+      const checks = document.querySelectorAll('.product-row-check');
+      checks.forEach(c => c.checked = master.checked);
+      updateBulkState();
+    }
+
+    function updateBulkState() {
+      const checks = document.querySelectorAll('.product-row-check:checked');
+      const bulkBar = document.getElementById('bulkActionBar');
+      const countEl = document.getElementById('selectedCount');
+      if (checks.length > 0) {
+        bulkBar.classList.remove('hidden');
+        bulkBar.classList.add('flex');
+        countEl.textContent = checks.length;
+      } else {
+        bulkBar.classList.add('hidden');
+        bulkBar.classList.remove('flex');
+      }
+    }
+
+    // Attach listeners to individual row checkboxes
+    document.querySelectorAll('.product-row-check').forEach(cb => {
+      cb.addEventListener('change', updateBulkState);
+    });
+
+    function resetFilters() {
+      document.getElementById('searchInput').value = '';
+      document.getElementById('catFilter').value = 'all';
+      document.getElementById('statusFilter').value = 'all';
+      document.getElementById('sortFilter').value = 'newest';
+      switchState('full');
+    }
+  </script>
+</div></main></div></body></html>

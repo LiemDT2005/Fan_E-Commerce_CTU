@@ -1,0 +1,18 @@
+{
+  "name": "projects/5634229459885586050/screens/ebe43ed9324b42cab4456b53d7494143",
+  "title": "FANFUN Admin - Quản lý Sản phẩm",
+  "screenshot": {
+    "name": "projects/9052313486425226484/screens/ebe43ed9324b42cab4456b53d7494143/fileEntries/screenshot",
+    "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d34ad022d6bb1051f5c93:download",
+    "mimeType": "image/png"
+  },
+  "htmlCode": {
+    "name": "projects/9052313486425226484/screens/ebe43ed9324b42cab4456b53d7494143/fileEntries/html",
+    "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/ebe43ed9324b42cab4456b53d7494143:download",
+    "mimeType": "text/html"
+  },
+  "width": "2560",
+  "height": "4138",
+  "deviceType": "DESKTOP",
+  "screenType": "DESIGN"
+}

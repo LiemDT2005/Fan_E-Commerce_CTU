@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-primary":"#ffb598","on-background":"#1f1b14","background":"#fff8f2","on-secondary-fixed":"#1b1c1c","surface-dim":"#e2d9ce","surface-tint":"#9f4113","on-tertiary-container":"#fffbff","inverse-surface":"#343028","on-error":"#ffffff","on-tertiary-fixed-variant":"#49473f","error-container":"#ffdad6","error":"#ba1a1a","on-secondary":"#ffffff","secondary-fixed":"#e4e2e1","on-tertiary-fixed":"#1d1b15","surface-bright":"#fff8f2","surface":"#fff8f2","on-secondary-container":"#656464","surface-variant":"#eae1d6","outline-variant":"#ddc1b6","inverse-on-surface":"#f9efe4","tertiary-fixed":"#e8e2d7","on-primary-fixed-variant":"#7e2c00","secondary-fixed-dim":"#c8c6c5","secondary-container":"#e4e2e1","primary-fixed":"#ffdbce","on-error-container":"#93000a","surface-container-high":"#f0e7db","outline":"#8a7269","tertiary":"#5f5c53","on-surface":"#1f1b14","tertiary-container":"#78746b","surface-container-low":"#fcf2e7","on-primary-fixed":"#370e00","on-tertiary":"#ffffff","primary-container":"#bc5728","primary-fixed-dim":"#ffb598","on-primary":"#ffffff","primary":"#9c3f11","on-primary-container":"#fffbff","surface-container":"#f6ede1","surface-container-lowest":"#ffffff","surface-container-highest":"#eae1d6","tertiary-fixed-dim":"#cbc6bc","on-surface-variant":"#56423b","on-secondary-fixed-variant":"#474746","secondary":"#5f5e5e"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin":"3rem","space-md":"1rem","gutter":"1.5rem","gutter-mobile":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xl":"2.5rem","space-xs":"0.25rem","margin-mobile":"1.25rem"},fontFamily:{"display":["Be Vietnam Pro"],"label-lg":["Be Vietnam Pro"],"body-sm":["Be Vietnam Pro"],"headline-lg-mobile":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"headline-sm":["Be Vietnam Pro"],"display-mobile":["Be Vietnam Pro"],"label-md":["Be Vietnam Pro"],"headline-lg":["Be Vietnam Pro"],"body-md":["Be Vietnam Pro"],"label-sm":["Be Vietnam Pro"],"body-lg":["Be Vietnam Pro"]},fontSize:{"display":["3.5rem",{lineHeight:"4.25rem",letterSpacing:"-0.02em",fontWeight:"700"}],"label-lg":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.02em",fontWeight:"600"}],"body-sm":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.005em",fontWeight:"400"}],"headline-lg-mobile":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-sm":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"0",fontWeight:"600"}],"display-mobile":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.015em",fontWeight:"700"}],"label-md":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.04em",fontWeight:"600"}],"headline-lg":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.015em",fontWeight:"600"}],"body-md":["1rem",{lineHeight:"1.5rem",letterSpacing:"0",fontWeight:"400"}],"label-sm":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.05em",fontWeight:"500"}],"body-lg":["1.125rem",{lineHeight:"1.75rem",letterSpacing:"0",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-8 flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs" href="#"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary">FANFUN</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider pl-1">Smart Living</span></a><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-bold"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="trang-chu" href="#">Trang chủ</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="san-pham-he-sinh-thai" href="#">Sản phẩm &amp; Hệ sinh thái</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="cong-nghe-3-in-1" href="#">Công nghệ 3-in-1</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="dich-vu-lap-dat-bao-hanh" href="#">Dịch vụ lắp đặt &amp; Bảo hành</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="cau-chuyen-thuong-hieu" href="#">Câu chuyện thương hiệu</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container-low px-space-md py-space-xs rounded-full shadow-[0_1px_8px_rgba(0,0,0,0.04)] w-60"><span class="material-symbols-outlined text-outline text-[20px] mr-space-xs">search</span><input class="bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline w-full" placeholder="Tìm kiếm quạt, bộ lọc..." type="text"/></div><div class="hidden lg:flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[20px]">support_agent</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-outline leading-tight">Hotline</span><span class="font-label-lg text-label-lg font-bold text-on-surface leading-tight">1900 6868</span></div></div><div class="flex items-center gap-space-sm"><a class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-sm rounded-full text-on-surface hover:bg-surface-container-high transition-colors" data-path="ho-so-ca-nhan" href="#"><span class="material-symbols-outlined text-[18px] text-primary">person</span><span class="font-label-lg text-label-lg">Tài khoản</span></a><a class="relative p-space-sm rounded-full text-on-surface hover:bg-surface-container-low transition-colors" data-path="don-hang-cua-toi" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute top-1 right-1 w-4 h-4 bg-primary text-on-primary font-label-sm text-[10px] rounded-full flex items-center justify-center font-bold">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-20 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col p-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md pb-space-lg mb-space-lg"><div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-[0_1px_8px_rgba(0,0,0,0.04)]">NV</div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-label-lg font-bold text-on-surface truncate">Nguyễn Văn An</span><span class="inline-flex items-center gap-space-xs mt-space-xs self-start px-space-sm py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[14px]">workspace_premium</span>Thành viên Gold</span></div></div><nav class="flex flex-col gap-space-xs flex-1" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-xl"><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ho-so-ca-nhan" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Hồ sơ cá nhân</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="doi-mat-khau" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">lock_reset</span><span class="font-label-lg text-label-lg">Đổi mật khẩu</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="don-hang-cua-toi" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span class="font-label-lg text-label-lg">Đơn hàng của tôi</span></div><span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">4</span></a></nav><div class="pt-space-md"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-secondary hover:bg-error-container hover:text-on-error-container transition-all" data-path="dang-xuat" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-label-lg text-label-lg">Đăng xuất</span></a></div></aside><div class="pl-72"><div class="pt-20 px-8 py-space-md bg-surface"><nav class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="trang-chu" href="#">Trang chủ</a><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-on-surface font-medium">Tài khoản của tôi</span></nav></div><main class="relative w-full px-8 pb-space-xl bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Top Section Title -->
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm uppercase tracking-wider font-semibold">Tài khoản &amp; Bảo mật</span>
+<span class="font-label-sm text-label-sm text-outline">Lần đổi gần nhất: 42 ngày trước</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">Đổi mật khẩu</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+      Để bảo mật tài khoản, vui lòng không chia sẻ mật khẩu của bạn cho người khác và định kỳ cập nhật mật khẩu 90 ngày/lần.
+    </p>
+</div>
+<!-- Main Grid Layout -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter items-start">
+<!-- Left / Center Column: Security Advisory + Form (Col 8) -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg">
+<!-- Security Advisory Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-md shadow-sm">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-primary/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-start gap-space-md relative z-10">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">shield_person</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Gợi ý bảo mật tài khoản FANFUN</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Sử dụng mật khẩu có ít nhất 8 ký tự, bao gồm cả chữ hoa, chữ thường, số và ký tự đặc biệt để bảo vệ tối đa dữ liệu thiết bị thông minh, lịch sử đơn hàng và chứng nhận bảo hành điện tử 36 tháng của bạn.
+            </p>
+</div>
+</div>
+</div>
+<!-- Password Change Card Form -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-sm flex flex-col gap-space-lg">
+<form class="flex flex-col gap-space-lg" id="change-password-form" onsubmit="event.preventDefault(); handlePasswordSubmit();">
+<!-- Current Password Field -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg font-bold text-on-surface flex items-center gap-1" for="current-password">
+                Mật khẩu hiện tại <span class="text-primary">*</span>
+</label>
+<a class="font-label-sm text-label-sm text-primary hover:text-primary-container font-semibold transition-colors" href="#">
+                Quên mật khẩu?
+              </a>
+</div>
+<div class="relative flex items-center">
+<input class="w-full h-12 px-space-md pr-12 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#9c3f11] transition-all" id="current-password" placeholder="Nhập mật khẩu hiện tại" required="" type="password" value="FanfunSecure2023!"/>
+<button aria-label="Hiển thị hoặc ẩn mật khẩu" class="absolute right-3 p-1.5 rounded-full text-outline hover:text-on-surface transition-colors flex items-center justify-center" onclick="togglePasswordVisibility('current-password', this)" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- New Password Field -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg font-bold text-on-surface flex items-center gap-1" for="new-password">
+              Mật khẩu mới <span class="text-primary">*</span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 px-space-md pr-12 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#9c3f11] transition-all" id="new-password" oninput="evaluatePasswordStrength(this.value)" placeholder="Tạo mật khẩu mới an toàn" required="" type="password" value="LivingSmart#2024"/>
+<button aria-label="Hiển thị hoặc ẩn mật khẩu" class="absolute right-3 p-1.5 rounded-full text-outline hover:text-on-surface transition-colors flex items-center justify-center" onclick="togglePasswordVisibility('new-password', this)" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+<!-- Password Strength Meter Bar -->
+<div class="flex flex-col gap-1.5 mt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Độ mạnh mật khẩu</span>
+<span class="font-label-sm text-label-sm font-bold text-primary" id="strength-label">Mạnh</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5 w-full h-1.5">
+<div class="h-full rounded-full bg-primary transition-all duration-300"></div>
+<div class="h-full rounded-full bg-primary transition-all duration-300"></div>
+<div class="h-full rounded-full bg-primary transition-all duration-300"></div>
+<div class="h-full rounded-full bg-primary/80 transition-all duration-300"></div>
+</div>
+</div>
+</div>
+<!-- Password Requirements Checklist -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold mb-1">Quy chuẩn mật khẩu FANFUN:</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-space-md">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium">Ít nhất 8 ký tự</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium">Chữ hoa &amp; chữ thường</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium">Có ít nhất 1 chữ số</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium">Ký tự đặc biệt (@, #, $, %...)</span>
+</div>
+</div>
+</div>
+<!-- Confirm New Password Field -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg font-bold text-on-surface flex items-center gap-1" for="confirm-password">
+              Xác nhận mật khẩu mới <span class="text-primary">*</span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 px-space-md pr-12 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#9c3f11] transition-all" id="confirm-password" oninput="verifyMatch()" placeholder="Nhập lại mật khẩu mới" required="" type="password" value="LivingSmart#2024"/>
+<button aria-label="Hiển thị hoặc ẩn mật khẩu" class="absolute right-3 p-1.5 rounded-full text-outline hover:text-on-surface transition-colors flex items-center justify-center" onclick="togglePasswordVisibility('confirm-password', this)" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+<!-- Match Status Verification Message -->
+<div class="flex items-center gap-1.5 mt-0.5 text-primary" id="match-status">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm font-semibold">Mật khẩu trùng khớp</span>
+</div>
+</div>
+<!-- Simulation Success Alert (Appears after submission or toggleable) -->
+<div class="hidden p-space-md rounded-xl bg-surface-container-high transition-all" id="success-notification">
+<div class="flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary text-[24px]">task_alt</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Đổi mật khẩu thành công!</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Mật khẩu tài khoản đã được đồng bộ mới. Bạn sẽ cần đăng nhập lại trên các thiết bị khác hoặc ứng dụng di động FANFUN.
+                </p>
+</div>
+</div>
+</div>
+<!-- Buttons & Navigation -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-sm">
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-secondary hover:text-on-surface transition-colors py-2" data-path="ho-so-ca-nhan" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Quay lại Hồ sơ cá nhân</span>
+</a>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="px-space-lg py-3 rounded-xl bg-surface-container-low text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-colors" onclick="resetFormFields()" type="button">
+                Hủy
+              </button>
+<button class="px-space-xl py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-md hover:bg-primary-container active:scale-[0.99] transition-all flex items-center justify-center gap-space-xs" id="btn-submit" type="submit">
+<span class="material-symbols-outlined text-[20px]">lock_reset</span>
+<span>Đổi mật khẩu</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<!-- Right Sidebar Column: Active Sessions & Eco-System Guarantee (Col 4) -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg">
+<!-- Device & Session Info Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">devices</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Phiên đăng nhập &amp; Thiết bị</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">Hiện tại</span>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">laptop_mac</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Chrome trên macOS</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
+              Hà Nội, Việt Nam • 118.70.198.xxx
+            </span>
+<span class="font-label-sm text-label-sm text-outline mt-1">Đang hoạt động trên trình duyệt này</span>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-low opacity-75">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">smartphone</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">FANFUN App (iPhone 15)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+              TP. Hồ Chí Minh • 3 giờ trước
+            </span>
+<span class="font-label-sm text-label-sm text-outline mt-1">Ứng dụng Smart Living</span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-outline leading-relaxed pt-1">
+          Sau khi đổi mật khẩu mới, bạn sẽ được tự động giữ đăng nhập trên thiết bị hiện tại và có thể yêu cầu đăng xuất từ xa ở các phiên khác.
+        </p>
+</div>
+<!-- Quick Security Metric Card -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Mức độ an toàn tài khoản</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="relative w-16 h-16 shrink-0 flex items-center justify-center">
+<!-- Inline SVG Gauge (92%) -->
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="92, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-headline-sm text-label-lg font-bold text-on-surface">92%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Rất an toàn</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tài khoản được bảo vệ bởi chứng thực mã hóa dữ liệu quạt trần 3-in-1.</span>
+</div>
+</div>
+</div>
+<!-- Smart Living Support Widget -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Cần hỗ trợ gấp?</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">1900 6868 (24/7)</span>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Miễn cước</span>
+</div>
+</div>
+</div>
+<script>
+    function togglePasswordVisibility(fieldId, btnElement) {
+      const input = document.getElementById(fieldId);
+      const icon = btnElement.querySelector('.material-symbols-outlined');
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.textContent = 'visibility_off';
+      } else {
+        input.type = 'password';
+        icon.textContent = 'visibility';
+      }
+    }
+
+    function evaluatePasswordStrength(val) {
+      const label = document.getElementById('strength-label');
+      if (val.length === 0) {
+        label.textContent = 'Chưa nhập';
+        label.className = 'font-label-sm text-label-sm font-bold text-outline';
+        return;
+      }
+      if (val.length < 8) {
+        label.textContent = 'Yếu';
+        label.className = 'font-label-sm text-label-sm font-bold text-error';
+      } else if (val.length < 12) {
+        label.textContent = 'Trung bình';
+        label.className = 'font-label-sm text-label-sm font-bold text-tertiary';
+      } else {
+        label.textContent = 'Mạnh';
+        label.className = 'font-label-sm text-label-sm font-bold text-primary';
+      }
+      verifyMatch();
+    }
+
+    function verifyMatch() {
+      const p1 = document.getElementById('new-password').value;
+      const p2 = document.getElementById('confirm-password').value;
+      const matchElem = document.getElementById('match-status');
+      
+      if (!p2) {
+        matchElem.classList.add('hidden');
+        return;
+      }
+      matchElem.classList.remove('hidden');
+      if (p1 === p2) {
+        matchElem.className = 'flex items-center gap-1.5 mt-0.5 text-primary';
+        matchElem.innerHTML = '<span class="material-symbols-outlined text-[16px]">verified</span><span class="font-label-sm text-label-sm font-semibold">Mật khẩu trùng khớp</span>';
+      } else {
+        matchElem.className = 'flex items-center gap-1.5 mt-0.5 text-error';
+        matchElem.innerHTML = '<span class="material-symbols-outlined text-[16px]">error</span><span class="font-label-sm text-label-sm font-semibold">Mật khẩu xác nhận chưa khớp</span>';
+      }
+    }
+
+    function handlePasswordSubmit() {
+      const notif = document.getElementById('success-notification');
+      const btn = document.getElementById('btn-submit');
+      
+      btn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>Đang xử lý...</span>';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">lock_reset</span><span>Đổi mật khẩu</span>';
+        notif.classList.remove('hidden');
+        notif.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 700);
+    }
+
+    function resetFormFields() {
+      document.getElementById('change-password-form').reset();
+      document.getElementById('success-notification').classList.add('hidden');
+      document.getElementById('match-status').classList.add('hidden');
+      const label = document.getElementById('strength-label');
+      label.textContent = 'Chưa nhập';
+      label.className = 'font-label-sm text-label-sm font-bold text-outline';
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="w-full px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold text-primary">FANFUN</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider pl-1">Smart Living</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Thoải mái quanh năm, thông minh mỗi ngày. Tiên phong giải pháp làm mát, thanh lọc không khí và chiếu sáng thông minh cho tổ ấm Việt Nam.</p><p class="font-label-sm text-label-sm text-outline mt-space-sm">© 2024 FANFUN Việt Nam. All rights reserved.</p></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg font-bold text-on-surface">Sản phẩm</span><div class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="san-pham-he-sinh-thai" href="#">Quạt Trần Thông Minh 3-in-1</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="san-pham-he-sinh-thai" href="#">Quạt Đứng Tuần Hoàn Khí</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="san-pham-he-sinh-thai" href="#">Lõi Lọc HEPA H13 Khử Khuẩn</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="san-pham-he-sinh-thai" href="#">Phụ Kiện &amp; Cảm Biến Môi Trường</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg font-bold text-on-surface">Hỗ trợ khách hàng</span><div class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="dich-vu-lap-dat-bao-hanh" href="#">Chính sách lắp đặt chuẩn 4.0</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="dich-vu-lap-dat-bao-hanh" href="#">Bảo hành điện tử 36 tháng</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="dich-vu-lap-dat-bao-hanh" href="#">Hướng dẫn cài đặt ứng dụng FANFUN</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="cau-chuyen-thuong-hieu" href="#">Hệ thống Showroom toàn quốc</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg font-bold text-on-surface">Liên hệ &amp; Trụ sở</span><div class="flex flex-col gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary mt-0.5">location_on</span><span>Tòa nhà FANFUN Living, Số 88 Đường Nguyễn Cơ Thạch, TP. Thủ Đức, TP. Hồ Chí Minh</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">call</span><span>Hotline hỗ trợ: 1900 6868</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">mail</span><span>cskh@fanfun.vn</span></div></div></div></div></footer></div></body></html>

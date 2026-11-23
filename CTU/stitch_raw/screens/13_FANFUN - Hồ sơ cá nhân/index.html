@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-primary":"#ffb598","on-background":"#1f1b14","background":"#fff8f2","on-secondary-fixed":"#1b1c1c","surface-dim":"#e2d9ce","surface-tint":"#9f4113","on-tertiary-container":"#fffbff","inverse-surface":"#343028","on-error":"#ffffff","on-tertiary-fixed-variant":"#49473f","error-container":"#ffdad6","error":"#ba1a1a","on-secondary":"#ffffff","secondary-fixed":"#e4e2e1","on-tertiary-fixed":"#1d1b15","surface-bright":"#fff8f2","surface":"#fff8f2","on-secondary-container":"#656464","surface-variant":"#eae1d6","outline-variant":"#ddc1b6","inverse-on-surface":"#f9efe4","tertiary-fixed":"#e8e2d7","on-primary-fixed-variant":"#7e2c00","secondary-fixed-dim":"#c8c6c5","secondary-container":"#e4e2e1","primary-fixed":"#ffdbce","on-error-container":"#93000a","surface-container-high":"#f0e7db","outline":"#8a7269","tertiary":"#5f5c53","on-surface":"#1f1b14","tertiary-container":"#78746b","surface-container-low":"#fcf2e7","on-primary-fixed":"#370e00","on-tertiary":"#ffffff","primary-container":"#bc5728","primary-fixed-dim":"#ffb598","on-primary":"#ffffff","primary":"#9c3f11","on-primary-container":"#fffbff","surface-container":"#f6ede1","surface-container-lowest":"#ffffff","surface-container-highest":"#eae1d6","tertiary-fixed-dim":"#cbc6bc","on-surface-variant":"#56423b","on-secondary-fixed-variant":"#474746","secondary":"#5f5e5e"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin":"3rem","space-md":"1rem","gutter":"1.5rem","gutter-mobile":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xl":"2.5rem","space-xs":"0.25rem","margin-mobile":"1.25rem"},fontFamily:{"display":["Be Vietnam Pro"],"label-lg":["Be Vietnam Pro"],"body-sm":["Be Vietnam Pro"],"headline-lg-mobile":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"headline-sm":["Be Vietnam Pro"],"display-mobile":["Be Vietnam Pro"],"label-md":["Be Vietnam Pro"],"headline-lg":["Be Vietnam Pro"],"body-md":["Be Vietnam Pro"],"label-sm":["Be Vietnam Pro"],"body-lg":["Be Vietnam Pro"]},fontSize:{"display":["3.5rem",{lineHeight:"4.25rem",letterSpacing:"-0.02em",fontWeight:"700"}],"label-lg":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.02em",fontWeight:"600"}],"body-sm":["0.875rem",{lineHeight:"1.25rem",letterSpacing:"0.005em",fontWeight:"400"}],"headline-lg-mobile":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-md":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-sm":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"0",fontWeight:"600"}],"display-mobile":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.015em",fontWeight:"700"}],"label-md":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.04em",fontWeight:"600"}],"headline-lg":["2.25rem",{lineHeight:"2.75rem",letterSpacing:"-0.015em",fontWeight:"600"}],"body-md":["1rem",{lineHeight:"1.5rem",letterSpacing:"0",fontWeight:"400"}],"label-sm":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.05em",fontWeight:"500"}],"body-lg":["1.125rem",{lineHeight:"1.75rem",letterSpacing:"0",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-8 flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs" href="#"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary">FANFUN</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider pl-1">Smart Living</span></a><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-bold"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="trang-chu" href="#">Trang chủ</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="san-pham-he-sinh-thai" href="#">Sản phẩm &amp; Hệ sinh thái</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="cong-nghe-3-in-1" href="#">Công nghệ 3-in-1</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="dich-vu-lap-dat-bao-hanh" href="#">Dịch vụ lắp đặt &amp; Bảo hành</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="cau-chuyen-thuong-hieu" href="#">Câu chuyện thương hiệu</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container-low px-space-md py-space-xs rounded-full shadow-[0_1px_8px_rgba(0,0,0,0.04)] w-60"><span class="material-symbols-outlined text-outline text-[20px] mr-space-xs">search</span><input class="bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline w-full" placeholder="Tìm kiếm quạt, bộ lọc..." type="text"/></div><div class="hidden lg:flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-primary text-[20px]">support_agent</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-outline leading-tight">Hotline</span><span class="font-label-lg text-label-lg font-bold text-on-surface leading-tight">1900 6868</span></div></div><div class="flex items-center gap-space-sm"><a class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-sm rounded-full text-on-surface hover:bg-surface-container-high transition-colors" data-path="ho-so-ca-nhan" href="#"><span class="material-symbols-outlined text-[18px] text-primary">person</span><span class="font-label-lg text-label-lg">Tài khoản</span></a><a class="relative p-space-sm rounded-full text-on-surface hover:bg-surface-container-low transition-colors" data-path="don-hang-cua-toi" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute top-1 right-1 w-4 h-4 bg-primary text-on-primary font-label-sm text-[10px] rounded-full flex items-center justify-center font-bold">2</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-20 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col p-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md pb-space-lg mb-space-lg"><div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-[0_1px_8px_rgba(0,0,0,0.04)]">NV</div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-label-lg font-bold text-on-surface truncate">Nguyễn Văn An</span><span class="inline-flex items-center gap-space-xs mt-space-xs self-start px-space-sm py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[14px]">workspace_premium</span>Thành viên Gold</span></div></div><nav class="flex flex-col gap-space-xs flex-1" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-xl"><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ho-so-ca-nhan" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Hồ sơ cá nhân</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="doi-mat-khau" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">lock_reset</span><span class="font-label-lg text-label-lg">Đổi mật khẩu</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="don-hang-cua-toi" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span class="font-label-lg text-label-lg">Đơn hàng của tôi</span></div><span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">4</span></a></nav><div class="pt-space-md"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-secondary hover:bg-error-container hover:text-on-error-container transition-all" data-path="dang-xuat" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-label-lg text-label-lg">Đăng xuất</span></a></div></aside><div class="pl-72"><div class="pt-20 px-8 py-space-md bg-surface"><nav class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="trang-chu" href="#">Trang chủ</a><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-on-surface font-medium">Tài khoản của tôi</span></nav></div><main class="relative w-full px-8 pb-space-xl bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full gap-space-lg">
+<!-- Toast / Ambient Notification -->
+<div class="transition-all duration-300 transform opacity-0 -translate-y-2 pointer-events-none hidden bg-surface-container-highest px-space-md py-space-sm rounded-xl shadow-md flex items-center justify-between gap-space-md" id="saveToast">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+<span class="font-label-lg text-label-lg text-on-surface">Đã cập nhật hồ sơ cá nhân thành công! Dữ liệu đã đồng bộ sang FANFUN Care.</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="dismissToast()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Header & Meta Level -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-primary/5 pointer-events-none blur-2xl"></div>
+<div class="flex flex-col gap-space-xs z-10">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Tài khoản &amp; Bảo hành</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cập nhật lần cuối: 2 giờ trước</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Hồ sơ của tôi</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        Quản lý thông tin hồ sơ để bảo mật tài khoản và đồng bộ quyền lợi bảo hành chính hãng FANFUN Care.
+      </p>
+</div>
+<!-- Quick Meta Chips -->
+<div class="flex flex-wrap lg:flex-col items-start lg:items-end gap-space-sm z-10">
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-fixed text-on-primary-fixed-variant shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="font-label-lg text-label-lg font-bold">Thành viên Gold</span>
+<span class="text-on-primary-fixed-variant/60 font-body-sm text-body-sm">|</span>
+<span class="font-label-md text-label-md font-semibold">1.029 pts</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+<span class="font-label-md text-label-md font-medium">Đã xác thực số điện thoại &amp; email</span>
+</div>
+</div>
+</div>
+<!-- Smart Sync Banner -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start sm:items-center gap-space-md shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs w-full">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="font-label-lg text-label-lg text-on-surface">Lưu ý quyền lợi:</strong> Thông tin hồ sơ được sử dụng để tự động điền khi đặt hàng và kích hoạt bảo hành điện tử 5 năm cho các thiết bị FANFUN Smart Living.
+      </p>
+<span class="shrink-0 px-space-sm py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold tracking-wide">
+        FANFUN Care 5Y
+      </span>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Profile & Security Quick Status (Left Col / 4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Avatar Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col items-center text-center relative">
+<div class="relative group my-space-xs">
+<div class="w-28 h-28 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-display text-display shadow-md">
+            NV
+          </div>
+<button class="absolute bottom-0 right-0 w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center shadow hover:bg-primary-container transition-transform active:scale-95" title="Thay đổi ảnh đại diện" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-space-sm">Nguyễn Văn An</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Khách hàng thành viên từ 2022</span>
+<div class="w-full mt-space-md pt-space-md flex flex-col gap-space-xs bg-surface-container-low p-space-sm rounded-lg">
+<button class="w-full py-space-xs px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high font-label-md text-label-md text-on-surface transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">upload</span>
+<span>Thay đổi ảnh đại diện</span>
+</button>
+<span class="font-label-sm text-label-sm text-outline mt-1">Dung lượng tối đa 2MB • Định dạng JPG/PNG</span>
+</div>
+</div>
+<!-- Quick Navigation & Security Summary Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">shield</span>
+<span class="font-headline-sm text-label-lg font-bold text-on-surface">Bảo mật &amp; Hoạt động</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Trạng thái tài khoản</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+              Tốt (90%)
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Mật khẩu đã được cập nhật an toàn 30 ngày trước.
+          </p>
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-primary font-bold hover:underline pt-space-xs self-start" data-path="doi-mat-khau" href="#">
+<span>Đổi mật khẩu</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-high/40 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">package_2</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Đơn hàng của tôi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hiện có 4 thiết bị gắn bảo hành</span>
+</div>
+</div>
+<a class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors" data-path="don-hang-cua-toi" href="#" title="Xem đơn hàng">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- State Simulation Controls for Preview -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Mô phỏng trạng thái giao diện</span>
+<div class="flex flex-wrap gap-space-xs mt-1">
+<button class="px-space-sm py-1 rounded bg-surface-container-highest hover:bg-primary-fixed font-label-sm text-label-sm text-on-surface transition-colors" onclick="triggerToast()" type="button">
+            Thành công
+          </button>
+<button class="px-space-sm py-1 rounded bg-surface-container-highest hover:bg-error-container hover:text-on-error-container font-label-sm text-label-sm text-on-surface transition-colors" onclick="toggleErrorState()" type="button">
+            Báo lỗi
+          </button>
+<button class="px-space-sm py-1 rounded bg-surface-container-highest hover:bg-surface-variant font-label-sm text-label-sm text-on-surface transition-colors" onclick="simulateLoading()" type="button">
+            Đang xử lý
+          </button>
+</div>
+</div>
+</div>
+<!-- Personal Information Form (Right Col / 8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-lg sm:p-space-xl rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Thông tin chi tiết</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vui lòng cập nhật chính xác để nhân viên kỹ thuật liên hệ bàn giao và bảo dưỡng máy.</p>
+</div>
+<span class="font-label-sm text-label-sm text-outline hidden sm:inline-block">(* Trường bắt buộc)</span>
+</div>
+<form class="flex flex-col gap-space-lg" id="profileForm" onsubmit="event.preventDefault(); triggerToast();">
+<!-- Full Name -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface" for="fullName">
+            Họ và tên <span class="text-primary">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-outline absolute left-space-md text-[20px] pointer-events-none">person</span>
+<input class="w-full h-12 pl-11 pr-11 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="fullName" name="fullName" required="" type="text" value="Nguyễn Văn An"/>
+<span class="material-symbols-outlined text-primary absolute right-space-md text-[20px]">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-error hidden" id="nameError">Họ và tên không được để trống hoặc chứa ký tự đặc biệt.</p>
+</div>
+<!-- Email & Phone in 2-col Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Email Field -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface" for="email">
+                Địa chỉ Email <span class="text-primary">*</span>
+</label>
+<button class="font-label-sm text-label-sm text-primary hover:underline font-semibold" type="button">Thay đổi</button>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-outline absolute left-space-md text-[20px] pointer-events-none">mail</span>
+<input class="w-full h-12 pl-11 pr-28 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="email" name="email" required="" type="email" value="nguyen.van@fanfun.vn"/>
+<span class="absolute right-space-sm px-space-xs py-0.5 bg-primary-fixed text-on-primary-fixed-variant rounded font-label-sm text-[11px] font-bold">
+                Đã xác thực
+              </span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Dùng để nhận hóa đơn điện tử VAT và thông báo FANFUN</span>
+</div>
+<!-- Phone Number Field -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface" for="phone">
+                Số điện thoại liên hệ <span class="text-primary">*</span>
+</label>
+<button class="font-label-sm text-label-sm text-primary hover:underline font-semibold" type="button">Cập nhật</button>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-outline absolute left-space-md text-[20px] pointer-events-none">call</span>
+<input class="w-full h-12 pl-11 pr-28 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all" id="phone" name="phone" required="" type="tel" value="0912 345 678"/>
+<span class="absolute right-space-sm px-space-xs py-0.5 bg-primary-fixed text-on-primary-fixed-variant rounded font-label-sm text-[11px] font-bold">
+                Đã xác thực
+              </span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Liên hệ hẹn lịch bảo trì và kích hoạt thiết bị</span>
+</div>
+</div>
+<!-- Date of Birth Selection -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface">Ngày sinh</label>
+<div class="grid grid-cols-3 gap-space-md">
+<!-- Day -->
+<div class="relative">
+<select class="w-full h-12 px-space-md appearance-none bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all cursor-pointer">
+<option selected="" value="15">Ngày 15</option>
+<option value="16">Ngày 16</option>
+<option value="17">Ngày 17</option>
+<option value="18">Ngày 18</option>
+</select>
+<span class="material-symbols-outlined text-outline absolute right-space-md top-1/2 -translate-y-1/2 pointer-events-none text-[20px]">expand_more</span>
+</div>
+<!-- Month -->
+<div class="relative">
+<select class="w-full h-12 px-space-md appearance-none bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all cursor-pointer">
+<option selected="" value="08">Tháng 08</option>
+<option value="09">Tháng 09</option>
+<option value="10">Tháng 10</option>
+<option value="11">Tháng 11</option>
+</select>
+<span class="material-symbols-outlined text-outline absolute right-space-md top-1/2 -translate-y-1/2 pointer-events-none text-[20px]">expand_more</span>
+</div>
+<!-- Year -->
+<div class="relative">
+<select class="w-full h-12 px-space-md appearance-none bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all cursor-pointer">
+<option selected="" value="1990">Năm 1990</option>
+<option value="1991">Năm 1991</option>
+<option value="1992">Năm 1992</option>
+<option value="1993">Năm 1993</option>
+</select>
+<span class="material-symbols-outlined text-outline absolute right-space-md top-1/2 -translate-y-1/2 pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Nhận voucher tri ân giảm 15% vào dịp sinh nhật mỗi năm</span>
+</div>
+<!-- Gender Selection -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface">Giới tính</label>
+<div class="flex items-center gap-space-lg pt-1">
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input checked="" class="hidden peer" name="gender" type="radio" value="nam"/>
+<div class="w-5 h-5 rounded-full bg-surface-container flex items-center justify-center peer-checked:bg-primary transition-colors">
+<div class="w-2 h-2 rounded-full bg-white opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+</div>
+<span class="font-body-md text-body-md text-on-surface peer-checked:font-bold">Nam</span>
+</label>
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="hidden peer" name="gender" type="radio" value="nu"/>
+<div class="w-5 h-5 rounded-full bg-surface-container flex items-center justify-center peer-checked:bg-primary transition-colors">
+<div class="w-2 h-2 rounded-full bg-white opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+</div>
+<span class="font-body-md text-body-md text-on-surface peer-checked:font-bold">Nữ</span>
+</label>
+<label class="flex items-center gap-space-xs cursor-pointer select-none">
+<input class="hidden peer" name="gender" type="radio" value="khac"/>
+<div class="w-5 h-5 rounded-full bg-surface-container flex items-center justify-center peer-checked:bg-primary transition-colors">
+<div class="w-2 h-2 rounded-full bg-white opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+</div>
+<span class="font-body-md text-body-md text-on-surface peer-checked:font-bold">Khác</span>
+</label>
+</div>
+</div>
+<!-- Ecosystem Sync Notice -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">sync</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Đồng bộ ứng dụng di động FANFUN Home</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Mọi chỉnh sửa tại đây sẽ tức thì đồng bộ hóa với hệ điều hành quạt trần 3-in-1, ứng dụng di động và hệ thống kích hoạt thợ kỹ thuật số FANFUN Service.
+            </span>
+</div>
+</div>
+<!-- Form Actions -->
+<div class="flex items-center justify-end gap-space-md pt-space-md">
+<button class="px-space-lg py-space-sm rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="resetFormState()" type="reset">
+            Hủy
+          </button>
+<button class="px-space-xl py-space-sm rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow hover:bg-primary-container active:scale-95 transition-all flex items-center gap-space-xs" id="submitBtn" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span id="btnText">Lưu thay đổi</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>
+  function triggerToast() {
+    const toast = document.getElementById('saveToast');
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.remove('opacity-0', '-translate-y-2');
+      toast.classList.add('opacity-100', 'translate-y-0');
+    }, 20);
+
+    setTimeout(() => {
+      dismissToast();
+    }, 4000);
+  }
+
+  function dismissToast() {
+    const toast = document.getElementById('saveToast');
+    toast.classList.add('opacity-0', '-translate-y-2');
+    toast.classList.remove('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 300);
+  }
+
+  function toggleErrorState() {
+    const nameInput = document.getElementById('fullName');
+    const nameError = document.getElementById('nameError');
+    if (nameError.classList.contains('hidden')) {
+      nameError.classList.remove('hidden');
+      nameInput.classList.add('ring-2', 'ring-error', 'bg-error-container/20');
+      nameInput.value = '';
+    } else {
+      nameError.classList.add('hidden');
+      nameInput.classList.remove('ring-2', 'ring-error', 'bg-error-container/20');
+      nameInput.value = 'Nguyễn Văn An';
+    }
+  }
+
+  function simulateLoading() {
+    const btn = document.getElementById('submitBtn');
+    const text = document.getElementById('btnText');
+    btn.disabled = true;
+    text.innerText = 'Đang xử lý...';
+    btn.classList.add('opacity-70');
+
+    setTimeout(() => {
+      btn.disabled = false;
+      text.innerText = 'Lưu thay đổi';
+      btn.classList.remove('opacity-70');
+      triggerToast();
+    }, 1200);
+  }
+
+  function resetFormState() {
+    const nameError = document.getElementById('nameError');
+    const nameInput = document.getElementById('fullName');
+    nameError.classList.add('hidden');
+    nameInput.classList.remove('ring-2', 'ring-error', 'bg-error-container/20');
+    nameInput.value = 'Nguyễn Văn An';
+  }
+</script></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="w-full px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold text-primary">FANFUN</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider pl-1">Smart Living</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Thoải mái quanh năm, thông minh mỗi ngày. Tiên phong giải pháp làm mát, thanh lọc không khí và chiếu sáng thông minh cho tổ ấm Việt Nam.</p><p class="font-label-sm text-label-sm text-outline mt-space-sm">© 2024 FANFUN Việt Nam. All rights reserved.</p></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg font-bold text-on-surface">Sản phẩm</span><div class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="san-pham-he-sinh-thai" href="#">Quạt Trần Thông Minh 3-in-1</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="san-pham-he-sinh-thai" href="#">Quạt Đứng Tuần Hoàn Khí</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="san-pham-he-sinh-thai" href="#">Lõi Lọc HEPA H13 Khử Khuẩn</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="san-pham-he-sinh-thai" href="#">Phụ Kiện &amp; Cảm Biến Môi Trường</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg font-bold text-on-surface">Hỗ trợ khách hàng</span><div class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="dich-vu-lap-dat-bao-hanh" href="#">Chính sách lắp đặt chuẩn 4.0</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="dich-vu-lap-dat-bao-hanh" href="#">Bảo hành điện tử 36 tháng</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="dich-vu-lap-dat-bao-hanh" href="#">Hướng dẫn cài đặt ứng dụng FANFUN</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="cau-chuyen-thuong-hieu" href="#">Hệ thống Showroom toàn quốc</a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg font-bold text-on-surface">Liên hệ &amp; Trụ sở</span><div class="flex flex-col gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary mt-0.5">location_on</span><span>Tòa nhà FANFUN Living, Số 88 Đường Nguyễn Cơ Thạch, TP. Thủ Đức, TP. Hồ Chí Minh</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">call</span><span>Hotline hỗ trợ: 1900 6868</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">mail</span><span>cskh@fanfun.vn</span></div></div></div></div></footer></div></body></html>

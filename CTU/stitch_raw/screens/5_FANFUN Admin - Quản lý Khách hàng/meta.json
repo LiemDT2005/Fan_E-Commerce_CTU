@@ -1,0 +1,18 @@
+{
+  "name": "projects/5634229459885586050/screens/fd0d1771fe954a9085ad5c465123e658",
+  "title": "FANFUN Admin - Quản lý Khách hàng",
+  "screenshot": {
+    "name": "projects/9052313486425226484/screens/fd0d1771fe954a9085ad5c465123e658/fileEntries/screenshot",
+    "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/screenshot_0006604fd95d3486022d6bb1051f5c93:download",
+    "mimeType": "image/png"
+  },
+  "htmlCode": {
+    "name": "projects/9052313486425226484/screens/fd0d1771fe954a9085ad5c465123e658/fileEntries/html",
+    "downloadUrl": "https://stitch.googleapis.com/v1/projects/5634229459885586050/files/fd0d1771fe954a9085ad5c465123e658:download",
+    "mimeType": "text/html"
+  },
+  "width": "2560",
+  "height": "2656",
+  "deviceType": "DESKTOP",
+  "screenType": "DESIGN"
+}

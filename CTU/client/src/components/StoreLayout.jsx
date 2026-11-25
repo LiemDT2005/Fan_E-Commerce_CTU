@@ -7,7 +7,7 @@ export default function StoreLayout() {
   return (
     <div className="min-h-screen flex flex-col bg-surface text-on-surface">
       <Header />
-      <main className="flex-1 pt-24">
+      <main className="flex-1">
         <Outlet />
       </main>
       <Footer />

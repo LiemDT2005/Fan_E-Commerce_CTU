@@ -1,0 +1,57 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: fanfun-postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgrespassword
+      POSTGRES_DB: fanfun
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - fanfun-network
+
+  backend:
+    build:
+      context: ./CTU/server
+      dockerfile: Dockerfile
+    container_name: fanfun-backend
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./CTU/server/.env
+    environment:
+      - PORT=5000
+      - DATABASE_URL=postgres://postgres:postgrespassword@postgres:5432/fanfun
+      - CLOUDINARY_CLOUD_NAME=dpfy23tda
+      - CLOUDINARY_API_KEY=953398772632599
+      - CLOUDINARY_API_SECRET=t1DWOpDR-k9AOKH0W8xVDKsOVzY
+    depends_on:
+      - postgres
+    networks:
+      - fanfun-network
+
+  frontend:
+    build:
+      context: ./CTU/client
+      dockerfile: Dockerfile
+    container_name: fanfun-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - fanfun-network
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  fanfun-network:
+    driver: bridge

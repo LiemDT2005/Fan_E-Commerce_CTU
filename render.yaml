@@ -1,0 +1,42 @@
+databases:
+  - name: fanfun-db
+    plan: free
+    databaseName: fanfun
+    user: fanfun_user
+
+services:
+  # 1. Backend REST API Service
+  - type: web
+    name: fanfun-backend
+    runtime: node
+    rootDir: CTU/server
+    plan: free
+    buildCommand: npm install
+    startCommand: node src/server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: DATABASE_URL
+        fromDatabase:
+          name: fanfun-db
+          property: connectionString
+      - key: CLOUDINARY_CLOUD_NAME
+        value: dpfy23tda
+      - key: CLOUDINARY_API_KEY
+        value: 953398772632599
+      - key: CLOUDINARY_API_SECRET
+        value: t1DWOpDR-k9AOKH0W8xVDKsOVzY
+
+  # 2. Frontend React Client (Static Site)
+  - type: web
+    name: fanfun-frontend
+    runtime: static
+    rootDir: CTU/client
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

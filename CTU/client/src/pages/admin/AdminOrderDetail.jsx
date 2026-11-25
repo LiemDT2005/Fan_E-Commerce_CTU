@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { ChevronRight, CheckCircle2, QrCode, Truck } from 'lucide-react';
 
 export default function AdminOrderDetail() {
   const { id } = useParams();
@@ -7,6 +8,7 @@ export default function AdminOrderDetail() {
   const [loading, setLoading] = useState(true);
   const [technician, setTechnician] = useState('');
   const [status, setStatus] = useState('processing');
+  const [paymentStatus, setPaymentStatus] = useState('unpaid');
   const [savedMsg, setSavedMsg] = useState(false);
 
   useEffect(() => {
@@ -18,6 +20,7 @@ export default function AdminOrderDetail() {
           setOrder(d.data);
           setTechnician(d.data.technician || '');
           setStatus(d.data.status || 'processing');
+          setPaymentStatus(d.data.paymentStatus || 'unpaid');
         }
         setLoading(false);
       });
@@ -25,15 +28,16 @@ export default function AdminOrderDetail() {
 
   const handleSave = (e) => {
     e.preventDefault();
-    let statusText = 'Chờ duyệt';
-    if (status === 'processing') statusText = 'Đang điều phối lắp đặt';
-    if (status === 'delivering') statusText = 'Đang giao & lắp';
-    if (status === 'completed') statusText = 'Đã hoàn thành lắp đặt';
+    let statusText = 'Pending Confirmation';
+    if (status === 'processing') statusText = 'In Progress & Dispatching';
+    if (status === 'delivering') statusText = 'Out for Installation';
+    if (status === 'completed') statusText = 'Completed';
+    if (status === 'cancelled') statusText = 'Order Cancelled';
 
     fetch(`/api/orders/${id}/status`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ status, statusText, technician })
+      body: JSON.stringify({ status, statusText, technician, paymentStatus })
     })
       .then(r => r.json())
       .then(d => {
@@ -45,34 +49,34 @@ export default function AdminOrderDetail() {
       });
   };
 
-  if (loading) return <div className="py-20 text-center text-xs font-semibold">Đang tải đơn hàng...</div>;
-  if (!order) return <div className="py-20 text-center">Không tìm thấy đơn hàng.</div>;
+  if (loading) return <div className="py-20 text-center text-xs font-semibold">Loading order...</div>;
+  if (!order) return <div className="py-20 text-center">Order not found.</div>;
 
   return (
     <div className="space-y-6 max-w-[1200px] mx-auto w-full">
-      <div className="flex items-center gap-2 text-xs text-on-surface-variant font-medium">
-        <Link to="/admin" className="hover:text-primary">Bảng điều khiển</Link>
-        <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-        <Link to="/admin/orders" className="hover:text-primary">Quản lý đơn hàng</Link>
-        <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-        <span className="text-primary font-bold">Chi tiết đơn hàng #{order.id}</span>
+      <div className="flex items-center gap-1.5 text-xs text-on-surface-variant font-medium">
+        <Link to="/admin" className="hover:text-primary transition-colors">Dashboard</Link>
+        <ChevronRight size={13} strokeWidth={1.75} />
+        <Link to="/admin/orders" className="hover:text-primary transition-colors">Orders</Link>
+        <ChevronRight size={13} strokeWidth={1.75} />
+        <span className="text-primary font-semibold">Order #{order.id} Details</span>
       </div>
 
       <div className="flex items-center justify-between pb-4 border-b border-outline-variant/20">
         <div>
           <h1 className="text-3xl font-extrabold text-on-surface tracking-tight">
-            Quản Trị Đơn Hàng #{order.id}
+            Order Management #{order.id}
           </h1>
           <p className="text-xs text-on-surface-variant mt-1">
-            Khách hàng: <strong className="text-on-surface">{order.customerName}</strong> • Đặt ngày: {new Date(order.createdAt).toLocaleString('vi-VN')}
+            Customer: <strong className="text-on-surface">{order.customerName}</strong> • Ordered: {new Date(order.createdAt).toLocaleString('en-US')}
           </p>
         </div>
       </div>
 
       {savedMsg && (
-        <div className="p-4 rounded-2xl bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center gap-2">
-          <span className="material-symbols-outlined text-base">check_circle</span>
-          Đã cập nhật trạng thái đơn hàng và phân bổ kỹ thuật viên thành công!
+        <div className="p-4 rounded-xl bg-emerald-100 text-emerald-800 text-xs font-semibold flex items-center gap-2">
+          <CheckCircle2 size={16} strokeWidth={1.75} />
+          Order status and technician assignment updated successfully!
         </div>
       )}
 
@@ -81,7 +85,7 @@ export default function AdminOrderDetail() {
         <div className="lg:col-span-8 space-y-6">
           <div className="p-6 rounded-3xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm space-y-4">
             <h3 className="text-sm font-bold text-on-surface uppercase tracking-wider pb-2 border-b border-outline-variant/20">
-              Thiết bị trong đơn hàng
+              Ordered Equipment
             </h3>
 
             <div className="space-y-4">
@@ -92,10 +96,10 @@ export default function AdminOrderDetail() {
                     <div>
                       <span className="text-[10px] font-bold text-primary font-mono">{it.sku}</span>
                       <h4 className="font-bold text-xs text-on-surface line-clamp-1">{it.name}</h4>
-                      <span className="text-xs text-on-surface-variant">{it.price.toLocaleString('vi-VN')}đ × {it.quantity}</span>
+                      <span className="text-xs text-on-surface-variant">{it.price.toLocaleString('en-US')} VND × {it.quantity}</span>
                     </div>
                   </div>
-                  <strong className="text-sm text-on-surface">{(it.price * it.quantity).toLocaleString('vi-VN')}đ</strong>
+                  <strong className="text-sm text-on-surface">{(it.price * it.quantity).toLocaleString('en-US')} VND</strong>
                 </div>
               ))}
             </div>
@@ -103,9 +107,9 @@ export default function AdminOrderDetail() {
 
           {/* Construction Note */}
           <div className="p-6 rounded-3xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm space-y-2 text-xs">
-            <h4 className="font-bold text-on-surface">Ghi chú kết cấu thi công trần:</h4>
+            <h4 className="font-bold text-on-surface">Ceiling Structural Instructions:</h4>
             <p className="text-on-surface-variant p-3.5 rounded-xl bg-surface-container-low leading-relaxed">
-              {order.note || 'Không có ghi chú thêm.'}
+              {order.note || 'No specific instructions provided.'}
             </p>
           </div>
         </div>
@@ -114,46 +118,87 @@ export default function AdminOrderDetail() {
         <div className="lg:col-span-4 space-y-6">
           <form onSubmit={handleSave} className="p-6 rounded-3xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm space-y-4">
             <h3 className="text-sm font-bold text-on-surface uppercase tracking-wider pb-2 border-b border-outline-variant/20">
-              Điều phối thi công
+              Technical Dispatch
             </h3>
 
             <div>
-              <label className="block text-xs font-bold text-on-surface-variant mb-1">Trạng thái đơn hàng</label>
+              <label className="block text-xs font-bold text-on-surface-variant mb-1">Order Status</label>
               <select
                 value={status}
                 onChange={(e) => setStatus(e.target.value)}
                 className="w-full h-11 px-4 rounded-xl bg-surface-container-low border border-outline-variant/30 text-xs font-bold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
               >
-                <option value="pending">Chờ xác nhận</option>
-                <option value="processing">Đang điều phối lắp đặt</option>
-                <option value="delivering">Đang giao & lắp tận nơi</option>
-                <option value="completed">Đã hoàn thành lắp đặt</option>
+                <option value="pending">Pending Confirmation</option>
+                <option value="processing">In Progress & Dispatching</option>
+                <option value="delivering">Out for Installation</option>
+                <option value="completed">Completed</option>
+                <option value="cancelled">Cancelled</option>
               </select>
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-on-surface-variant mb-1">Kỹ thuật viên phụ trách</label>
+              <label className="block text-xs font-bold text-on-surface-variant mb-1">Payment Status</label>
+              <select
+                value={paymentStatus}
+                onChange={(e) => setPaymentStatus(e.target.value)}
+                className="w-full h-11 px-4 rounded-xl bg-surface-container-low border border-outline-variant/30 text-xs font-bold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
+              >
+                <option value="unpaid">⏳ Unpaid</option>
+                <option value="paid">✅ Paid</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block text-xs font-bold text-on-surface-variant mb-1">Assigned Technician</label>
               <input
                 type="text"
                 value={technician}
                 onChange={(e) => setTechnician(e.target.value)}
-                placeholder="VD: Trần Quốc Bảo (KT-04 - 0988 123 456)"
+                placeholder="e.g. David Tran (Tech Lead - +84 988 123 456)"
                 className="w-full h-11 px-4 rounded-xl bg-surface-container-low border border-outline-variant/30 text-xs text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
 
             <div className="text-xs space-y-2 pt-2 border-t border-outline-variant/20">
               <div>
-                <span className="text-on-surface-variant">Lịch hẹn:</span>
+                <span className="text-on-surface-variant">Scheduled Slot:</span>
                 <strong className="block text-on-surface mt-0.5">{order.scheduledDate} ({order.scheduledSlot})</strong>
               </div>
               <div>
-                <span className="text-on-surface-variant">Địa chỉ thi công:</span>
+                <span className="text-on-surface-variant">Installation Address:</span>
                 <strong className="block text-on-surface mt-0.5 leading-relaxed">{order.address}</strong>
               </div>
               <div>
-                <span className="text-on-surface-variant">Tổng thu tiền (COD):</span>
-                <strong className="block text-lg font-black text-primary mt-0.5">{order.total.toLocaleString('vi-VN')}đ</strong>
+                <span className="text-on-surface-variant">Payment Method:</span>
+                <strong className="block text-on-surface mt-0.5 flex items-center gap-1.5">
+                  {order.paymentMethod === 'payos' ? (
+                    <>
+                      <QrCode size={14} strokeWidth={1.75} className="text-blue-600" />
+                      QR Bank Transfer (PayOS)
+                    </>
+                  ) : (
+                    <>
+                      <Truck size={14} strokeWidth={1.75} className="text-amber-700" />
+                      Cash on Delivery (COD)
+                    </>
+                  )}
+                </strong>
+              </div>
+              <div>
+                <span className="text-on-surface-variant">Payment Status:</span>
+                <strong className="block mt-0.5">
+                  <span className={`px-2.5 py-1 rounded-lg text-[11px] font-bold ${
+                    order.paymentStatus === 'paid'
+                      ? 'bg-emerald-100 text-emerald-800'
+                      : 'bg-amber-100 text-amber-800'
+                  }`}>
+                    {order.paymentStatus === 'paid' ? '✅ Paid' : '⏳ Unpaid'}
+                  </span>
+                </strong>
+              </div>
+              <div>
+                <span className="text-on-surface-variant">Total Collection{order.paymentMethod === 'cod' ? ' (COD)' : ''}:</span>
+                <strong className="block text-lg font-black text-primary mt-0.5">{order.total.toLocaleString('en-US')} VND</strong>
               </div>
             </div>
 
@@ -161,7 +206,7 @@ export default function AdminOrderDetail() {
               type="submit"
               className="w-full py-3.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary text-xs font-bold shadow-md transition-all mt-4"
             >
-              Cập nhật điều phối
+              Update Dispatch Status
             </button>
           </form>
         </div>

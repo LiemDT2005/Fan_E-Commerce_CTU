@@ -10,18 +10,18 @@ export function CartProvider({ children }) {
         {
           id: "ff-apex-3in1",
           sku: "FAN-APEX-WALNUT",
-          name: "Quạt trần thông minh FANFUN Apex 3-in-1 (Gỗ Óc Chó)",
+          name: "FANFUN Apex 3-in-1 Smart Ceiling Fan (Walnut Wood)",
           price: 8490000,
           quantity: 1,
-          image: "https://lh3.googleusercontent.com/aida/ALJJyrAsiZaWI3R7fdCjyGjiRWTZQ1e93xWc9QEQ47Zoy5hlGrO487ZHGdDMX2aQ0wD7YzCYOCNLCFrqPdwQ0MLrStB0NPn5sMzLdCxDMm2Pk3lR-7tbMu82gpklcYK64RytVb-FuLsjBQWNBSKuaUWgCPkz476kJTVUy-zRk7Q0u5JIDP84IJAtan0RrqIA3D4tEt_nw_LetO36wFGsn5vQAcoedK_XrCLgOuw2GiKwd-Ve"
+          image: "https://res.cloudinary.com/dpfy23tda/image/upload/v1795491622/fanfun_products/ff-apex-3in1.jpg"
         },
         {
           id: "ff-filter-hepa-h13",
           sku: "ACC-HEPA-H13",
-          name: "Lõi lọc HEPA H13 đa tầng chính hãng FANFUN (Set 2 lõi)",
+          name: "FANFUN Multi-Layer HEPA H13 Filter (Set of 2)",
           price: 490000,
           quantity: 1,
-          image: "https://lh3.googleusercontent.com/aida/ALJJyrD_ae_lLPYjMCZY4HnpQLZUiTWqZ4f7Q3Hp5CGxa9PgWIdPi4kO6fM-OxuvnVpWYAg5-UyoEc3zOsSlyawbN9cnoP5bp_f9e8YqUvfEgMn71i9skHxLwhMWJBRPyUvuwOOXBpNW78I_cwAl8h0xnsmDQX7edKmwfLwMaw36fDGK-XYbSNikSfD7rGEo2hSgknSrD2BaXTviAqt2MfTn99RZO9boW3SIYjKcii6V4CUtDnAT6NxSN_M1gdM6"
+          image: "https://res.cloudinary.com/dpfy23tda/image/upload/v1795491625/fanfun_products/ff-filter-hepa-h13.jpg"
         }
       ];
     } catch {
@@ -31,7 +31,7 @@ export function CartProvider({ children }) {
 
   const [appliedVoucher, setAppliedVoucher] = useState({
     code: "FANFUN2026",
-    title: "Ưu đãi mở bán thế hệ mới",
+    title: "New Generation Launch Promo",
     discountAmount: 500000
   });
 

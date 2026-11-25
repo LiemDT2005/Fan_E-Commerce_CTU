@@ -6,15 +6,7 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(() => {
     try {
       const saved = localStorage.getItem('fanfun_user');
-      return saved ? JSON.parse(saved) : {
-        id: "cust-01",
-        name: "Nguyễn Văn An",
-        email: "nguyenvanan@gmail.com",
-        phone: "0912 345 678",
-        tier: "VIP Gold",
-        address: "Căn hộ 1806, Tòa Landmark 3, Vinhomes Central Park, TP.HCM",
-        isAdmin: true
-      };
+      return saved ? JSON.parse(saved) : null;
     } catch {
       return null;
     }

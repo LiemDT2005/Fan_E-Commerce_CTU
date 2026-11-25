@@ -1,5 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import {
+  Plus,
+  TrendingUp,
+  CreditCard,
+  Clock,
+  ShoppingBag,
+  Package,
+  Layers,
+  Users,
+  ShieldCheck,
+  ArrowRight,
+} from 'lucide-react';
 
 export default function AdminDashboard() {
   const [stats, setStats] = useState({
@@ -33,21 +45,21 @@ export default function AdminDashboard() {
       {/* Page Title & ERP sync */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <div className="flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-wider mb-1">
-            <span>Bảng Điều Khiển Hệ Thống</span>
-            <span className="w-4 h-px bg-outline-variant"></span>
-            <span className="text-on-surface-variant">Tổng quan kinh doanh & Lắp đặt</span>
+          <div className="flex items-center gap-2 text-[11px] font-semibold text-primary uppercase tracking-[0.12em] mb-1">
+            <span>Operations Dashboard</span>
+            <span className="w-4 h-px bg-outline-variant/40"></span>
+            <span className="text-on-surface-variant">Retail KPI &amp; Survey Overview</span>
           </div>
-          <h1 className="text-3xl font-extrabold text-on-surface tracking-tight">Tổng Quan Bán Hàng</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold text-on-surface tracking-tight">Business Overview</h1>
         </div>
 
         <div className="flex items-center gap-3">
           <Link
             to="/admin/products/new"
-            className="px-4 py-2.5 rounded-xl bg-primary hover:bg-primary-container text-on-primary text-xs font-bold flex items-center gap-2 shadow-sm transition-all"
+            className="px-4 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary text-xs font-semibold flex items-center gap-1.5 transition-colors"
           >
-            <span className="material-symbols-outlined text-base">add</span>
-            <span>Thêm sản phẩm mới</span>
+            <Plus size={15} strokeWidth={1.75} />
+            <span>Add New Product</span>
           </Link>
         </div>
       </div>
@@ -55,125 +67,118 @@ export default function AdminDashboard() {
       {/* KPI Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {/* Stat 1 */}
-        <div className="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm flex items-center justify-between">
+        <div className="p-5 rounded-xl bg-surface-container-low border border-outline-variant/25 flex items-start justify-between">
           <div>
-            <span className="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">Tổng doanh thu</span>
-            <div className="text-2xl font-black text-primary mt-1">
-              {stats.totalRevenue.toLocaleString('vi-VN')}đ
+            <span className="text-[11px] font-semibold text-on-surface-variant uppercase tracking-wider">Total Revenue</span>
+            <div className="text-xl sm:text-2xl font-bold text-primary mt-1">
+              {stats.totalRevenue.toLocaleString('en-US')} VND
             </div>
-            <span className="text-[11px] text-emerald-700 font-semibold flex items-center gap-1 mt-1">
-              <span className="material-symbols-outlined text-sm">trending_up</span> +18.5% so với tháng trước
+            <span className="text-[11px] text-emerald-800 font-medium flex items-center gap-1 mt-1.5">
+              <TrendingUp size={13} strokeWidth={1.75} /> +18.5% from last month
             </span>
           </div>
-          <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
-            <span className="material-symbols-outlined text-2xl">payments</span>
-          </div>
+          <CreditCard size={20} strokeWidth={1.75} className="text-primary mt-0.5 flex-shrink-0" />
         </div>
 
         {/* Stat 2 */}
-        <div className="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm flex items-center justify-between">
+        <div className="p-5 rounded-xl bg-surface-container-low border border-outline-variant/25 flex items-start justify-between">
           <div>
-            <span className="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">Đơn hàng cần xử lý</span>
-            <div className="text-2xl font-black text-on-surface mt-1">
+            <span className="text-[11px] font-semibold text-on-surface-variant uppercase tracking-wider">Pending Orders</span>
+            <div className="text-xl sm:text-2xl font-bold text-on-surface mt-1">
               {stats.pendingOrders}
             </div>
-            <span className="text-[11px] text-amber-700 font-semibold flex items-center gap-1 mt-1">
-              <span className="material-symbols-outlined text-sm">schedule</span> Chờ điều phối khảo sát
+            <span className="text-[11px] text-amber-800 font-medium flex items-center gap-1 mt-1.5">
+              <Clock size={13} strokeWidth={1.75} /> Pending Survey / Dispatch
             </span>
           </div>
-          <div className="w-12 h-12 rounded-xl bg-surface-container text-on-surface flex items-center justify-center">
-            <span className="material-symbols-outlined text-2xl">shopping_bag</span>
-          </div>
+          <ShoppingBag size={20} strokeWidth={1.75} className="text-on-surface-variant mt-0.5 flex-shrink-0" />
         </div>
 
         {/* Stat 3 */}
-        <div className="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm flex items-center justify-between">
+        <div className="p-5 rounded-xl bg-surface-container-low border border-outline-variant/25 flex items-start justify-between">
           <div>
-            <span className="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">Thiết bị đang mở bán</span>
-            <div className="text-2xl font-black text-on-surface mt-1">
+            <span className="text-[11px] font-semibold text-on-surface-variant uppercase tracking-wider">Active Catalog</span>
+            <div className="text-xl sm:text-2xl font-bold text-on-surface mt-1">
               {stats.activeProducts}
             </div>
-            <span className="text-[11px] text-primary font-semibold flex items-center gap-1 mt-1">
-              <span className="material-symbols-outlined text-sm">inventory_2</span> 4 phân nhóm vi khí hậu
+            <span className="text-[11px] text-primary font-medium flex items-center gap-1 mt-1.5">
+              <Package size={13} strokeWidth={1.75} /> 4 Microclimate Groups
             </span>
           </div>
-          <div className="w-12 h-12 rounded-xl bg-surface-container text-on-surface flex items-center justify-center">
-            <span className="material-symbols-outlined text-2xl">shelves</span>
-          </div>
+          <Layers size={20} strokeWidth={1.75} className="text-on-surface-variant mt-0.5 flex-shrink-0" />
         </div>
 
         {/* Stat 4 */}
-        <div className="p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm flex items-center justify-between">
+        <div className="p-5 rounded-xl bg-surface-container-low border border-outline-variant/25 flex items-start justify-between">
           <div>
-            <span className="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">Khách hàng VIP</span>
-            <div className="text-2xl font-black text-on-surface mt-1">
+            <span className="text-[11px] font-semibold text-on-surface-variant uppercase tracking-wider">VIP Customers</span>
+            <div className="text-xl sm:text-2xl font-bold text-on-surface mt-1">
               {stats.totalCustomers}
             </div>
-            <span className="text-[11px] text-emerald-700 font-semibold flex items-center gap-1 mt-1">
-              <span className="material-symbols-outlined text-sm">verified</span> Tỷ lệ hài lòng 99.2%
+            <span className="text-[11px] text-emerald-800 font-medium flex items-center gap-1 mt-1.5">
+              <ShieldCheck size={13} strokeWidth={1.75} /> 99.2% Satisfaction Rate
             </span>
           </div>
-          <div className="w-12 h-12 rounded-xl bg-surface-container text-on-surface flex items-center justify-center">
-            <span className="material-symbols-outlined text-2xl">group</span>
-          </div>
+          <Users size={20} strokeWidth={1.75} className="text-on-surface-variant mt-0.5 flex-shrink-0" />
         </div>
       </div>
 
       {/* Recent Orders Table */}
-      <div className="p-6 rounded-3xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm space-y-4">
+      <div className="p-6 rounded-xl bg-surface-container-low border border-outline-variant/25 space-y-4">
         <div className="flex items-center justify-between">
           <div>
-            <h3 className="font-bold text-base text-on-surface">Đơn Hàng Gần Đây</h3>
-            <p className="text-xs text-on-surface-variant mt-0.5">Tiến độ thi công và lịch hẹn của khách hàng</p>
+            <h3 className="font-semibold text-sm sm:text-base text-on-surface">Recent Orders</h3>
+            <p className="text-xs text-on-surface-variant mt-0.5">Installation scheduling and customer dispatch tracking</p>
           </div>
-          <Link to="/admin/orders" className="text-xs font-bold text-primary hover:underline">
-            Xem tất cả đơn hàng →
+          <Link to="/admin/orders" className="text-xs font-semibold text-primary hover:underline inline-flex items-center gap-1">
+            <span>View All Orders</span>
+            <ArrowRight size={13} strokeWidth={1.75} />
           </Link>
         </div>
 
         <div className="overflow-x-auto">
           <table className="w-full text-left text-xs">
-            <thead className="bg-surface-container-low text-on-surface-variant uppercase font-bold text-[10px]">
+            <thead className="bg-surface-container text-on-surface-variant uppercase font-semibold text-[10px] tracking-wider">
               <tr>
-                <th className="p-3.5 rounded-l-xl">Mã đơn</th>
-                <th className="p-3.5">Khách hàng</th>
-                <th className="p-3.5">Lịch hẹn lắp đặt</th>
-                <th className="p-3.5">Kỹ thuật viên</th>
-                <th className="p-3.5">Trạng thái</th>
-                <th className="p-3.5">Tổng tiền</th>
-                <th className="p-3.5 rounded-r-xl text-right">Thao tác</th>
+                <th className="p-3 rounded-l-lg">Order ID</th>
+                <th className="p-3">Customer</th>
+                <th className="p-3">Installation Slot</th>
+                <th className="p-3">Technician</th>
+                <th className="p-3">Status</th>
+                <th className="p-3">Total Amount</th>
+                <th className="p-3 rounded-r-lg text-right">Actions</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-outline-variant/20">
+            <tbody className="divide-y divide-outline-variant/15">
               {recentOrders.map(o => (
-                <tr key={o.id} className="hover:bg-surface-container-low/50 transition-colors">
-                  <td className="p-3.5 font-mono font-bold text-primary">{o.id}</td>
-                  <td className="p-3.5">
-                    <strong className="block text-on-surface">{o.customerName}</strong>
+                <tr key={o.id} className="hover:bg-surface-container/40 transition-colors">
+                  <td className="p-3 font-mono font-semibold text-primary">{o.id}</td>
+                  <td className="p-3">
+                    <strong className="block text-on-surface font-semibold">{o.customerName}</strong>
                     <span className="text-[11px] text-on-surface-variant">{o.customerPhone}</span>
                   </td>
-                  <td className="p-3.5 text-on-surface">
+                  <td className="p-3 text-on-surface">
                     {o.scheduledDate} ({o.scheduledSlot})
                   </td>
-                  <td className="p-3.5 text-on-surface">{o.technician || 'Chưa phân công'}</td>
-                  <td className="p-3.5">
+                  <td className="p-3 text-on-surface">{o.technician || 'Pending Assignment'}</td>
+                  <td className="p-3">
                     {o.status === 'completed' ? (
-                      <span className="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 font-bold text-[10px]">
-                        Hoàn thành
+                      <span className="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 font-semibold text-[10px]">
+                        Completed
                       </span>
                     ) : (
-                      <span className="px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 font-bold text-[10px]">
+                      <span className="px-2 py-0.5 rounded-md bg-amber-100 text-amber-900 font-semibold text-[10px]">
                         {o.statusText}
                       </span>
                     )}
                   </td>
-                  <td className="p-3.5 font-bold text-on-surface">{o.total.toLocaleString('vi-VN')}đ</td>
-                  <td className="p-3.5 text-right">
+                  <td className="p-3 font-semibold text-on-surface">{o.total.toLocaleString('en-US')} VND</td>
+                  <td className="p-3 text-right">
                     <Link
                       to={`/admin/orders/${o.id}`}
-                      className="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-xs font-semibold transition-colors"
+                      className="px-2.5 py-1.5 rounded-md bg-surface-container hover:bg-primary hover:text-on-primary text-xs font-medium transition-colors"
                     >
-                      Chi tiết
+                      Details
                     </Link>
                   </td>
                 </tr>

@@ -7,9 +7,26 @@
     margin: 0;
     padding: 0;
     font-family: 'Be Vietnam Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Typography scale — consistent hierarchy */
+  h1 {
+    @apply text-2xl sm:text-3xl font-bold tracking-tight text-on-surface leading-tight;
+  }
+  h2 {
+    @apply text-xl sm:text-2xl font-bold tracking-tight text-on-surface;
+  }
+  h3 {
+    @apply text-base font-semibold text-on-surface;
+  }
+  h4 {
+    @apply text-sm font-semibold text-on-surface;
   }
 }
 
+/* Material Symbols — keep for any remaining fallback usage */
 .material-symbols-outlined {
   font-variation-settings:
     'FILL' 0,
@@ -24,13 +41,13 @@
   font-variation-settings: 'FILL' 1;
 }
 
-/* Custom scrollbar */
+/* Scrollbar — subtle warm styling */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #f6ede1;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   background: #ddc1b6;
@@ -38,4 +55,13 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #9c3f11;
+}
+
+/* Hide scrollbar for horizontal scroll strips */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

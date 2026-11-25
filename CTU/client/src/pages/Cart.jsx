@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import {
+  ShoppingBag,
+  ArrowRight,
+  ChevronRight,
+  Minus,
+  Plus,
+  Trash2,
+  Wrench,
+} from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 export default function Cart() {
@@ -34,102 +43,101 @@ export default function Cart() {
       .then(data => {
         if (data.success) {
           setAppliedVoucher(data.data);
-          setVoucherSuccess(`Đã áp dụng mã "${data.data.code}" giảm ${data.data.discountAmount.toLocaleString('vi-VN')}đ!`);
+          setVoucherSuccess(`Applied coupon "${data.data.code}" - Saved ${data.data.discountAmount.toLocaleString('en-US')} VND!`);
           setVoucherInput('');
         } else {
-          setVoucherError(data.message || 'Mã giảm giá không hợp lệ.');
+          setVoucherError(data.message || 'Invalid coupon code.');
         }
       })
-      .catch(() => setVoucherError('Lỗi kiểm tra mã giảm giá.'));
+      .catch(() => setVoucherError('Error validating coupon.'));
   };
 
   if (cartItems.length === 0) {
     return (
-      <div className="max-w-[1280px] mx-auto px-4 lg:px-8 py-20 text-center">
-        <div className="w-20 h-20 rounded-full bg-surface-container-low text-primary flex items-center justify-center mx-auto mb-4">
-          <span className="material-symbols-outlined text-4xl">shopping_cart</span>
-        </div>
-        <h2 className="text-2xl font-extrabold text-on-surface">Giỏ hàng của bạn đang trống</h2>
+      <div className="max-w-[1280px] mx-auto px-4 lg:px-8 py-24 text-center">
+        <ShoppingBag size={40} strokeWidth={1.5} className="text-outline mx-auto mb-4" />
+        <h2 className="text-2xl font-bold text-on-surface">Your Shopping Cart is Empty</h2>
         <p className="text-sm text-on-surface-variant mt-2 mb-8">
-          Hãy khám phá các mẫu quạt trần 3-in-1 thông minh và phụ kiện để hoàn thiện không gian sống.
+          Explore our smart 3-in-1 ceiling fans and accessories to elevate your living space.
         </p>
         <Link
           to="/products"
-          className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-on-primary font-bold text-sm shadow-md hover:bg-primary-container transition-all"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-on-primary font-semibold text-sm hover:bg-primary-container transition-colors"
         >
-          <span>Khám phá sản phẩm ngay</span>
-          <span className="material-symbols-outlined text-base">arrow_forward</span>
+          <span>Explore Products Now</span>
+          <ArrowRight size={16} strokeWidth={1.75} />
         </Link>
       </div>
     );
   }
 
   return (
-    <div className="max-w-[1280px] mx-auto px-4 lg:px-8 py-8">
+    <div className="max-w-[1280px] mx-auto px-4 lg:px-8 py-10">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-xs font-medium text-on-surface-variant mb-6">
-        <Link to="/" className="hover:text-primary">Trang chủ</Link>
-        <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-        <span className="text-primary font-bold">Giỏ hàng của bạn</span>
+      <div className="flex items-center gap-1.5 text-xs text-on-surface-variant mb-6">
+        <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+        <ChevronRight size={14} strokeWidth={1.75} />
+        <span className="text-on-surface font-medium">Shopping Cart</span>
       </div>
 
-      <h1 className="text-3xl font-extrabold text-on-surface tracking-tight mb-8">Giỏ Hàng Của Bạn</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold text-on-surface tracking-tight mb-8">Shopping Cart</h1>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
         {/* Left: Cart Items List */}
         <div className="lg:col-span-8 space-y-4">
-          <div className="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/30 space-y-6">
+          <div className="rounded-xl bg-surface-container-low border border-outline-variant/25 divide-y divide-outline-variant/20">
             {cartItems.map((item) => (
               <div
                 key={item.id}
-                className="flex flex-col sm:flex-row items-center justify-between gap-4 pb-6 border-b border-outline-variant/20 last:border-0 last:pb-0"
+                className="flex flex-col sm:flex-row items-center justify-between gap-4 p-5"
               >
                 {/* Product info */}
                 <div className="flex items-center gap-4 w-full sm:w-auto">
-                  <div className="w-20 h-20 rounded-2xl overflow-hidden bg-surface-container flex-shrink-0 border border-outline-variant/30">
+                  <div className="w-20 h-20 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 border border-outline-variant/25">
                     <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
                   </div>
                   <div>
-                    <span className="text-[10px] font-bold text-primary uppercase tracking-widest">{item.sku}</span>
-                    <h3 className="font-bold text-sm text-on-surface line-clamp-1">{item.name}</h3>
-                    <div className="text-sm font-extrabold text-primary mt-1">
-                      {item.price.toLocaleString('vi-VN')}đ
+                    <span className="text-[10px] font-semibold text-primary uppercase tracking-[0.12em]">{item.sku}</span>
+                    <h3 className="font-semibold text-sm text-on-surface line-clamp-1">{item.name}</h3>
+                    <div className="text-sm font-bold text-primary mt-0.5">
+                      {item.price.toLocaleString('en-US')} VND
                     </div>
                   </div>
                 </div>
 
                 {/* Quantity and Actions */}
-                <div className="flex items-center justify-between sm:justify-end gap-6 w-full sm:w-auto">
-                  <div className="flex items-center rounded-xl bg-surface-container-lowest border border-outline-variant/30">
+                <div className="flex items-center justify-between sm:justify-end gap-5 w-full sm:w-auto">
+                  <div className="flex items-center rounded-lg bg-surface-container-lowest border border-outline-variant/35">
                     <button
                       type="button"
                       onClick={() => updateQuantity(item.id, -1)}
                       className="w-8 h-8 flex items-center justify-center text-on-surface hover:text-primary transition-colors"
                     >
-                      <span className="material-symbols-outlined text-sm">remove</span>
+                      <Minus size={14} strokeWidth={1.75} />
                     </button>
-                    <span className="w-8 text-center font-bold text-xs">{item.quantity}</span>
+                    <span className="w-8 text-center font-semibold text-xs">{item.quantity}</span>
                     <button
                       type="button"
                       onClick={() => updateQuantity(item.id, 1)}
                       className="w-8 h-8 flex items-center justify-center text-on-surface hover:text-primary transition-colors"
                     >
-                      <span className="material-symbols-outlined text-sm">add</span>
+                      <Plus size={14} strokeWidth={1.75} />
                     </button>
                   </div>
 
                   <div className="text-right min-w-[100px]">
-                    <div className="font-bold text-sm text-on-surface">
-                      {(item.price * item.quantity).toLocaleString('vi-VN')}đ
+                    <div className="font-semibold text-sm text-on-surface">
+                      {(item.price * item.quantity).toLocaleString('en-US')} VND
                     </div>
                   </div>
 
                   <button
+                    type="button"
                     onClick={() => removeFromCart(item.id)}
-                    className="p-2 text-on-surface-variant hover:text-error transition-colors"
-                    title="Xóa khỏi giỏ hàng"
+                    className="p-1.5 text-on-surface-variant hover:text-error transition-colors"
+                    title="Remove from cart"
                   >
-                    <span className="material-symbols-outlined text-lg">delete</span>
+                    <Trash2 size={16} strokeWidth={1.75} />
                   </button>
                 </div>
               </div>
@@ -137,80 +145,79 @@ export default function Cart() {
           </div>
 
           {/* Installation Guarantee Banner */}
-          <div className="p-5 rounded-2xl bg-primary-fixed/30 border border-primary-fixed/50 flex items-center gap-4 text-xs text-on-surface">
-            <div className="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center flex-shrink-0">
-              <span className="material-symbols-outlined text-2xl">home_repair_service</span>
-            </div>
+          <div className="py-4 px-5 rounded-xl border border-outline-variant/25 flex items-center gap-3.5 text-xs text-on-surface">
+            <Wrench size={18} strokeWidth={1.75} className="text-primary flex-shrink-0" />
             <div>
-              <strong className="block text-primary text-sm font-bold">Miễn phí khảo sát & Lắp đặt tiêu chuẩn 0đ</strong>
-              <span>Được tự động áp dụng tại bước Thanh toán cho toàn bộ đơn hàng quạt trần tại Hà Nội & TP.HCM.</span>
+              <strong className="block text-primary text-sm font-semibold">Free Ceiling Survey &amp; Standard Installation</strong>
+              <span className="text-on-surface-variant">Automatically applied at Checkout for all ceiling fan orders in Hanoi &amp; Ho Chi Minh City.</span>
             </div>
           </div>
         </div>
 
         {/* Right: Order Summary */}
-        <div className="lg:col-span-4 space-y-6">
-          <div className="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/30 space-y-4">
-            <h3 className="text-base font-bold text-on-surface pb-3 border-b border-outline-variant/20">
-              Tóm tắt đơn hàng
+        <div className="lg:col-span-4 space-y-5">
+          <div className="p-6 rounded-xl bg-surface-container-low border border-outline-variant/25 space-y-4">
+            <h3 className="text-sm font-semibold text-on-surface pb-3 border-b border-outline-variant/20">
+              Order Summary
             </h3>
 
             {/* Calculations */}
             <div className="space-y-3 text-xs">
               <div className="flex justify-between text-on-surface-variant">
-                <span>Tạm tính hàng hóa:</span>
-                <span className="font-bold text-on-surface">{subtotal.toLocaleString('vi-VN')}đ</span>
+                <span>Subtotal:</span>
+                <span className="font-semibold text-on-surface">{subtotal.toLocaleString('en-US')} VND</span>
               </div>
               <div className="flex justify-between text-on-surface-variant">
-                <span>Khảo sát & Lắp đặt:</span>
-                <span className="text-emerald-700 font-bold">Miễn phí (0đ)</span>
+                <span>Survey &amp; Installation:</span>
+                <span className="text-emerald-800 font-semibold">Free</span>
               </div>
               <div className="flex justify-between text-on-surface-variant">
-                <span>Vận chuyển:</span>
-                <span className="text-emerald-700 font-bold">Miễn phí (0đ)</span>
+                <span>Shipping:</span>
+                <span className="text-emerald-800 font-semibold">Free</span>
               </div>
               {discount > 0 && (
-                <div className="flex justify-between text-primary font-bold">
-                  <span>Ưu đãi voucher ({appliedVoucher?.code}):</span>
-                  <span>-{discount.toLocaleString('vi-VN')}đ</span>
+                <div className="flex justify-between text-primary font-semibold">
+                  <span>Coupon Discount ({appliedVoucher?.code}):</span>
+                  <span>-{discount.toLocaleString('en-US')} VND</span>
                 </div>
               )}
               <div className="pt-3 border-t border-outline-variant/20 flex justify-between items-baseline">
-                <span className="text-sm font-bold text-on-surface">Tổng thanh toán:</span>
-                <span className="text-2xl font-black text-primary">{total.toLocaleString('vi-VN')}đ</span>
+                <span className="text-sm font-semibold text-on-surface">Total:</span>
+                <span className="text-xl font-bold text-primary">{total.toLocaleString('en-US')} VND</span>
               </div>
             </div>
 
             {/* Voucher input form */}
             <form onSubmit={handleApplyVoucher} className="pt-4 border-t border-outline-variant/20">
-              <label className="block text-[11px] font-bold text-on-surface-variant uppercase tracking-wider mb-2">
-                Mã giảm giá / Voucher
+              <label className="block text-[11px] font-semibold text-on-surface-variant uppercase tracking-[0.12em] mb-2">
+                Coupon Code / Promo Voucher
               </label>
               <div className="flex gap-2">
                 <input
                   type="text"
                   value={voucherInput}
                   onChange={(e) => setVoucherInput(e.target.value.toUpperCase())}
-                  placeholder="VD: FANFUN2026"
-                  className="flex-1 h-10 px-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 text-xs uppercase font-bold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
+                  placeholder="e.g. FANFUN2026"
+                  className="flex-1 h-9 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant/35 text-xs uppercase font-semibold text-on-surface focus:outline-none focus:border-primary"
                 />
                 <button
                   type="submit"
-                  className="px-4 h-10 rounded-xl bg-surface-container hover:bg-surface-container-high text-xs font-bold text-on-surface transition-colors"
+                  className="px-4 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-xs font-semibold text-on-surface transition-colors"
                 >
-                  Áp dụng
+                  Apply
                 </button>
               </div>
               {voucherError && <p className="text-[11px] text-error mt-1.5">{voucherError}</p>}
-              {voucherSuccess && <p className="text-[11px] text-emerald-700 font-semibold mt-1.5">{voucherSuccess}</p>}
+              {voucherSuccess && <p className="text-[11px] text-emerald-800 font-medium mt-1.5">{voucherSuccess}</p>}
             </form>
 
             <button
+              type="button"
               onClick={() => navigate('/checkout')}
-              className="w-full py-4 rounded-2xl bg-primary hover:bg-primary-container text-on-primary font-bold text-sm transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 mt-4"
+              className="w-full py-3.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-semibold text-sm transition-colors flex items-center justify-center gap-2 mt-3"
             >
-              <span>Tiến hành thanh toán</span>
-              <span className="material-symbols-outlined text-lg">arrow_forward</span>
+              <span>Proceed to Checkout</span>
+              <ArrowRight size={16} strokeWidth={1.75} />
             </button>
           </div>
         </div>

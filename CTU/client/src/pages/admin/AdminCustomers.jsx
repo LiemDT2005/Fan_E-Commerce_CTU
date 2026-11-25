@@ -17,28 +17,28 @@ export default function AdminCustomers() {
     <div className="space-y-6 max-w-[1400px] mx-auto w-full">
       <div>
         <div className="flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-wider mb-1">
-          <span>Khách Hàng Thân Thiết</span>
+          <span>Customer Relationship Management (CRM)</span>
           <span className="w-4 h-px bg-outline-variant"></span>
-          <span className="text-on-surface-variant">Hồ sơ & Lịch sử chi tiêu</span>
+          <span className="text-on-surface-variant">Profiles & Lifetime Value</span>
         </div>
-        <h1 className="text-3xl font-extrabold text-on-surface tracking-tight">Quản lý Khách hàng</h1>
+        <h1 className="text-3xl font-extrabold text-on-surface tracking-tight">Customers Management</h1>
       </div>
 
       <div className="p-6 rounded-3xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm overflow-hidden">
         {loading ? (
-          <div className="py-20 text-center text-xs font-semibold">Đang tải danh sách khách hàng...</div>
+          <div className="py-20 text-center text-xs font-semibold">Loading customer database...</div>
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full text-left text-xs">
               <thead className="bg-surface-container-low text-on-surface-variant uppercase font-bold text-[10px]">
                 <tr>
-                  <th className="p-3.5 rounded-l-xl">Họ tên khách hàng</th>
-                  <th className="p-3.5">Số điện thoại</th>
+                  <th className="p-3.5 rounded-l-xl">Customer Name</th>
+                  <th className="p-3.5">Phone Number</th>
                   <th className="p-3.5">Email</th>
-                  <th className="p-3.5">Khu vực</th>
-                  <th className="p-3.5">Hạng thành viên</th>
-                  <th className="p-3.5">Số đơn đã đặt</th>
-                  <th className="p-3.5 rounded-r-xl text-right">Tổng chi tiêu</th>
+                  <th className="p-3.5">City / Region</th>
+                  <th className="p-3.5">Loyalty Tier</th>
+                  <th className="p-3.5">Orders Placed</th>
+                  <th className="p-3.5 rounded-r-xl text-right">Lifetime Spent</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-outline-variant/20">
@@ -53,9 +53,9 @@ export default function AdminCustomers() {
                         {c.tier}
                       </span>
                     </td>
-                    <td className="p-3.5 font-semibold text-on-surface">{c.totalOrders} đơn</td>
+                    <td className="p-3.5 font-semibold text-on-surface">{c.totalOrders} order(s)</td>
                     <td className="p-3.5 text-right font-black text-primary">
-                      {c.totalSpent.toLocaleString('vi-VN')}đ
+                      {c.totalSpent.toLocaleString('en-US')} VND
                     </td>
                   </tr>
                 ))}

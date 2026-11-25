@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://CHANGE_ME_TO_YOUR_RENDER_URL/api/$1"
+      "destination": "https://fanfun-backend.onrender.com/"
     },
     {
       "source": "/(.*)",

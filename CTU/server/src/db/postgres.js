@@ -13,12 +13,12 @@ async function initPostgres() {
   try {
     const isSslRequired = connectionString.includes('render.com') || 
                           connectionString.includes('neon.tech') || 
-                          connectionString.includes('supabase.co');
+                          connectionString.includes('supabase');
 
     pool = new Pool({
       connectionString,
       ssl: isSslRequired ? { rejectUnauthorized: false } : false,
-      connectionTimeoutMillis: 3000
+      connectionTimeoutMillis: 10000
     });
 
     // Test connection

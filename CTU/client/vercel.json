@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "https://fanfun-backend.onrender.com/"
+      "source": "/api/:path*",
+      "destination": "https://fanfun-backend.onrender.com/api/:path*"
     },
     {
       "source": "/(.*)",
@@ -10,3 +10,4 @@
     }
   ]
 }
+

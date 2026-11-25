@@ -40,7 +40,15 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
-// === HEALTH CHECK ===
+// === ROOT & HEALTH CHECK ===
+app.get('/', (req, res) => {
+  res.json({
+    status: 'ok',
+    message: 'FANFUN Backend API is running',
+    timestamp: new Date().toISOString()
+  });
+});
+
 app.get('/api/health', (req, res) => {
   let dbType = 'in-memory';
   if (isPgConnected()) dbType = 'postgresql';

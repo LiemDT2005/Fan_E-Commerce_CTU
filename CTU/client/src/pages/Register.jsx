@@ -40,7 +40,7 @@ export default function Register() {
     <AuthLayout>
       {/* Heading */}
       <div className="space-y-1.5">
-        <h1 className="text-2xl sm:text-3xl font-extrabold text-on-surface tracking-tight">
+        <h1 className="text-2xl sm:text-3xl font-bold text-on-surface tracking-tight">
           Create an Account
         </h1>
         <p className="text-xs sm:text-sm text-on-surface-variant">

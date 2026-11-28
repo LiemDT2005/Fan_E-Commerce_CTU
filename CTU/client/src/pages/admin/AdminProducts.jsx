@@ -275,7 +275,7 @@ export default function AdminProducts() {
                     <td className="p-3">
                       <button
                         onClick={() => handleToggleStatus(p.id, p.status)}
-                        className={`px-2.5 py-0.5 rounded-full text-[10px] font-semibold transition-colors cursor-pointer ${
+                        className={`px-2.5 py-0.5 rounded-md text-[10px] font-semibold transition-colors cursor-pointer ${
                           p.status === 'active'
                             ? 'bg-emerald-100 text-emerald-800 hover:bg-emerald-200'
                             : 'bg-surface-container text-on-surface-variant hover:bg-surface-container-high'

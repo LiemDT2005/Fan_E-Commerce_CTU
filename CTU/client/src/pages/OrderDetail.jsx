@@ -10,7 +10,7 @@ export default function OrderDetail() {
   const [cancelMessage, setCancelMessage] = useState('');
 
   const handleCancelOrder = async () => {
-    if (!window.confirm('Bạn có chắc chắn muốn hủy đơn hàng này không?')) return;
+    if (!window.confirm('Are you sure you want to cancel this order?')) return;
     setCancelling(true);
     setCancelMessage('');
     try {
@@ -22,13 +22,13 @@ export default function OrderDetail() {
       setCancelling(false);
       if (data.success) {
         setOrder(prev => ({ ...prev, status: 'cancelled', statusText: 'Order cancelled by customer' }));
-        setCancelMessage('Đơn hàng đã được hủy thành công.');
+        setCancelMessage('Order successfully cancelled.');
       } else {
-        alert(data.message || 'Không thể hủy đơn hàng.');
+        alert(data.message || 'Unable to cancel order.');
       }
     } catch (err) {
       setCancelling(false);
-      alert('Lỗi kết nối khi hủy đơn hàng.');
+      alert('Connection error while cancelling order.');
     }
   };
 
@@ -83,7 +83,7 @@ export default function OrderDetail() {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
         <div>
-          <span className="text-xs font-semibold text-primary uppercase tracking-widest bg-primary-fixed/40 px-3 py-1 rounded-full">
+          <span className="text-xs font-semibold text-primary uppercase tracking-widest bg-primary-fixed/40 px-3 py-1 rounded-md">
             Order Details
           </span>
           <h1 className="text-2xl sm:text-3xl font-bold text-on-surface mt-2 tracking-tight">
@@ -96,8 +96,8 @@ export default function OrderDetail() {
 
         <div className="flex items-center gap-3">
           <a
-            href="tel:19006868"
-            className="px-5 py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-xs font-semibold text-on-surface flex items-center gap-2 transition-colors"
+            href="tel:0918074079"
+            className="px-5 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-xs font-semibold text-on-surface flex items-center gap-2 transition-colors"
           >
             <Headset size={16} strokeWidth={1.75} className="text-primary" />
             <span>Technical Support</span>
@@ -106,7 +106,7 @@ export default function OrderDetail() {
       </div>
 
       {/* 5-STEP INSTALLATION & DELIVERY TIMELINE */}
-      <div className="p-8 rounded-2xl bg-surface-container-low border border-outline-variant/25 mb-8">
+      <div className="p-8 rounded-xl bg-surface-container-low border border-outline-variant/25 mb-8">
         <h3 className="text-sm font-semibold text-on-surface uppercase tracking-wider mb-8">
           Standard Survey & Installation Progress
         </h3>
@@ -273,7 +273,7 @@ export default function OrderDetail() {
                 className="w-full py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs flex items-center justify-center gap-2 transition-colors mt-2"
               >
                 <QrCode size={15} strokeWidth={1.75} />
-                <span>Hoàn tất thanh toán QR</span>
+                <span>Complete QR Payment</span>
               </a>
             )}
 
@@ -284,13 +284,13 @@ export default function OrderDetail() {
                 disabled={cancelling}
                 className="w-full py-2.5 rounded-lg border border-red-300 hover:bg-red-50 text-red-700 font-semibold text-xs transition-colors mt-2 cursor-pointer disabled:opacity-50"
               >
-                {cancelling ? 'Đang hủy đơn...' : 'Hủy đơn hàng'}
+                {cancelling ? 'Cancelling...' : 'Cancel Order'}
               </button>
             )}
 
             {order.status === 'cancelled' && (
               <div className="p-3 rounded-lg bg-red-50 text-red-700 text-xs font-medium text-center mt-2">
-                Đơn hàng này đã bị hủy.
+                This order has been cancelled.
               </div>
             )}
           </div>

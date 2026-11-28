@@ -202,10 +202,10 @@ export default function Products() {
               Unsure which model fits your ceiling height and room size? Contact our engineers for a complimentary on-site survey.
             </p>
             <a
-              href="tel:19006868"
+              href="tel:0918074079"
               className="pt-1 inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:underline"
             >
-              <span>Call 1900 6868</span>
+              <span>Call 091 8074079</span>
               <ArrowRight size={14} strokeWidth={1.75} />
             </a>
           </div>

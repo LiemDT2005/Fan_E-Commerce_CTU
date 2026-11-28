@@ -22,7 +22,7 @@ export default function Checkout() {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
-    customerName: user ? user.name : 'Alex Nguyen',
+    customerName: user ? user.name : 'Huynh Nam Phuong',
     customerPhone: user ? user.phone : '+84 912 345 678',
     customerEmail: user ? user.email : 'alex@example.com',
     city: 'Ho Chi Minh City',

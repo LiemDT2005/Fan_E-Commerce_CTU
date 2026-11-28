@@ -21,10 +21,10 @@ export default function AdminCustomers() {
           <span className="w-4 h-px bg-outline-variant"></span>
           <span className="text-on-surface-variant">Profiles & Lifetime Value</span>
         </div>
-        <h1 className="text-3xl font-extrabold text-on-surface tracking-tight">Customers Management</h1>
+        <h1 className="text-3xl font-bold text-on-surface tracking-tight">Customers Management</h1>
       </div>
 
-      <div className="p-6 rounded-3xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm overflow-hidden">
+      <div className="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/30 overflow-hidden">
         {loading ? (
           <div className="py-20 text-center text-xs font-semibold">Loading customer database...</div>
         ) : (
@@ -49,7 +49,7 @@ export default function AdminCustomers() {
                     <td className="p-3.5 text-on-surface-variant">{c.email}</td>
                     <td className="p-3.5 font-semibold text-on-surface">{c.city}</td>
                     <td className="p-3.5">
-                      <span className="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-bold text-[10px]">
+                      <span className="px-2.5 py-1 rounded-md bg-primary-fixed text-on-primary-fixed font-semibold text-[10px]">
                         {c.tier}
                       </span>
                     </td>

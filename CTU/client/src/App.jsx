@@ -7,6 +7,10 @@ import { RequireAuth, RedirectIfLoggedIn } from './components/ProtectedRoute';
 // Store Layout & Pages
 import StoreLayout from './components/StoreLayout';
 import Home from './pages/Home';
+import About from './pages/About';
+import BrandStory from './pages/BrandStory';
+import BrandArchitecture from './pages/BrandArchitecture';
+import BrandCulture from './pages/BrandCulture';
 import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
@@ -46,6 +50,10 @@ export default function App() {
             <Route path="/" element={<StoreLayout />}>
               {/* Public routes */}
               <Route index element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="brand-story" element={<BrandStory />} />
+              <Route path="ecosystem" element={<BrandArchitecture />} />
+              <Route path="culture" element={<BrandCulture />} />
               <Route path="products" element={<Products />} />
               <Route path="products/:id" element={<ProductDetail />} />
               <Route path="cart" element={<Cart />} />

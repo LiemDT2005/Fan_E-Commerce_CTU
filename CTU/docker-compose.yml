@@ -1,3 +1,5 @@
+name: fanfun
+
 services:
   postgres:
     image: postgres:16-alpine
@@ -11,6 +13,11 @@ services:
       POSTGRES_DB: fanfun
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d fanfun"]
+      interval: 3s
+      timeout: 3s
+      retries: 5
     networks:
       - fanfun-network
 
@@ -31,7 +38,8 @@ services:
       - CLOUDINARY_API_KEY=953398772632599
       - CLOUDINARY_API_SECRET=t1DWOpDR-k9AOKH0W8xVDKsOVzY
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
     networks:
       - fanfun-network
 

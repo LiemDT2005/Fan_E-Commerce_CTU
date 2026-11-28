@@ -99,33 +99,33 @@ export default function AdminVouchers() {
 
       if (data.success) {
         setIsModalOpen(false);
-        setSuccessMsg(isCreate ? `Tạo mã voucher "${data.data.code}" thành công!` : `Cập nhật voucher "${data.data.code}" thành công!`);
+        setSuccessMsg(isCreate ? `Voucher code "${data.data.code}" created successfully!` : `Voucher code "${data.data.code}" updated successfully!`);
         setTimeout(() => setSuccessMsg(''), 4000);
         fetchVouchers();
       } else {
-        setErrorMsg(data.message || 'Lỗi khi lưu voucher.');
+        setErrorMsg(data.message || 'Error saving voucher.');
       }
     } catch (err) {
       setSubmitting(false);
-      setErrorMsg('Lỗi kết nối máy chủ.');
+      setErrorMsg('Server connection error.');
     }
   };
 
   const handleDelete = async (code) => {
-    if (!window.confirm(`Bạn có chắc muốn xóa mã voucher "${code}" không?`)) return;
+    if (!window.confirm(`Are you sure you want to delete voucher code "${code}"?`)) return;
 
     try {
       const res = await fetch(`/api/vouchers/${code}`, { method: 'DELETE' });
       const data = await res.json();
       if (data.success) {
-        setSuccessMsg(`Đã xóa voucher "${code}" thành công!`);
+        setSuccessMsg(`Voucher "${code}" deleted successfully!`);
         setTimeout(() => setSuccessMsg(''), 4000);
         setVouchers(prev => prev.filter(v => v.code !== code));
       } else {
-        alert(data.message || 'Lỗi khi xóa voucher.');
+        alert(data.message || 'Error deleting voucher.');
       }
     } catch (err) {
-      alert('Lỗi kết nối khi xóa voucher.');
+      alert('Connection error while deleting voucher.');
     }
   };
 
@@ -148,7 +148,7 @@ export default function AdminVouchers() {
           className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary text-xs font-semibold transition-colors cursor-pointer self-start sm:self-auto"
         >
           <Plus size={15} strokeWidth={1.75} />
-          <span>Thêm Voucher mới</span>
+          <span>Add New Voucher</span>
         </button>
       </div>
 
@@ -161,11 +161,11 @@ export default function AdminVouchers() {
 
       {/* Grid of Vouchers */}
       {loading ? (
-        <div className="py-20 text-center text-xs font-medium text-on-surface-variant">Đang tải danh sách voucher...</div>
+        <div className="py-20 text-center text-xs font-medium text-on-surface-variant">Loading vouchers...</div>
       ) : vouchers.length === 0 ? (
         <div className="py-20 text-center p-8 rounded-xl bg-surface-container-low border border-outline-variant/25">
           <Ticket size={36} strokeWidth={1.5} className="text-outline mx-auto mb-2" />
-          <p className="text-xs text-on-surface-variant">Chưa có voucher nào. Bấm "Thêm Voucher mới" để tạo mã khuyến mãi.</p>
+          <p className="text-xs text-on-surface-variant">No vouchers found. Click "Add New Voucher" to create a promotional code.</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -192,7 +192,7 @@ export default function AdminVouchers() {
                       <button
                         type="button"
                         onClick={() => openEditModal(v)}
-                        title="Sửa voucher"
+                        title="Edit voucher"
                         className="p-1 rounded-md text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors cursor-pointer"
                       >
                         <Pencil size={14} strokeWidth={1.75} />
@@ -200,7 +200,7 @@ export default function AdminVouchers() {
                       <button
                         type="button"
                         onClick={() => handleDelete(v.code)}
-                        title="Xóa voucher"
+                        title="Delete voucher"
                         className="p-1 rounded-md text-on-surface-variant hover:text-error hover:bg-error-container/20 transition-colors cursor-pointer"
                       >
                         <Trash2 size={14} strokeWidth={1.75} />
@@ -216,13 +216,13 @@ export default function AdminVouchers() {
                 </div>
 
                 <p className="text-xs text-on-surface-variant">
-                  Đơn tối thiểu: <strong className="text-on-surface font-semibold">{v.minOrderValue.toLocaleString('en-US')} VND</strong>
+                  Min Order: <strong className="text-on-surface font-semibold">{v.minOrderValue.toLocaleString('en-US')} VND</strong>
                 </p>
               </div>
 
               <div className="pt-3.5 mt-5 border-t border-outline-variant/20 flex items-center justify-between text-[11px] text-on-surface-variant">
-                <span>Đã dùng: <strong className="text-on-surface font-semibold">{v.usedCount || 0} / {v.usageLimit}</strong></span>
-                <span>HSD: <strong className="text-on-surface font-semibold">{v.expiryDate}</strong></span>
+                <span>Used: <strong className="text-on-surface font-semibold">{v.usedCount || 0} / {v.usageLimit}</strong></span>
+                <span>Expires: <strong className="text-on-surface font-semibold">{v.expiryDate}</strong></span>
               </div>
             </div>
           ))}
@@ -235,7 +235,7 @@ export default function AdminVouchers() {
           <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-xl max-w-md w-full p-6 shadow-xl space-y-4 animate-in fade-in duration-150">
             <div className="flex items-center justify-between pb-3 border-b border-outline-variant/20">
               <h2 className="text-base font-bold text-on-surface">
-                {modalMode === 'create' ? 'Tạo mã Voucher mới' : `Chỉnh sửa Voucher: ${formData.code}`}
+                {modalMode === 'create' ? 'Create New Voucher' : `Edit Voucher: ${formData.code}`}
               </h2>
               <button
                 type="button"
@@ -256,7 +256,7 @@ export default function AdminVouchers() {
             <form onSubmit={handleSubmit} className="space-y-3.5">
               <div>
                 <label className="block text-xs font-medium text-on-surface-variant mb-1">
-                  Mã Voucher (Code) *
+                  Voucher Code *
                 </label>
                 <input
                   type="text"
@@ -273,14 +273,14 @@ export default function AdminVouchers() {
 
               <div>
                 <label className="block text-xs font-medium text-on-surface-variant mb-1">
-                  Tên / Mô tả Voucher *
+                  Voucher Title / Description *
                 </label>
                 <input
                   type="text"
                   required
                   value={formData.title}
                   onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                  placeholder="e.g. Giảm 200.000 VND cho đơn hàng từ 5 triệu"
+                  placeholder="e.g. 200,000 VND discount on orders from 5M"
                   className="w-full h-9 px-3 rounded-lg bg-surface-container-low border border-outline-variant/35 text-xs text-on-surface focus:outline-none focus:border-primary"
                 />
               </div>
@@ -288,7 +288,7 @@ export default function AdminVouchers() {
               <div className="grid grid-cols-2 gap-3">
                 <div>
                   <label className="block text-xs font-medium text-on-surface-variant mb-1">
-                    Số tiền giảm (VND) *
+                    Discount Amount (VND) *
                   </label>
                   <input
                     type="number"
@@ -304,7 +304,7 @@ export default function AdminVouchers() {
 
                 <div>
                   <label className="block text-xs font-medium text-on-surface-variant mb-1">
-                    Đơn tối thiểu (VND) *
+                    Min Order Value (VND) *
                   </label>
                   <input
                     type="number"
@@ -322,7 +322,7 @@ export default function AdminVouchers() {
               <div className="grid grid-cols-2 gap-3">
                 <div>
                   <label className="block text-xs font-medium text-on-surface-variant mb-1">
-                    Hạn sử dụng (HSD)
+                    Expiry Date
                   </label>
                   <input
                     type="text"
@@ -335,7 +335,7 @@ export default function AdminVouchers() {
 
                 <div>
                   <label className="block text-xs font-medium text-on-surface-variant mb-1">
-                    Số lượt dùng tối đa
+                    Usage Limit
                   </label>
                   <input
                     type="number"
@@ -350,15 +350,15 @@ export default function AdminVouchers() {
 
               <div>
                 <label className="block text-xs font-medium text-on-surface-variant mb-1">
-                  Trạng thái
+                  Status
                 </label>
                 <select
                   value={formData.status}
                   onChange={(e) => setFormData({ ...formData, status: e.target.value })}
                   className="w-full h-9 px-3 rounded-lg bg-surface-container-low border border-outline-variant/35 text-xs text-on-surface focus:outline-none focus:border-primary"
                 >
-                  <option value="active">Active (Có hiệu lực)</option>
-                  <option value="inactive">Inactive (Tạm khóa)</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
                 </select>
               </div>
 
@@ -368,14 +368,14 @@ export default function AdminVouchers() {
                   onClick={() => setIsModalOpen(false)}
                   className="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-xs font-medium text-on-surface transition-colors cursor-pointer"
                 >
-                  Hủy
+                  Cancel
                 </button>
                 <button
                   type="submit"
                   disabled={submitting}
                   className="px-5 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary text-xs font-semibold transition-colors disabled:opacity-50 cursor-pointer"
                 >
-                  {submitting ? 'Đang lưu...' : modalMode === 'create' ? 'Tạo mới' : 'Cập nhật'}
+                  {submitting ? 'Saving...' : modalMode === 'create' ? 'Create Voucher' : 'Update Voucher'}
                 </button>
               </div>
             </form>

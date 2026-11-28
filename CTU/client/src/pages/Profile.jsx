@@ -5,7 +5,7 @@ import { ChevronRight, CheckCircle2 } from 'lucide-react';
 
 export default function Profile() {
   const { user, login } = useAuth();
-  const [name, setName] = useState(user?.name || 'Alex Nguyen');
+  const [name, setName] = useState(user?.name || 'Huynh Nam Phuong');
   const [phone, setPhone] = useState(user?.phone || '+84 912 345 678');
   const [email, setEmail] = useState(user?.email || 'alex@example.com');
   const [address, setAddress] = useState(user?.address || 'Suite 1806, Landmark 3, Vinhomes Central Park, HCMC');
@@ -35,7 +35,7 @@ export default function Profile() {
             Manage contact details, apartment specifications, and connected smart fans
           </p>
         </div>
-        <span className="px-3.5 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed text-xs font-semibold">
+        <span className="px-3.5 py-1.5 rounded-md bg-primary-fixed text-on-primary-fixed text-xs font-semibold">
           {user?.tier || 'VIP Gold'}
         </span>
       </div>
@@ -49,7 +49,7 @@ export default function Profile() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left card */}
-        <div className="md:col-span-1 p-6 rounded-2xl bg-surface-container-low border border-outline-variant/25 text-center space-y-4">
+        <div className="md:col-span-1 p-6 rounded-xl bg-surface-container-low border border-outline-variant/25 text-center space-y-4">
           <div className="w-24 h-24 rounded-full bg-primary text-on-primary text-3xl font-bold flex items-center justify-center mx-auto">
             {name ? name.charAt(0) : 'U'}
           </div>
@@ -71,7 +71,7 @@ export default function Profile() {
         </div>
 
         {/* Right form */}
-        <div className="md:col-span-2 p-6 rounded-2xl bg-surface-container-low border border-outline-variant/25">
+        <div className="md:col-span-2 p-6 rounded-xl bg-surface-container-low border border-outline-variant/25">
           <form onSubmit={handleSave} className="space-y-4">
             <div>
               <label className="block text-xs font-semibold text-on-surface-variant mb-1">Full Name</label>
@@ -79,7 +79,7 @@ export default function Profile() {
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full h-11 px-4 rounded-xl bg-surface-container-lowest border border-outline-variant/25 text-xs text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant/25 text-xs text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
 
@@ -90,7 +90,7 @@ export default function Profile() {
                   type="tel"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  className="w-full h-11 px-4 rounded-xl bg-surface-container-lowest border border-outline-variant/25 text-xs text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant/25 text-xs text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
 
@@ -100,7 +100,7 @@ export default function Profile() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full h-11 px-4 rounded-xl bg-surface-container-lowest border border-outline-variant/25 text-xs text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant/25 text-xs text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function Profile() {
                 type="text"
                 value={address}
                 onChange={(e) => setAddress(e.target.value)}
-                className="w-full h-11 px-4 rounded-xl bg-surface-container-lowest border border-outline-variant/25 text-xs text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant/25 text-xs text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
 
@@ -121,14 +121,14 @@ export default function Profile() {
                 type="text"
                 value={homeArea}
                 onChange={(e) => setHomeArea(e.target.value)}
-                className="w-full h-11 px-4 rounded-xl bg-surface-container-lowest border border-outline-variant/25 text-xs text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full h-10 px-3 rounded-lg bg-surface-container-lowest border border-outline-variant/25 text-xs text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
 
             <div className="pt-4 flex justify-end">
               <button
                 type="submit"
-                className="px-6 py-3 rounded-xl bg-primary hover:bg-primary-container text-on-primary text-xs font-semibold transition-all"
+                className="px-6 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary text-xs font-semibold transition-colors"
               >
                 Save Profile Changes
               </button>

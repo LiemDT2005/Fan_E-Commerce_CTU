@@ -11,11 +11,11 @@ const DEMO_ACCOUNTS = [
     password: "admin123",
     userData: {
       id: "admin-01",
-      name: "Alex Nguyen (Administrator)",
+      name: "Huynh Nam Phuong (Administrator)",
       email: "admin@fanfun.vn",
-      phone: "+84 912 345 678",
+      phone: "+84 918 074 079",
       tier: "Executive Board",
-      address: "FANFUN HQ, Suite 1806 Landmark 3, Vinhomes Central Park, HCMC",
+      address: "117 Electric Power Residential Area, Hung Phu, Cai Rang, Can Tho",
       isAdmin: true
     }
   },
@@ -92,7 +92,7 @@ export default function Login() {
     <AuthLayout>
       {/* Heading */}
       <div className="space-y-1.5">
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-on-surface tracking-tight">
+            <h1 className="text-2xl sm:text-3xl font-bold text-on-surface tracking-tight">
               Sign In
             </h1>
             <p className="text-xs sm:text-sm text-on-surface-variant">
@@ -101,7 +101,7 @@ export default function Login() {
           </div>
 
           {/* 1-Click Demo Accounts (No Icons in Buttons) */}
-          <div className="p-4 rounded-2xl bg-surface-container-low border border-outline-variant/30 space-y-2.5">
+          <div className="p-4 rounded-lg bg-surface-container-low border border-outline-variant/30 space-y-2.5">
             <div className="flex items-center justify-between">
               <span className="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">
                 Demo Accounts (1-Click Fill)
@@ -114,7 +114,7 @@ export default function Login() {
                   key={acc.email}
                   type="button"
                   onClick={() => selectDemoAccount(acc)}
-                  className="w-full text-left px-3.5 py-2.5 rounded-xl bg-surface-container-lowest hover:bg-primary-fixed/30 border border-outline-variant/20 hover:border-primary/30 flex items-center justify-between transition-all group"
+                  className="w-full text-left px-3.5 py-2.5 rounded-lg bg-surface-container-lowest hover:bg-primary-fixed/30 border border-outline-variant/20 hover:border-primary/30 flex items-center justify-between transition-colors group"
                 >
                   <div className="min-w-0 pr-2">
                     <div className="text-xs font-bold text-on-surface group-hover:text-primary transition-colors truncate">
@@ -124,7 +124,7 @@ export default function Login() {
                       {acc.email}
                     </div>
                   </div>
-                  <span className="text-[11px] font-bold text-primary flex-shrink-0 px-2.5 py-1 rounded-lg bg-primary/10 group-hover:bg-primary group-hover:text-on-primary transition-all">
+                  <span className="text-[11px] font-bold text-primary flex-shrink-0 px-2.5 py-1 rounded bg-primary/10 group-hover:bg-primary group-hover:text-on-primary transition-colors">
                     Fill & Sign In
                   </span>
                 </button>
@@ -134,7 +134,7 @@ export default function Login() {
 
           {/* Error Notice */}
           {error && (
-            <div className="px-4 py-3 rounded-xl bg-error/10 border border-error/20 text-error text-xs font-semibold">
+            <div className="px-4 py-3 rounded-lg bg-error/10 border border-error/20 text-error text-xs font-semibold">
               {error}
             </div>
           )}
@@ -151,7 +151,7 @@ export default function Login() {
                 value={email}
                 onChange={(e) => { setEmail(e.target.value); setError(''); }}
                 placeholder="name@fanfun.vn"
-                className="w-full h-12 px-4 rounded-xl bg-surface-container-low border border-outline-variant/30 text-sm text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                className="w-full h-11 px-4 rounded-lg bg-surface-container-low border border-outline-variant/30 text-sm text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
               />
             </div>
 
@@ -170,14 +170,14 @@ export default function Login() {
                 value={password}
                 onChange={(e) => { setPassword(e.target.value); setError(''); }}
                 placeholder="••••••••"
-                className="w-full h-12 px-4 rounded-xl bg-surface-container-low border border-outline-variant/30 text-sm text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                className="w-full h-11 px-4 rounded-lg bg-surface-container-low border border-outline-variant/30 text-sm text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
               />
             </div>
 
             {/* Submit Button (NO icon before button) */}
             <button
               type="submit"
-              className="w-full h-12 rounded-xl bg-primary hover:bg-primary/90 text-on-primary text-sm font-bold shadow-sm hover:shadow transition-all mt-2"
+              className="w-full h-11 rounded-lg bg-primary hover:bg-primary/90 text-on-primary text-sm font-bold transition-colors mt-2"
             >
               Sign In
             </button>

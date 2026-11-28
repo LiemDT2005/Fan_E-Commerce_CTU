@@ -56,7 +56,7 @@ export default function AdminOrders() {
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex bg-surface-container-low p-1.5 rounded-2xl border border-outline-variant/30">
+        <div className="flex bg-surface-container-low p-1 rounded-lg border border-outline-variant/30">
           {[
             { id: 'all', label: 'All' },
             { id: 'pending', label: 'Pending Review' },
@@ -66,9 +66,9 @@ export default function AdminOrders() {
             <button
               key={t.id}
               onClick={() => setStatusFilter(t.id)}
-              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
+              className={`px-4 py-2 rounded-md text-xs font-semibold transition-colors ${
                 statusFilter === t.id
-                  ? 'bg-primary text-on-primary shadow-sm'
+                  ? 'bg-primary text-on-primary'
                   : 'text-on-surface-variant hover:text-on-surface'
               }`}
             >
@@ -79,7 +79,7 @@ export default function AdminOrders() {
       </div>
 
       {/* Orders Table */}
-      <div className="p-6 rounded-3xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm overflow-hidden">
+      <div className="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/30 overflow-hidden">
         {loading ? (
           <div className="py-20 text-center text-xs font-semibold">Loading orders...</div>
         ) : orders.length === 0 ? (
@@ -92,14 +92,14 @@ export default function AdminOrders() {
             <table className="w-full text-left text-xs">
               <thead className="bg-surface-container-low text-on-surface-variant uppercase font-bold text-[10px]">
                 <tr>
-                  <th className="p-3.5 rounded-l-xl">Order ID</th>
+                  <th className="p-3.5 rounded-l-lg">Order ID</th>
                   <th className="p-3.5">Customer & Contact</th>
                   <th className="p-3.5">Installation Slot</th>
                   <th className="p-3.5">Equipment</th>
                   <th className="p-3.5">Payment</th>
                   <th className="p-3.5">Total Amount</th>
                   <th className="p-3.5">Status</th>
-                  <th className="p-3.5 rounded-r-xl text-right">Actions</th>
+                  <th className="p-3.5 rounded-r-lg text-right">Actions</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-outline-variant/20">
@@ -143,7 +143,7 @@ export default function AdminOrders() {
                           if (val === 'cancelled') txt = 'Order Cancelled';
                           handleUpdateStatus(o.id, val, txt);
                         }}
-                        className="px-3 py-1.5 rounded-xl bg-surface-container-low border border-outline-variant/30 text-[11px] font-bold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
+                        className="px-3 py-1.5 rounded-lg bg-surface-container-low border border-outline-variant/30 text-[11px] font-semibold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary"
                       >
                         <option value="pending">Pending Confirmation</option>
                         <option value="processing">In Progress & Dispatching</option>

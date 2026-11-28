@@ -12,7 +12,7 @@ export default function OrderSuccess() {
         <Check size={36} strokeWidth={1.75} />
       </div>
 
-      <span className="text-xs font-semibold text-primary uppercase tracking-widest bg-primary-fixed/40 px-3.5 py-1 rounded-full">
+      <span className="text-xs font-semibold text-primary uppercase tracking-widest bg-primary-fixed/40 px-3 py-1 rounded-md">
         Order Placed Successfully
       </span>
 
@@ -25,13 +25,13 @@ export default function OrderSuccess() {
       </p>
 
       {/* Order info card */}
-      <div className="my-8 p-6 rounded-2xl bg-surface-container-low border border-outline-variant/25 text-left space-y-4">
+      <div className="my-8 p-6 rounded-xl bg-surface-container-low border border-outline-variant/25 text-left space-y-4">
         <div className="flex items-center justify-between pb-3 border-b border-outline-variant/20">
           <div>
             <div className="text-[11px] text-on-surface-variant uppercase font-semibold">Order ID</div>
             <div className="text-lg font-bold text-primary font-mono">{orderId}</div>
           </div>
-          <span className="px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-semibold">
+          <span className="px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 text-xs font-semibold">
             Pending Dispatch & Survey
           </span>
         </div>

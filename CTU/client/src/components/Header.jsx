@@ -23,7 +23,7 @@ import BrandLogo from './BrandLogo';
 const PRIMARY_NAV = [
   { to: '/', label: 'Home', end: true },
   { to: '/products', label: 'Products & Ecosystem' },
-  { to: '/products?category=smart-ceiling-fan', label: '3-in-1 Tech' },
+  { to: '/about', label: 'About Us' },
   { to: '/orders', label: 'My Orders' },
 ];
 
@@ -65,7 +65,7 @@ export default function Header() {
       {/* Top Announcement Strip */}
       <div className="bg-[#241914] text-[#f5ebe0] py-1.5 px-4 text-center text-[11px] tracking-wide">
         <span>
-          Free on-site ceiling survey &amp; installation in Hanoi &amp; HCMC &nbsp;·&nbsp; Hotline 1900 6868 &nbsp;·&nbsp; 5-Year Official Warranty
+          Can Tho: 117 Electric Power Residential Area, Hung Phu, Cai Rang &nbsp;·&nbsp; Admin: Huynh Nam Phuong &nbsp;·&nbsp; Hotline 091 8074079
         </span>
       </div>
 
@@ -130,14 +130,28 @@ export default function Header() {
             </Link>
           )}
 
+          {/* Facebook Link */}
+          <a
+            href="https://www.facebook.com/share/18kcsekqpu/?mibextid=wwXIfr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-[#1877F2] hover:bg-[#1877F2]/10 transition-colors text-xs font-semibold whitespace-nowrap"
+            title="Fanpage Facebook FANFUN"
+          >
+            <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            <span className="hidden md:inline">Facebook</span>
+          </a>
+
           {/* Hotline */}
           <a
-            href="tel:19006868"
+            href="tel:0918074079"
             className="hidden xl:inline-flex items-center gap-1.5 px-2 py-1.5 text-on-surface-variant hover:text-primary transition-colors text-xs font-medium whitespace-nowrap"
-            title="Hotline 1900 6868"
+            title="Hotline 091 8074079"
           >
             <Phone size={15} strokeWidth={1.75} className="text-primary" />
-            <span>1900 6868</span>
+            <span>091 8074079</span>
           </a>
 
           {/* User Account Dropdown */}
@@ -299,12 +313,27 @@ export default function Header() {
             )}
           </nav>
 
-          <div className="pt-3 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
-            <a href="tel:19006868" className="inline-flex items-center gap-1.5 font-medium text-primary">
-              <Phone size={14} strokeWidth={1.75} />
-              Hotline: 1900 6868
-            </a>
-            <span>Hanoi &amp; HCMC Service</span>
+          <div className="pt-3 border-t border-outline-variant/20 flex flex-col gap-2.5 text-xs text-on-surface-variant">
+            <div className="flex items-center justify-between">
+              <a href="tel:0918074079" className="inline-flex items-center gap-1.5 font-medium text-primary">
+                <Phone size={14} strokeWidth={1.75} />
+                Hotline: 091 8074079
+              </a>
+              <a
+                href="https://www.facebook.com/share/18kcsekqpu/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 font-semibold text-[#1877F2]"
+              >
+                <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                <span>Facebook FANFUN</span>
+              </a>
+            </div>
+            <div className="text-[11px] text-on-surface-variant/80">
+              Can Tho: 117 Electric Power Residential Area, Hung Phu, Cai Rang
+            </div>
           </div>
         </div>
       )}

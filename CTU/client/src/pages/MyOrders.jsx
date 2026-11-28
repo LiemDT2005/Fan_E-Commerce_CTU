@@ -27,15 +27,15 @@ export default function MyOrders() {
   const getStatusBadge = (status) => {
     switch (status) {
       case 'completed':
-        return <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-semibold">Completed</span>;
+        return <span className="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">Completed</span>;
       case 'processing':
-        return <span className="px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-semibold">Dispatching & Surveying</span>;
+        return <span className="px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 text-xs font-semibold">Dispatching & Surveying</span>;
       case 'delivering':
-        return <span className="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-semibold">Out for Installation</span>;
+        return <span className="px-2.5 py-1 rounded-md bg-blue-100 text-blue-800 text-xs font-semibold">Out for Installation</span>;
       case 'cancelled':
-        return <span className="px-3 py-1 rounded-full bg-red-100 text-red-800 text-xs font-semibold">Cancelled</span>;
+        return <span className="px-2.5 py-1 rounded-md bg-red-100 text-red-800 text-xs font-semibold">Cancelled</span>;
       default:
-        return <span className="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant text-xs font-semibold">Pending Confirmation</span>;
+        return <span className="px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant text-xs font-semibold">Pending Confirmation</span>;
     }
   };
 

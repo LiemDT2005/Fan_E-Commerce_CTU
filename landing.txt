@@ -1,0 +1,89 @@
+1 Mission/Vision
+ a Mission
+"Mang đến sự thoải mái trọn vẹn cho mọi gia đình bằng dòng quạt thông minh đa năng - linh hoạt chuyển đổi giữa lò sưởi, máy lạnh và quạt mát để mọi khoảnh khắc tại nhà luôn dễ chịu nhất." 
+ b Vision
+"Trở thành thương hiệu dẫn đầu trong lĩnh vực thiết bị gia dụng thông minh đa năng, kiến tạo chuẩn mực sống tiện nghi, tiết kiệm năng lượng và mang lại sự dễ chịu trọn vẹn suốt 365 ngày cho người tiêu dùng toàn cầu." 
+2 Core value 
+- Trung thực: Nói đúng, làm đúng, hứa là giữ. Smart Fan không tô vẽ thông số, không giấu lỗi, và luôn là bên chủ động báo trước khi có vấn đề với sản phẩm hay đơn hàng. 
+- Tận tâm: Mỗi quyết định đều bắt đầu từ nhu cầu thật của khách hàng, và luôn lắng nghe, sửa nhanh. 
+- An toàn: Không đánh đổi an toàn lấy chi phí; linh kiện chưa kiểm định thì chưa xuất xưởng. 
+- Cải tiến: Smart Fan khuyến khích học hỏi, cải tiến liên tục và dám thử cách làm mới để tạo ra những giải pháp thông minh, tiết kiệm năng lượng. 
+- Trách nhiệm: Dám nhận phần việc của mình, làm việc như một đội và có trách nhiệm với cộng đồng, môi trường. 
+3. Brand Personality
+Brand Personality - FanFun
+Thông minh (Smart):Tích hợp điều khiển từ xa, điều khiển bằng giọng nói, chế độ tự động, nhắc vệ sinh/thay lọc qua ứng dụng. 
+Tận tâm (Caring):Quan tâm đến sức khỏe và sự thoải mái của người dùng thông qua lọc bụi mịn, khử mùi, cải thiện chất lượng không khí và chăm sóc sau mua. 
+Hiện đại (Modern):Thiết kế tối giản, công nghệ BLDC, PTC ceramic, ứng dụng điện thoại và các tính năng tự động. 
+Đáng tin cậy (Reliable): Vật liệu bền, chống cháy, khung kim loại chắc chắn, bảo hành dài hạn, hỗ trợ sửa chữa và đổi trả khi có lỗi. 
+Thân thiện (Friendly): Dễ sử dụng, tư vấn tận tình, giao hàng - lắp đặt miễn phí và hướng dẫn sử dụng hiệu quả. 
+Trách nhiệm (Responsible): Hướng đến tiết kiệm điện, sử dụng hiệu quả và cung cấp bộ lọc thay thế định kỳ, góp phần duy trì môi trường sống trong lành.  
+4. Brand Architective
+Smart Fan sử dụng mô hình kiến trúc thương hiệu Branded House, trong đó Smart Fan là thương hiệu mẹ và bao phủ sản phẩm FanFun 3-IN-1 cùng hệ sinh thái dịch vụ như FanFun App, FanFun Care, FanFun Filter và FanFun Energy. Mô hình này giúp thương hiệu duy trì hình ảnh nhất quán, tăng khả năng nhận diện và tạo nền tảng thuận lợi cho việc mở rộng danh mục sản phẩm trong tương lai.
+ 4.1. Thương hiệu mẹ: FANFUN
+ Là thương hiệu trung tâm, đại diện cho định hướng tiện nghi - thông minh - tiết kiệm - chăm sóc sức khỏe và chất lượng không khí trong không gian sống.
+ 4.2. Dòng sản phẩm chính: FANFUN 3-IN-1
+ Đây là sản phẩm chủ lực của Smart Fan, tích hợp nhiều nhu cầu trong một thiết bị:
+-        Làm mát: Quạt 5 cánh, gió tự nhiên, động cơ BLDC tiết kiệm điện.
+-        Làm lạnh: Hỗ trợ tạo cảm giác mát mẻ trong thời tiết nóng.
+-        Sưởi ấm: Bộ gia nhiệt PTC Ceramic, phù hợp khi thời tiết lạnh.
+ 4.3. Hệ sinh thái dịch vụ FanFun
+Các dịch vụ đều sử dụng chung tên thương hiệu FanFun, giúp tạo sự nhất quán:
+-        FanFun App: Điều khiển từ xa, theo dõi nhiệt độ, nhắc vệ sinh/thay bộ lọc.
+-        FanFun Care: Bảo hành, sửa chữa, tư vấn và chăm sóc khách hàng.
+-        FanFun Filter: Bộ lọc thay thế định kỳ.
+-        FanFun Delivery: Giao hàng và lắp đặt miễn phí.
+-        FanFun Energy: Hướng dẫn sử dụng và giải pháp tiết kiệm điện.
+
+Sơ đồ kiến trúc thương hiệu
+                     	FANFUN
+                    (THƯƠNG HIỆU MẸ)
+                       	│
+          ┌────────────────┼────────────────┐
+      	│            	│            	│
+      	▼            	▼            	▼
+   FANFUN 3-IN-1   FANFUN WEB	FANFUN CARE
+	Sản phẩm chính  	Ứng dụng    	Bảo hành & CSKH
+      	│
+   ┌──────┼──────┬───
+   ▼  	▼      ▼     	
+ Làm	Làm    Sưởi  	
+ mát	lạnh    ấm   	
+      	│
+      	Vì sao chọn Branded House?
+FanFun đang tập trung vào một sản phẩm cốt lõi, đồng thời các dịch vụ đi kèm đều phục vụ trực tiếp cho sản phẩm. Vì vậy, việc dùng một thương hiệu FanFun xuyên suốt sẽ giúp:
+-        Dễ nhận diện: Khách hàng chỉ cần nhớ một cái tên.
+-        Tăng độ tin cậy: Chất lượng của sản phẩm góp phần xây dựng uy tín cho toàn thương hiệu.
+-        Dễ mở rộng: Sau này có thể phát triển thêm các sản phẩm như FanFun Mini, FanFun Pro hoặc các thiết bị gia dụng thông minh khác.
+-        Tiết kiệm chi phí marketing: Không phải xây dựng một thương hiệu riêng cho từng sản phẩm.
+-        Tạo hệ sinh thái: Sản phẩm, ứng dụng, bộ lọc và dịch vụ hậu mãi cùng nằm dưới một thương hiệu.
+5. Brand culture 
+Công ty TNHH FanFun định hướng xây dựng văn hóa thương hiệu xoay quanh tinh thần “Một thiết bị - mọi mùa - mọi không gian”, với sản phẩm quạt thông minh tích hợp 3 chức năng: làm mát, sưởi ấm và làm lạnh. Văn hóa thương hiệu FanFun không chỉ được thể hiện qua sản phẩm mà còn được hình thành từ những giá trị, niềm tin và chuẩn mực được chia sẻ bởi toàn thể nhân viên trong doanh nghiệp.
+5.1. Giá trị cốt lõi
+- Trung thực: Nói đúng, làm đúng, hứa là giữ. FanFun không tô vẽ thông số, không giấu lỗi, và luôn là bên chủ động báo trước khi có vấn đề với sản phẩm hay đơn hàng. 
+- Tận tâm: Mỗi quyết định đều bắt đầu từ nhu cầu thật của khách hàng, và luôn lắng nghe, sửa nhanh. 
+- An toàn: Không đánh đổi an toàn lấy chi phí; linh kiện chưa kiểm định thì chưa xuất xưởng. 
+- Cải tiến: Smart Fan khuyến khích học hỏi, cải tiến liên tục và dám thử cách làm mới để tạo ra những giải pháp thông minh, tiết kiệm năng lượng. 
+- Trách nhiệm: Dám nhận phần việc của mình, làm việc như một đội và có trách nhiệm với cộng đồng, môi trường. 
+5.2. Niềm tin của thương hiệu
+FanFun tin rằng công nghệ chỉ thực sự có giá trị khi giúp cuộc sống của con người trở nên đơn giản, tiện nghi và an tâm hơn.
+Do đó, công ty không chỉ bán một chiếc quạt mà cung cấp giải pháp kiểm soát nhiệt độ và sự thoải mái trong không gian sống. FanFun tin rằng một sản phẩm tốt phải đồng thời đáp ứng được ba yếu tố: an toàn và tiện ích cho khách hàng, hiệu quả bền vững cho doanh nghiệp, và trách nhiệm với cộng đồng, môi trường. Niềm tin ấy chỉ đứng vững khi công ty luôn trung thực với những gì mình hứa và tận tâm với những người sử dụng sản phẩm. 
+5.3. Chuẩn mực trong hoạt động
+Văn hóa FanFun được thể hiện qua các chuẩn mực gắn với 5 giá trị cốt lõi:
+- Trung thực: cung cấp thông tin chính xác về công suất, tính năng, mức tiêu thụ điện và độ an toàn của sản phẩm; không tô vẽ thông số, chủ động báo trước khi có vấn đề với sản phẩm hoặc đơn hàng.
+- Tận tâm: mọi quyết định bắt đầu từ nhu cầu thật của khách hàng; lắng nghe phản hồi và giải quyết vấn đề nhanh chóng, kể cả sau khi bán.
+- An toàn: an toàn là ưu tiên số một; đặc biệt chú trọng các tiêu chuẩn an toàn điện, nhiệt và chất lượng sản phẩm. Linh kiện chưa kiểm định thì chưa xuất xưởng, và mọi bộ phận đều có quyền dừng quyết định ảnh hưởng đến an toàn người dùng.
+- Cải tiến: nhân viên được khuyến khích đưa ra ý tưởng mới, dám thử nghiệm và học từ sai lầm để cải thiện sản phẩm và quy trình làm việc, hướng tới giải pháp thông minh và tiết kiệm năng lượng.
+- Trách nhiệm: mỗi nhân viên chịu trách nhiệm với công việc, sản phẩm và trải nghiệm mình tạo ra cho khách hàng; các bộ phận R&D, sản xuất, marketing, bán hàng và chăm sóc khách hàng phối hợp như một đội để tạo ra giá trị thống nhất cho thương hiệu, đồng thời có trách nhiệm với cộng đồng và môi trường.
+5.4. Hành vi của nhân viên
+Văn hóa thương hiệu phải được thể hiện qua hành vi thực tế của nhân viên:
+“Hiểu sản phẩm - Hiểu khách hàng - Luôn trung thực - Luôn an toàn - Luôn cải tiến - Luôn có trách nhiệm.”
+6. Brand story
+FANFUN - Một thiết bị, nhiều giải pháp cho không gian sống
+Trong cuộc sống hiện đại, thời tiết ngày càng thất thường khiến nhu cầu về một không gian sống thoải mái trở nên quan trọng hơn. Những ngày nóng, người dùng cần một thiết bị làm mát hiệu quả; khi thời tiết lạnh, lại cần một giải pháp sưởi ấm. Bên cạnh đó, chất lượng không khí, bụi mịn và mùi hôi trong không gian sống cũng ngày càng được quan tâm.
+Từ những nhu cầu rất thực tế đó, FanFun được hình thành với mong muốn tạo ra một thiết bị có thể đáp ứng nhiều nhu cầu trong cùng một sản phẩm. Thay vì phải sử dụng nhiều thiết bị riêng biệt như quạt, máy sưởi và máy lọc không khí, FanFun tích hợp các chức năng làm mát, làm lạnh và sưởi ấm trong một thiết kế nhỏ gọn, hiện đại.
+FanFun hướng đến những không gian sống phổ biến như phòng trọ, căn hộ và gia đình. Sản phẩm được phát triển với thiết kế tối giản, động cơ tiết kiệm điện, hoạt động êm và khả năng điều khiển thông minh bằng remote, giọng nói và ứng dụng điện thoại. Hệ thống cảm biến nhiệt độ giúp sản phẩm nhận biết môi trường xung quanh, từ đó mang đến trải nghiệm sử dụng thuận tiện và phù hợp hơn với nhu cầu của người dùng.
+Không dừng lại ở việc tạo ra một sản phẩm, FanFun xây dựng một hệ sinh thái dịch vụ xoay quanh khách hàng. Từ giao hàng, lắp đặt, bảo hành, sửa chữa đến nhắc vệ sinh và thay bộ lọc qua ứng dụng, thương hiệu mong muốn đồng hành cùng người dùng trong suốt quá trình sử dụng sản phẩm.
+FanFun tin rằng sự thoải mái không nên chỉ dành cho một mùa.
+Dù trời nóng hay lạnh, dù không khí trong lành hay nhiều bụi, FanFun hướng đến việc tạo ra một không gian sống thoải mái, tiện lợi và dễ chịu quanh năm.
+
+

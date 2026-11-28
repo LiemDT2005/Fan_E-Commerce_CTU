@@ -156,7 +156,7 @@ export default function AdminProductForm() {
 
       <div className="flex items-center justify-between pb-4 border-b border-outline-variant/20">
         <div>
-          <h1 className="text-3xl font-extrabold text-on-surface tracking-tight">
+          <h1 className="text-3xl font-bold text-on-surface tracking-tight">
             {isEdit ? 'Edit Equipment Information' : 'Add New Microclimate Equipment'}
           </h1>
           <p className="text-xs text-on-surface-variant mt-1">
@@ -167,8 +167,8 @@ export default function AdminProductForm() {
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Basic Info Card */}
-        <div className="p-6 rounded-3xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm space-y-4">
-          <h3 className="text-sm font-bold text-on-surface uppercase tracking-wider pb-2 border-b border-outline-variant/20">
+        <div className="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/30 space-y-4">
+          <h3 className="text-sm font-semibold text-on-surface uppercase tracking-wider pb-2 border-b border-outline-variant/20">
             1. General Information
           </h3>
 
@@ -324,8 +324,8 @@ export default function AdminProductForm() {
         </div>
 
         {/* Specifications Card */}
-        <div className="p-6 rounded-3xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm space-y-4">
-          <h3 className="text-sm font-bold text-on-surface uppercase tracking-wider pb-2 border-b border-outline-variant/20">
+        <div className="p-6 rounded-xl bg-surface-container-lowest border border-outline-variant/30 space-y-4">
+          <h3 className="text-sm font-semibold text-on-surface uppercase tracking-wider pb-2 border-b border-outline-variant/20">
             2. Technical Specifications
           </h3>
 
@@ -395,14 +395,14 @@ export default function AdminProductForm() {
         <div className="flex justify-end gap-4 pt-4">
           <Link
             to="/admin/products"
-            className="px-6 py-3 rounded-xl bg-surface-container text-on-surface text-xs font-bold hover:bg-surface-container-high transition-colors"
+            className="px-6 py-3 rounded-lg bg-surface-container text-on-surface text-xs font-semibold hover:bg-surface-container-high transition-colors"
           >
             Cancel
           </Link>
           <button
             type="submit"
             disabled={submitting}
-            className="px-8 py-3 rounded-xl bg-primary hover:bg-primary-container disabled:opacity-50 text-on-primary text-xs font-bold shadow-md transition-all"
+            className="px-8 py-3 rounded-lg bg-primary hover:bg-primary-container disabled:opacity-50 text-on-primary text-xs font-semibold transition-colors"
           >
             {submitting ? 'Saving...' : 'Save Product'}
           </button>

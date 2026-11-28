@@ -225,7 +225,7 @@ export default function AdminCategories() {
       {/* Modal: Create or Edit Category */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-xs">
-          <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-3xl max-w-md w-full p-6 shadow-2xl space-y-5 animate-in fade-in duration-200">
+          <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-xl max-w-md w-full p-6 shadow-xl space-y-5 animate-in fade-in duration-200">
             <div className="flex items-center justify-between pb-3 border-b border-outline-variant/20">
               <h2 className="text-lg font-bold text-on-surface">
                 {modalMode === 'create' ? 'Create New Category' : 'Edit Category'}
@@ -239,7 +239,7 @@ export default function AdminCategories() {
             </div>
 
             {modalError && (
-              <div className="p-3 rounded-xl bg-error/10 border border-error/20 text-error text-xs font-semibold">
+              <div className="p-3 rounded-lg bg-error/10 border border-error/20 text-error text-xs font-semibold">
                 {modalError}
               </div>
             )}

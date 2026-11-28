@@ -164,11 +164,11 @@ export default function AdminLayout() {
 
             <div className="flex items-center gap-2.5">
               <div className="flex flex-col text-right hidden sm:flex">
-                <span className="text-xs font-semibold text-on-surface leading-tight">Admin System</span>
-                <span className="text-[11px] text-on-surface-variant">Operations Manager</span>
+                <span className="text-xs font-semibold text-on-surface leading-tight">Huynh Nam Phuong</span>
+                <span className="text-[11px] text-on-surface-variant">Administrator</span>
               </div>
               <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-on-primary font-bold text-xs">
-                A
+                P
               </div>
             </div>
           </div>
